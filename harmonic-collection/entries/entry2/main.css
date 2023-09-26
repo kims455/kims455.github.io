@@ -1,0 +1,102 @@
+body {
+    background-color: rgb(23, 30, 100);
+    font-family: Verdana, sans-serif;
+}
+
+h6 {
+    font-size: 11pt;
+    text-align: center;
+    color: aliceblue;
+}
+
+h2 {
+    font-size: 45pt;
+}
+
+h2, h3, h4, h5 {
+    text-align: center;
+    color: aliceblue;
+}
+
+p {
+    font-size: 15px;
+    text-align: center;
+}
+
+.coral0 {
+    color: #ff1818;
+}
+
+.coral1 {
+    color: #ff3a3a;
+}
+
+.coral2 {
+    color: #ff5353;
+}
+
+.coral3 {
+    color: #ff6666;
+}
+
+.coral4 {
+    color: #ff7979;
+}
+
+.coral5 {
+    color: #ff8c8c;
+}
+
+.coral6 {
+    color: #ffa0a0;
+}
+
+.coral7 {
+    color: #ffb3b3;
+}
+
+.coral8 {
+    color: #ffc6c6;
+}
+
+.coral9 {
+    color: #ffe3e3;
+}
+
+.coral10 {
+    color: #fdfdfd;
+}
+
+.airplane {
+    text-align: center;
+    color: rgb(143, 202, 253);
+    font-size: 15pt;
+}
+
+.distorted {
+    text-align: justify;
+    color: rgb(255, 60, 60);
+}
+
+.tunnel {
+    text-align: center;
+    color: rgb(255, 255, 255);  
+    font-size: 10.5pt;
+}
+
+.footer {
+    font-size: 22pt;
+    font-style: italic;
+    font-variant: small-caps;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.footer2 {
+    font-size: 22pt;
+    font-style: italic;
+    text-align: center;
+    font-variant: small-caps;
+    padding: 130px;
+}
+
