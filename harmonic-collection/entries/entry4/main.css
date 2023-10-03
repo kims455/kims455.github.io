@@ -234,6 +234,7 @@ image {
     text-align: center;
     scale: 105%;
     padding: 20px;
+    border-radius: 50%;
 }
 
 .screentxt {
