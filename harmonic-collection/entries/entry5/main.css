@@ -1,7 +1,14 @@
 body {
-  background-color: rgb(227, 239, 250);
+  background-color: rgb(224, 240, 255);
   font-family: "dupincel-variable", sans-serif;
 }
+/*   background-image: url("assets/background.jpeg");
+  background-color: (227, 239, 250);
+  height: 2850px; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+*/
 
 h1 {
   text-align: center;
@@ -124,7 +131,7 @@ h3 {
   margin: 0 auto;
   justify-content: center; 
   align-items: center;
-}
+} 
 
 .title {
   font-family: "termina", sans-serif;
