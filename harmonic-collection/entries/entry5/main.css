@@ -1,6 +1,9 @@
 body {
   background-color: rgb(224, 240, 255);
   font-family: "dupincel-variable", sans-serif;
+  background-image: url("assets/gradient1.webp");
+  background-repeat:no-repeat;
+  background-size: 3000px;
 }
 /*   background-image: url("assets/background.jpeg");
   background-color: (227, 239, 250);
@@ -17,10 +20,11 @@ h1 {
   font-weight: 800;
   font-style: normal;
   letter-spacing: 1px;
-  background-image: repeating-radial-gradient(ellipse, #fab965, #ff441f, #316dc6);
+  background-image: repeating-radial-gradient(ellipse, #fab965, #ff3d17, #316dc6);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+  text-shadow: 1px 1px 3px rgb(255, 174, 187);
 }
 
 h3 {
@@ -37,8 +41,6 @@ h3 {
   display: flex;
   padding: 10px;
   background-color: none;
-  color:  #042135;
-  font-size:  36px;
   text-align:  center;
   justify-content:  space-evenly;
   cursor: url("https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/64/external-camera-photography-icongeek26-linear-colour-icongeek26-1.png"), auto;
@@ -141,6 +143,8 @@ h3 {
   text-align: center;
   line-height: 1.7em;
   color: rgb(2, 0, 108);
+  letter-spacing: 4px;
+  text-shadow: rgb(255, 124, 124) 7px 0 10px;
 }
 
 .describe {
@@ -150,5 +154,5 @@ h3 {
   font-size: 18px;
   text-align: justify;
   line-height: 1.7em;
-  color: rgb(95, 95, 95);
+  color: rgb(77, 77, 77);
 }
