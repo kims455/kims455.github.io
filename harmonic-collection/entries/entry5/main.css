@@ -1,0 +1,147 @@
+body {
+  background-color: rgb(227, 239, 250);
+  font-family: "dupincel-variable", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 57px;
+  font-family: "termina", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  letter-spacing: 1px;
+  background-image: repeating-radial-gradient(ellipse, #fab965, #ff441f, #316dc6);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+h3 {
+  text-align: center;
+  font-size: 18px;
+  font-family: "graphie", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: rgb(66, 66, 66);
+  letter-spacing: 1px;
+}
+
+.container1 {
+  display: flex;
+  padding: 10px;
+  background-color: none;
+  color:  #042135;
+  font-size:  36px;
+  text-align:  center;
+  justify-content:  space-evenly;
+  cursor: url("https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/64/external-camera-photography-icongeek26-linear-colour-icongeek26-1.png"), auto;
+}
+
+.container2{
+  display: flex;
+  padding: none;
+  background-color: none;
+  justify-content: space-evenly;
+  cursor: url("https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/64/external-camera-photography-icongeek26-linear-colour-icongeek26-1.png"), auto;
+} 
+
+.container3 {
+  display: flex;
+  padding: 14px;
+  background-color: rgb(6, 8, 60);
+  justify-content: space-evenly;
+  cursor: url("https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/64/external-camera-photography-icongeek26-linear-colour-icongeek26-1.png"), auto;
+}
+
+.down, .up {
+  cursor: url("https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/64/external-camera-photography-icongeek26-linear-colour-icongeek26-1.png"), auto;
+}
+
+.sky1, .sky2, .sky3 {
+  max-width: 40%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dormtrash1, .dormtrash2, .dormtrash3 {
+  max-width: 19.855%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.streettrash1, .streettrash2, .streettrash3, .streettrash7 {
+  max-width: 11.5%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.streettrash4, .streettrash5, .streettrash6, .streettrash8, .streettrash9, .streettrash10 {
+  max-width: 19.855%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item {
+  margin: none;
+  width: 300px;
+  display: none;
+}
+
+.figure {
+  position: relative;
+  width: 520px;
+  max-width: 100%;
+}
+
+.figure img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.figure .image-hover {
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity .2s;
+}
+
+.figure:hover .image-hover {
+  opacity: 1;
+}
+
+.paragraph {
+  width: 45%;
+  padding: 130px;
+  margin: 0 auto;
+  justify-content: center; 
+  align-items: center;
+}
+
+.title {
+  font-family: "termina", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  text-align: center;
+  line-height: 1.7em;
+  color: rgb(2, 0, 108);
+}
+
+.describe {
+  font-family: "graphie", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  text-align: justify;
+  line-height: 1.7em;
+  color: rgb(95, 95, 95);
+}
