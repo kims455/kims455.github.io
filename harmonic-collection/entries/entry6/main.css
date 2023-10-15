@@ -1,0 +1,26 @@
+body {
+    background-color:  #1c173c;
+    font-family:  monospace;
+    padding: 50px;
+    font-size: 16px;
+  }
+  
+  h1, h2 {
+    font-weight: normal;
+    text-align: center;
+    color: aliceblue;
+  }
+  
+  h1 {
+    font-size: 60px;
+    margin-bottom: -30px;
+  }
+  
+  h2 {
+    font-size: 36px;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
