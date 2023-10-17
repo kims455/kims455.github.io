@@ -19,7 +19,7 @@ h1 {
 
 .header1 {
   animation: appearEffect 4s alternate forwards;
-  border-radius: 4px;
+  border-radius: 50px;
   border-color: black;
   padding: 15px;
   margin: 0px;
@@ -28,9 +28,17 @@ h1 {
   margin-right: 29%;
   -webkit-text-size-adjust: auto;
 }
+/*
+.header2 {
+  color: rgb(0, 38, 255);
+  font-family: "kallisto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+*/
 
 .face {
-  line-height: 60%;
+  line-height: 140%;
 }
 
 @keyframes appearEffect {
@@ -42,6 +50,7 @@ h1 {
   }
 }
 
+/*
 h2 {
   font-size: 28px;
   color: rgb(132, 198, 255);
@@ -56,6 +65,7 @@ p {
   font-family: "abacaxi-latin-variable", sans-serif;
   font-variation-settings: "wght" 400;
 }
+*/
 
 .container {
   position: relative;
@@ -105,7 +115,6 @@ p {
 .object2:hover {
   filter: brightness(3);
 }
-
 
 
 /* 
