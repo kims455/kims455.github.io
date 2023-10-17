@@ -1,83 +1,110 @@
-body {
-  background-image: url('assets/dollarshop-background.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  font-family: "gomme-sans", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  padding: 50px;
-  margin: 0;
-}
-
 body, html {
   height: 100%;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
-  
+
 h1, h2 {
   text-align: center;
-  color: rgb(255, 0, 0);
-}
-  
-h1 {
-  font-size: 60px;
-  margin-bottom: -30px;
-}
-  
-h2 {
-  font-size: 36px; 
-}
-  
-p {
-  font-size: 16px;
+  font-family: "gabriella", sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }
 
-.text {
-  font-size: 16px;
+h1 {
+  font-size: 3.5vw;
+  color: rgb(229, 34, 34);
+}
+
+h2 {
+  font-size: 1.3vw;
+  color: rgb(255, 198, 198);
+}
+
+p {
+  font-size: 0.9vw;
+  color: aliceblue;
+  font-family: "abacaxi-latin-variable", sans-serif;
+  font-variation-settings: "wght" 400;
+}
+
+.blur-container {
+  max-width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
   position: relative;
-  z-index: 1; 
+  background: rgba(255, 255, 255, 0.8);
 }
 
 .blur-image {
   max-width: 100%;
-  height: auto;
-  filter: blur(0);
-  animation: blurEffect 7s alternate;
+  height: 100%;
+  animation: blurEffect 8s alternate infinite;
+  animation-delay: 1.5s;
   background-image: url('assets/dollarshop-background.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.blur-container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-  background: rgba(0, 0, 0, 0.8);
-}
-
 @keyframes blurEffect {
   0% {
-    filter: blur(0); 
+    filter: blur(0) brightness(1);
   }
   50% {
-    filter: blur(4px);
+    filter: blur(5px) brightness(0.4);
   }
   100% {
-    filter: blur(0);
+    filter: blur(0) brightness(1);
+  }
+}
+
+.popup-image {
+  width: 100%;
+  height: 100%;
+  animation: popEffect 8s alternate infinite;
+}
+
+@keyframes popUp {
+  0% {
+    opacity: 0;
+  }
+	100% {
+    opacity: 1;
+  } 
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  animation: shakeEffect 8s alternate infinite;
+  animation-delay: 2s;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes shakeEffect {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(55px) translateY(55px);
+  }
+  50% {
+    transform: translateX(-55px) translateY(-55px);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 
@@ -101,60 +128,3 @@ p {
     font-size: 60px;
   }
 }
-
-/* 
-.image-container {
-  position: absolute;
-  top: 25.5vh;
-  left: 37.7vw;
-  width: 7vw; 
-  transition: transform 0.4s; 
-}
-
-.power-strip {
-  max-width: 66%;
-  height: auto;
-}
-
-.image-container:hover {
-  transform: scale(1);
-  filter: brightness(0) saturate(0%);
-}
-*/
-
-
-/* 
-.background {
-  width: 100%;
-  height: 100%;
-  background-image: url('assets/dollarshop-background.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-size:100% 100%; 
-}
-
-.blur-container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-  background: rgba(0, 0, 0, 0.8);
-}
-
-@keyframes blurEffect {
-  0% {
-    filter: blur(0); 
-  }
-  50% {
-    filter: blur(4px);
-  }
-  100% {
-    filter: blur(0);
-  }
-}
-*/
