@@ -2,6 +2,126 @@ body, html {
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: beige;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 55px;
+  color: rgb(229, 34, 34);
+  font-family: "kallisto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.header1 {
+
+}
+
+h2 {
+  font-size: 28px;
+  color: rgb(132, 198, 255);
+  font-family: "kallisto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+p {
+  font-size: 16px;
+  color: aliceblue;
+  font-family: "abacaxi-latin-variable", sans-serif;
+  font-variation-settings: "wght" 400;
+}
+
+.container {
+  position: relative;
+}
+
+.image {
+  max-width: 100%;
+  display: block;
+}
+
+
+.powerstrip {
+  position: absolute;
+  top: 11%;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  text-align: center;
+}
+
+.object {
+  max-width: 6.5%; 
+  width: auto;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  transition: filter 0.5s;
+  margin: 20px;
+  justify-content: space-evenly;
+  animation: blurEffect 8s alternate forwards;
+}
+
+@keyframes blurEffect {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.object:hover {
+  filter: brightness(0);
+}
+
+.object2 {
+  max-width: 8.1%; 
+  width: auto;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  transition: filter 0.3s;
+  justify-content: space-evenly;
+}
+
+.object2:hover {
+  filter: brightness(3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
 }
 
@@ -19,7 +139,7 @@ h1 {
 
 h2 {
   font-size: 28px;
-  color: rgb(255, 198, 198);
+  color: rgb(132, 198, 255);
   font-family: "kallisto", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -82,24 +202,47 @@ p {
 @keyframes shakeEffect {
   0% {
     opacity: 0;
-    transform: translateX(0);
+    transform: translateX(0) scale(1, 1);
   }
   25% {
     opacity: 1;
-    transform: translateX(70px) translateY(70px);
+    transform: translateX(10px) translateY(10px) scale(1.3);
   }
   50% {
     opacity: 1;
-    transform: translateX(-70px) translateY(-70px);
+    transform: scale(1, 1);
   }
   100% {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(0) scale(1, 1);
   }
 }
 
+@media (max-width: 768px) {
+  h1 {
+    font-size: 20pt;
+  }
+  h2 {
+    font-size: 15pt;
+  }
+  p {
+    font-size: 9pt;
+  }
+}
 
-/* 
+@media (max-width: 992px) {
+  h1 {
+    font-size: 23pt;
+  }
+  h2 {
+    font-size: 18pt;
+  }
+  p {
+    font-size: 12pt;
+  }
+}
+
+-------
 .popup-image {
   width: 100%;
   height: 100%;
