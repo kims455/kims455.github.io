@@ -7,23 +7,26 @@ body, html {
 
 h1, h2 {
   text-align: center;
-  font-family: "gabriella", sans-serif;
+}
+
+h1 {
+  font-size: 55px;
+  color: rgb(229, 34, 34);
+  font-family: "kallisto", sans-serif;
   font-weight: 900;
   font-style: normal;
 }
 
-h1 {
-  font-size: 3.5vw;
-  color: rgb(229, 34, 34);
-}
-
 h2 {
-  font-size: 1.3vw;
+  font-size: 28px;
   color: rgb(255, 198, 198);
+  font-family: "kallisto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 p {
-  font-size: 0.9vw;
+  font-size: 16px;
   color: aliceblue;
   font-family: "abacaxi-latin-variable", sans-serif;
   font-variation-settings: "wght" 400;
@@ -42,7 +45,7 @@ p {
 .blur-image {
   max-width: 100%;
   height: 100%;
-  animation: blurEffect 8s alternate infinite;
+  animation: blurEffect 8s alternate forwards;
   animation-delay: 1.5s;
   background-image: url('assets/dollarshop-background.jpg');
   background-size: cover;
@@ -54,14 +57,49 @@ p {
   0% {
     filter: blur(0) brightness(1);
   }
-  50% {
-    filter: blur(5px) brightness(0.4);
-  }
   100% {
-    filter: blur(0) brightness(1);
+    filter: blur(6px) brightness(0.3);
   }
 }
 
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  animation: shakeEffect 6s alternate forwards;
+  animation-delay: 2.5s;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+@keyframes shakeEffect {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  25% {
+    opacity: 1;
+    transform: translateX(70px) translateY(70px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(-70px) translateY(-70px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+/* 
 .popup-image {
   width: 100%;
   height: 100%;
@@ -77,54 +115,42 @@ p {
   } 
 }
 
-.text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: absolute;
-  animation: shakeEffect 8s alternate infinite;
-  animation-delay: 2s;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-@keyframes shakeEffect {
-  0% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(55px) translateY(55px);
-  }
-  50% {
-    transform: translateX(-55px) translateY(-55px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-/* Tablet breakpoint */
+Tablet breakpoint 
 @media (min-width: 768px) {
-  body {
-    font-size: 40px;
+  h1 {
+    font-size: 20pt;
+  }
+  h2 {
+    font-size: 15pt;
+  }
+  p {
+    font-size: 9pt;
   }
 }
 
-/* Desktop breakpoint */
+Desktop breakpoint 
 @media (min-width: 992px) {
-  body {
-    font-size: 50px;
+  h1 {
+    font-size: 3vw;
+  }
+  h2 {
+    font-size: 1.5vw;
+  }
+  p {
+    font-size: 1vw;
   }
 }
 
-/* Wide screen breakpoint */
+Wide screen breakpoint 
 @media (min-width: 1200px) {
-  body {
-    font-size: 60px;
+  h1 {
+    font-size: 3.5vw;
+  }
+  h2 {
+    font-size: 1.3vw;
+  }
+  p {
+    font-size: 0.9vw;
   }
 }
+*/
