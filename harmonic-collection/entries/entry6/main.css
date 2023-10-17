@@ -25,13 +25,7 @@ h1 {
 
 @media (max-width: 992px) {
   h1 {
-    font-size: 23pt;
-  }
-  h2 {
-    font-size: 18pt;
-  }
-  p {
-    font-size: 12pt;
+    color: rgb(0, 255, 170);
   }
 }
 
