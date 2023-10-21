@@ -1,0 +1,32 @@
+html{
+    background-color: rgb(126, 175, 255);
+}
+
+h1 {
+    color: rgb(0, 17, 255);
+}
+
+body {
+    font-family: Verdana, sans-serif;
+}
+
+.entries-buttons {
+    text-align: center;
+}
+
+.button {
+    background-color: lightgoldenrodyellow;
+    border: 1.5px solid #422800;
+    border-radius: 25px;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "indivisible", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 12px;
+    padding: 0 10px;
+    line-height: 25px;
+    text-align: center;
+    margin: 0 10px; 
+}

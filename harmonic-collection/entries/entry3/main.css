@@ -3,6 +3,63 @@ body {
     background-image: url(../entry3/assets/noisebkgd.png);
 }
 
+.button-container {
+    position: fixed;
+    top: 7px;
+    right: 4px;
+    left: 4px;
+    z-index: 999;
+}
+
+.forward {
+    background-color: lightgoldenrodyellow;
+    border: 1.5px solid #422800;
+    border-radius: 25px;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "indivisible", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 12px;
+    padding: 0 10px;
+    line-height: 25px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 4px;
+}
+
+.backward {
+    background-color: lightgoldenrodyellow;
+    border: 1.5px solid #422800;
+    border-radius: 20px;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "indivisible", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 12px;
+    padding: 0 10px;
+    line-height: 25px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 4px;
+}
+
+.forward:hover, .backward:hover {
+    background-color: rgb(170, 232, 255);
+    color: #b10000;
+}
+
+.forward:active, .backward:active {
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);
+}
+
+/*
 .forward {
     font-size: 12px;
     font-family: Verdana, sans-serif;
@@ -29,6 +86,7 @@ body {
     align-items: center;
     position: relative;
 }
+*/
 
 h1 {
     font-family: Verdana, sans-serif;
