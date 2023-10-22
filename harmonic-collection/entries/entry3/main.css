@@ -54,10 +54,12 @@ body {
     color: #b10000;
 }
 
+/*
 .forward:active, .backward:active {
     box-shadow: #422800 2px 2px 0 0;
     transform: translate(2px, 2px);
 }
+*/
 
 /*
 .forward {
