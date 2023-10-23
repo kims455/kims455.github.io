@@ -4,7 +4,7 @@ body, html {
 }
 
 h1 {
-    color: rgb(0, 17, 255);
+    color: rgb(0, 10, 151);
     text-align: center;
 }
 
@@ -22,6 +22,11 @@ p {
     text-align: center;
 }
 
+.gif {
+    text-align: center;
+    scale: 90%;
+}
+
 .button {
     background-color: rgb(210, 233, 250);
     border: 1.5px solid #422800;
@@ -32,16 +37,16 @@ p {
     font-family: "indivisible", sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 12px;
-    padding: 0 10px;
-    line-height: 25px;
+    font-size: 13px;
+    padding: 0 15px;
+    line-height: 26px;
     text-align: center;
-    margin: 0 10px; 
+    margin: 0 13px; 
 }
 
 .button:hover {
     background-color: rgb(248, 255, 122);
-    color: #026e00;
+    color: #003dc2;
 }
 
 .button:active {
