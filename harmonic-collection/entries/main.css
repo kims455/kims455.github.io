@@ -6,6 +6,7 @@ body, html {
 h1 {
     color: rgb(0, 10, 151);
     text-align: center;
+    font-size: 25pt;
 }
 
 h3 {
@@ -24,7 +25,12 @@ p {
 
 .hello-gif {
     text-align: center;
-    scale: 85%;
+}
+
+.hello-gif img {
+    display: block;
+    margin: 0 auto; 
+    transform: scale(0.90);
 }
 
 .button {
