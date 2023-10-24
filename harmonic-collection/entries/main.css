@@ -4,18 +4,18 @@ body, html {
 }
 
 h1 {
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     text-align: center;
     font-size: 30pt;
 }
 
 h3 {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 208, 208);
     text-align: center;
 }
 
 p {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: center;
     line-height: 1em;
 }
