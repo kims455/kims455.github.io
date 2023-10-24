@@ -6,15 +6,6 @@ body {
   background-size: 4000px;
 }
 
-/*   
-  background-image: url("assets/background.jpeg");
-  background-color: (227, 239, 250);
-  height: 2850px; 
-  background-position: center; 
-  background-repeat: no-repeat;
-  background-size: cover;
-*/
-
 .button-container {
   position: fixed;
   top: 7px;
@@ -75,7 +66,7 @@ body {
 
 h1 {
   text-align: center;
-  font-size: 60px;
+  font-size: 63px;
   font-family: "termina", sans-serif;
   font-weight: 800;
   font-style: normal;
@@ -98,25 +89,26 @@ h3 {
 }
 
 .center-box {
-  background-color: #fff; 
-  border: 1px solid #ccc;
+  background-color: rgb(0, 4, 37); 
   padding: 10px;
-  max-width: 100%;
+  max-width: 85%; 
   z-index: 1;
-  text-align:  center;
+  text-align: center;
   justify-content: space-evenly;
   cursor: url("https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/64/external-camera-photography-icongeek26-linear-colour-icongeek26-1.png"), auto;
+  margin: 0 auto; 
 }
 
 .photo-collage {
   display: grid;
   grid-template-columns: repeat(6, 1fr); 
-  gap: 6px; 
+  gap: 9px; 
 }
 
 .photo-collage img {
   display: block;
-  max-width: 100%;
+  max-width: 100%; 
+  width: 100%;
   height: auto;
 }
 
@@ -124,7 +116,7 @@ h3 {
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
   transition: filter 0.3s;
-  animation: grayscaleAnimation 5s infinite alternate;
+  animation: grayscaleAnimation 5.5s infinite alternate;
 }
 
 @keyframes grayscaleAnimation {
@@ -132,13 +124,9 @@ h3 {
       -webkit-filter: grayscale(0%);
       filter: grayscale(0%);
   }
-  50% {
-      -webkit-filter: grayscale(100%);
-      filter: grayscale(100%);
-  }
   100% {
-      -webkit-filter: grayscale(0%);
-      filter: grayscale(0%);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
   }
 }
 
@@ -164,7 +152,7 @@ h3 {
 .container3 {
   display: flex;
   padding: 14px;
-  background-color: rgb(6, 8, 60);
+  background-color: rgb(0, 4, 37); 
   justify-content: space-evenly;
   cursor: url("https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/64/external-camera-photography-icongeek26-linear-colour-icongeek26-1.png"), auto;
 }
