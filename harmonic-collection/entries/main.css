@@ -1,22 +1,23 @@
 body, html {
     font-family: Verdana, sans-serif;
-    background-color: rgb(126, 175, 255);
+    background-color: rgb(58, 106, 183);
 }
 
 h1 {
-    color: rgb(0, 10, 151);
+    color: aliceblue;
     text-align: center;
-    font-size: 25pt;
+    font-size: 30pt;
 }
 
 h3 {
-    color: rgb(97, 0, 0);
+    color: rgb(0, 0, 0);
     text-align: center;
 }
 
 p {
     color: rgb(0, 0, 0);
     text-align: center;
+    line-height: 1em;
 }
 
 .entries-buttons {
