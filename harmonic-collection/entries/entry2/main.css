@@ -144,7 +144,7 @@ p {
     font-style: italic;
     font-variant: small-caps;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 70px;
 }
 
 .footer2 {
@@ -152,6 +152,28 @@ p {
     font-style: italic;
     text-align: center;
     font-variant: small-caps;
-    padding: 130px;
+    padding: 10px;
 }
 
+.paragraph {
+    width: 55%;
+    padding: 33px;
+    margin: 0 auto;
+    justify-content: center; 
+    align-items: center;
+}
+
+.title {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: Verdana, sans-serif;
+}
+
+p {
+    font-size: 16px;
+    text-align: justify;
+    color: rgb(255, 255, 255);
+    font-family: Verdana, sans-serif;
+    line-height: 1.3em;
+}
