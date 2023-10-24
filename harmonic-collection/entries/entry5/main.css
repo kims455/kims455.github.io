@@ -3,9 +3,11 @@ body {
   font-family: "dupincel-variable", sans-serif;
   background-image: url("assets/gradient1.webp");
   background-repeat:no-repeat;
-  background-size: 3000px;
+  background-size: 4000px;
 }
-/*   background-image: url("assets/background.jpeg");
+
+/*   
+  background-image: url("assets/background.jpeg");
   background-color: (227, 239, 250);
   height: 2850px; 
   background-position: center; 
@@ -70,6 +72,7 @@ body {
     transform: translate(2px, 2px);
 }
 */
+
 h1 {
   text-align: center;
   font-size: 60px;
@@ -94,6 +97,52 @@ h3 {
   letter-spacing: 1px;
 }
 
+.center-box {
+  background-color: #fff; 
+  border: 1px solid #ccc;
+  padding: 10px;
+  max-width: 100%;
+  z-index: 1;
+  text-align:  center;
+  justify-content: space-evenly;
+  cursor: url("https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/64/external-camera-photography-icongeek26-linear-colour-icongeek26-1.png"), auto;
+}
+
+.photo-collage {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); 
+  gap: 6px; 
+}
+
+.photo-collage img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.photo-collage .trash-img, .photo-collage .dorm-trash {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  transition: filter 0.3s;
+  animation: grayscaleAnimation 5s infinite alternate;
+}
+
+@keyframes grayscaleAnimation {
+  0% {
+      -webkit-filter: grayscale(0%);
+      filter: grayscale(0%);
+  }
+  50% {
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+  }
+  100% {
+      -webkit-filter: grayscale(0%);
+      filter: grayscale(0%);
+  }
+}
+
+/*
 .container1 {
   display: flex;
   padding: 10px;
@@ -102,6 +151,7 @@ h3 {
   justify-content:  space-evenly;
   cursor: url("https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/64/external-camera-photography-icongeek26-linear-colour-icongeek26-1.png"), auto;
 }
+*/
 
 .container2{
   display: flex;
@@ -157,35 +207,8 @@ h3 {
   display: none;
 }
 
-.figure {
-  position: relative;
-  width: 520px;
-  max-width: 100%;
-}
-
-.figure img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.figure .image-hover {
-  object-fit: contain;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  opacity: 0;
-  transition: opacity .2s;
-}
-
-.figure:hover .image-hover {
-  opacity: 1;
-}
-
 .paragraph {
-  width: 45%;
+  width: 50%;
   padding: 130px;
   margin: 0 auto;
   justify-content: center; 
@@ -200,7 +223,7 @@ h3 {
   text-align: center;
   color: rgb(2, 0, 108);
   letter-spacing: 1px;
-  text-shadow: rgb(244, 255, 124) 8px 0 10px;
+  text-shadow: rgb(244, 255, 124) 10px 0 10px;
 }
 
 .describe {
