@@ -1,23 +1,38 @@
 body, html {
-    font-family: Verdana, sans-serif;
-    background-color: rgb(58, 106, 183);
+    font-family: "soleil", sans-serif;
+    background: rgb(255,244,221);
+    background: radial-gradient(circle, rgba(255,244,221,1) 0%, rgba(255,250,78,1) 100%);
 }
 
 h1 {
-    color: rgb(255, 255, 255);
+    color: rgb(255, 0, 123);
     text-align: center;
-    font-size: 30pt;
+    font-size: 50pt;
+    font-family: "soleil", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    padding: 11px;
+    margin: 0;
 }
 
 h3 {
-    color: rgb(255, 208, 208);
+    color: rgb(0, 0, 0);
     text-align: center;
+    font-size: 18pt;
+    padding: 0;
+    padding-bottom: 8px;
+    margin: 0;
 }
 
 p {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-align: center;
+    font-family: "soleil", sans-serif;
+    font-weight: 300;
+    font-style: normal;
     line-height: 1em;
+    padding: 5px;
+    margin: 0;
 }
 
 .entries-buttons {
@@ -35,7 +50,7 @@ p {
 }
 
 .button {
-    background-color: rgb(210, 233, 250);
+    background-color: rgb(255, 255, 255);
     border: 1.5px solid #422800;
     border-radius: 25px;
     color: #d50000;
@@ -62,5 +77,6 @@ p {
 }
 
 hr {
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid rgb(255, 201, 201);
+    margin: 17px;
 }
