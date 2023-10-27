@@ -67,8 +67,8 @@ p {
 }
 
 .button:hover {
-    background-color: rgb(248, 255, 122);
-    color: #003dc2;
+    background-color: rgb(184, 254, 183);
+    color: #0051ff;
 }
 
 .button:active {
