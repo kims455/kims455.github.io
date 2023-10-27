@@ -4,15 +4,15 @@ body, html {
     padding: 0;
     background-color: aliceblue;
     font-family: "dashiell-fine", serif;
-  }
+}
   
-  .button-container {
+.button-container {
     position: fixed;
     top: 7px;
     right: 4px;
     left: 4px;
     z-index: 999;
-  }
+}
   
 .forward {
     background-color: lightgoldenrodyellow;
@@ -22,7 +22,7 @@ body, html {
     cursor: pointer;
     display: inline-block;
     font-family: "indivisible", sans-serif;
-    font-weight: 600;
+    fontsweight: 600;
     font-style: normal;
     font-size: 12px;
     padding: 0 10px;

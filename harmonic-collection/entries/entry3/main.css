@@ -113,17 +113,17 @@ a {
     display: block;
 }
 
-p {
-    font-size: 18px;
+p, .body {
+    font-size: 17px;
     text-align: justify;
     color: aliceblue;
     font-family: 'Arbutus Slab', serif;
-    line-height: 1.7em;
+    line-height: 1.5em;
 }
 
 .paragraph {
     width: 40%;
-    padding: 33px;
+    padding: 25px;
     margin: 0 auto;
     justify-content: center; 
     align-items: center;
@@ -131,10 +131,11 @@ p {
 }
 
 .title {
-    font-size: 25px;
+    font-size: 29px;
     text-align: center;
     color: aliceblue;
     font-family: 'Arbutus Slab', serif;
+    font-weight: 600;
 }
 
 .click {
