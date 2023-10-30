@@ -1,27 +1,54 @@
 body, html {
     font-family: "soleil", sans-serif;
     background: rgb(242, 255, 140);
-    /* background: radial-gradient(circle, rgba(255,244,221,1) 0%, rgba(255,250,78,1) 100%); */
 }
 
-.course-and-name {
+/*
+body, html {
+    font-family: "soleil", sans-serif;
+	background: linear-gradient(25deg, #fbffc9, #f3ff49, #ff7eaf);
+	background-size: 350% 350%;
+	animation: gradient 13s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+*/
+
+.course-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-family: "soleil", sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 7pt;
+    font-size: 6pt;
     padding-top: 16px;
 }
 
+.sem {
+    color: rgb(91, 91, 91);
+    text-align: center;
+}
+
 .course {
-    color: rgb(74, 74, 74);
-    float: left;
+    color: rgb(91, 91, 91);
     text-align: left;
     margin-left: 20px;
 }
 
 .name {
-    color: rgb(74, 74, 74);
-    float: right;
+    color: rgb(91, 91, 91);
     text-align: right;
     margin-right: 40px;
 }
@@ -37,7 +64,7 @@ h1 {
     color: rgb(255, 255, 255);
     text-shadow: 0px 0px 30px rgba(255,46,189,0.9);
     text-align: left;
-    font-size: 8.2vw;
+    font-size: 8.3vw;
     font-family: "soleil", sans-serif;
     font-weight: 900;
     font-style: normal;
@@ -48,7 +75,7 @@ h1 {
 }
 
 .extraordinary {
-    letter-spacing: 5px;
+    letter-spacing: 3px;
 }
 
 h3 {
@@ -111,15 +138,15 @@ p {
     font-family: "indivisible", sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 17px;
-    padding: 10px 13px;
-    line-height: 18px;
+    font-size: 14px;
+    padding: 9px 12px;
+    line-height: 12px;
     text-align: center;
-    margin: 0 13px;
+    margin: 0 7px;
 }
 
 .button:hover {
-    background-color: rgb(184, 254, 183);
+    background-color: rgb(142, 255, 141);
     color: #0051ff;
 }
 
