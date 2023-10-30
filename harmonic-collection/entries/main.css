@@ -1,11 +1,5 @@
 body, html {
     font-family: "soleil", sans-serif;
-    background: rgb(242, 255, 140);
-}
-
-/*
-body, html {
-    font-family: "soleil", sans-serif;
 	background: linear-gradient(25deg, #fbffc9, #f3ff49, #ff7eaf);
 	background-size: 350% 350%;
 	animation: gradient 13s ease infinite;
@@ -23,7 +17,6 @@ body, html {
 		background-position: 0% 50%;
 	}
 }
-*/
 
 .course-info {
     display: flex;
