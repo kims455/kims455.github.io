@@ -134,10 +134,6 @@ h1, h2 {
   animation: appearEffect 4s alternate forwards;
 }
 
-.cord {
-
-}
-
 /*
 .powerstrip2 {
   flex-wrap: nowrap;
@@ -198,7 +194,6 @@ p {
 
 .cord:hover {
   animation: scream 0.1s ease infinite;
-/  animation-iteration-count: infinite;
 }
 
 @keyframes scream {
