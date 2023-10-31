@@ -188,6 +188,7 @@ p {
   width: 300px; 
   height: 300px;
   transition: transform 0.2s;
+  padding: 190px;
 }
 
 .image-container {
@@ -197,7 +198,7 @@ p {
 
 .cord:hover {
   animation: scream 0.1s ease infinite;
-  animation-iteration-count: infinite;
+/  animation-iteration-count: infinite;
 }
 
 @keyframes scream {
