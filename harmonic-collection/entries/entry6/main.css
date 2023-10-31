@@ -184,10 +184,12 @@ h1, h2 {
   margin-left: 10%;
 }
 
+/*
 .object:nth-child(9) {
   order: 9;
   margin-right: 20%;
 }
+*/
 
 .cord {
   max-width: 100%;
