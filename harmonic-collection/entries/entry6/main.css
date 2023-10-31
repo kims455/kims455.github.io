@@ -127,19 +127,20 @@ h1, h2 {
 }
 
 .object {
-  max-width: 7%;
+  max-width: 8.5%;
   width: auto;
   flex: 0 0 auto;
   transition: filter 0.5s;
   animation: appearEffect 4s alternate forwards;
   transform-origin: center;
   transform: rotate(0deg);
-  margin: 100px;
+  margin: 75px;
 }
 
 .object:nth-child(1) {
   order: 1;
   transform: rotate(5deg);
+  margin-left: 10%;
 }
 
 .object:nth-child(2) {
@@ -151,13 +152,13 @@ h1, h2 {
 .object:nth-child(3) {
   order: 3;
   transform: rotate(10deg);
-  margin-right: 5%;
+  margin-right: 10%;
 }
 
 .object:nth-child(4) {
   order: 4;
   transform: rotate(-15deg);
-  margin-left: 20%;
+  margin-left: 10%;
 }
 
 .object:nth-child(5) {
@@ -181,7 +182,7 @@ h1, h2 {
 .object:nth-child(8) {
   order: 8;
   transform: rotate(-35deg);
-  margin-left: 10%;
+  margin-left: 5%;
 }
 
 /*
