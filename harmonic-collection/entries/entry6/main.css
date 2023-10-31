@@ -106,75 +106,88 @@ h1, h2 {
 
 .container {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .image {
   max-width: 100%;
   display: block;
-  justify-content: center;
 }
 
 .powerstrip {
   position: absolute;
-  top: 12%;
+  top: 7%;
   width: 100%;
   z-index: 2;
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 7%;
 }
 
 .object {
-  max-width: 8.8%; 
+  max-width: 7%;
   width: auto;
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
+  flex: 0 0 auto;
   transition: filter 0.5s;
-  margin: 20px;
-  justify-content: space-evenly;
   animation: appearEffect 4s alternate forwards;
+  transform-origin: center;
+  transform: rotate(0deg);
+  margin: 100px;
 }
 
-/*
-.powerstrip2 {
-  flex-wrap: nowrap;
-  text-align: center;
+.object:nth-child(1) {
+  order: 1;
+  transform: rotate(5deg);
 }
 
-h2 {
-  font-size: 28px;
-  color: rgb(132, 198, 255);
-  font-family: "kallisto", sans-serif;
-  font-weight: 500;
-  font-style: normal;
+.object:nth-child(2) {
+  order: 2;
+  transform: rotate(-7deg);
+  margin-left: 10%;
 }
 
-p {
-  font-size: 16px;
-  color: aliceblue;
-  font-family: "abacaxi-latin-variable", sans-serif;
-  font-variation-settings: "wght" 400;
-}
-*/
-
-/*
-.object:hover {
-   opacity: 1;
+.object:nth-child(3) {
+  order: 3;
+  transform: rotate(10deg);
+  margin-right: 5%;
 }
 
-.object2 {
-  max-width: 8.1%; 
-  width: auto;
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
-  transition: filter 0.3s;
-  justify-content: space-evenly;
+.object:nth-child(4) {
+  order: 4;
+  transform: rotate(-15deg);
+  margin-left: 20%;
 }
 
-.object2:hover {
-  filter: brightness(3);
+.object:nth-child(5) {
+  order: 5;
+  transform: rotate(20deg);
+  margin-right: 10%;
 }
-*/
+
+.object:nth-child(6) {
+  order: 6;
+  transform: rotate(-25deg);
+  margin-left: 5%;
+}
+
+.object:nth-child(7) {
+  order: 7;
+  transform: rotate(30deg);
+  margin-right: 15%;
+}
+
+.object:nth-child(8) {
+  order: 8;
+  transform: rotate(-35deg);
+  margin-left: 10%;
+}
+
+.object:nth-child(9) {
+  order: 9;
+  margin-right: 20%;
+}
 
 .cord {
   max-width: 100%;
@@ -184,7 +197,7 @@ p {
   width: 350px; 
   height: 350px;
   transition: transform 0.2s;
-  padding: 170px;
+  padding: 100px;
 }
 
 .image-container {
@@ -289,6 +302,48 @@ p {
     color: rgb(229, 34, 34);
   }
 }
+
+/*
+.powerstrip2 {
+  flex-wrap: nowrap;
+  text-align: center;
+}
+
+h2 {
+  font-size: 28px;
+  color: rgb(132, 198, 255);
+  font-family: "kallisto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+p {
+  font-size: 16px;
+  color: aliceblue;
+  font-family: "abacaxi-latin-variable", sans-serif;
+  font-variation-settings: "wght" 400;
+}
+*/
+
+/*
+.object:hover {
+   opacity: 1;
+}
+
+.object2 {
+  max-width: 8.1%; 
+  width: auto;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  transition: filter 0.3s;
+  justify-content: space-evenly;
+}
+
+.object2:hover {
+  filter: brightness(3);
+}
+*/
 
 /* 
 body, html {
