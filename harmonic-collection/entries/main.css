@@ -46,6 +46,35 @@ body, html {
     margin-right: 40px;
 }
 
+.balloons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 80px;
+}
+
+.balloon1, .balloon2, .balloon3, .balloon4, .balloon5 {
+    max-width: 13%;
+    height: auto;
+    margin: 0 50px;
+    animation: rotateBalloon 10s linear infinite;
+}
+
+@keyframes rotateBalloon {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.balloon1, .balloon2, .balloon3, .balloon4, .balloon5:hover {
+    transform: scale(1.2); /* Zoom in by 20% on hover */
+}
+
 .headers {
     max-width: 100%; 
     margin: 0 auto; 
@@ -105,8 +134,35 @@ p {
 }
 
 .entries-buttons hr {
-    border: 2px solid #980101;
+    border: 2px solid #bb0000;
     margin: 12px;
+}
+
+.button {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #422800;
+    border-radius: 25px;
+    color: #d50000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "indivisible", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    padding: 0.4vw 0.7vw;
+    line-height: 1;
+    text-align: center;
+    margin: 0 8px;
+}
+
+.button:hover {
+    background-color: rgb(142, 255, 141);
+    color: #0051ff;
+}
+
+.button:active {
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);
 }
 
 /*
@@ -120,30 +176,3 @@ p {
     transform: scale(0.90);
 } 
 */
-
-.button {
-    background-color: rgb(255, 255, 255);
-    border: 1.5px solid #422800;
-    border-radius: 25px;
-    color: #d50000;
-    cursor: pointer;
-    display: inline-block;
-    font-family: "indivisible", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 14px;
-    padding: 9px 12px;
-    line-height: 12px;
-    text-align: center;
-    margin: 0 7px;
-}
-
-.button:hover {
-    background-color: rgb(142, 255, 141);
-    color: #0051ff;
-}
-
-.button:active {
-    box-shadow: #422800 2px 2px 0 0;
-    transform: translate(2px, 2px);
-}
