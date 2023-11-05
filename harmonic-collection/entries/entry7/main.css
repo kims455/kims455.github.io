@@ -130,13 +130,61 @@ h1, h2 {
     }
 }
 
-.black-square {
+.black-square1 {
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    animation: shapeAnimation 9s linear infinite;
+    animation-delay: 1s;
+}
+
+.black-square2 {
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    animation: shapeAnimation 9s linear infinite;
+    animation-delay: 1s;
+}
+
+.black-square3 {
     width: 400px;
     height: 400px;
     background-color: black;
     position: absolute;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
+    animation: shapeAnimation 9s linear infinite;
+    animation-delay: 1s;
+}
+
+.black-square4 {
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    animation: shapeAnimation 9s linear infinite;
+    animation-delay: 1s;
+}
+
+.black-square5 {
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 100%;
     transform: translate(-50%, -50%);
     animation: shapeAnimation 9s linear infinite;
     animation-delay: 1s;
@@ -174,7 +222,6 @@ h1, h2 {
         /* square */
     }
 }
-
 
 /*
 .header1 {
