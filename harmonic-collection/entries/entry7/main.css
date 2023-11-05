@@ -22,7 +22,7 @@ body, html {
     cursor: pointer;
     display: inline-block;
     font-family: "indivisible", sans-serif;
-    fontsweight: 600;
+    font-weight: 600;
     font-style: normal;
     font-size: 12px;
     padding: 0 10px;
@@ -61,6 +61,122 @@ h1, h2 {
     text-align: center;
 }
 
+.blue-section {
+    width: 50%;
+    height: 100vh;
+    background-color: rgb(0, 23, 231);
+    float: left;
+}
+
+.lightblue-section {
+    width: 50%;
+    height: 100vh;
+    background-color: rgb(215, 236, 255);
+    float: left;
+}
+
+.blue-section h1 {
+    font-family: "dashiell-fine", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2.8vw;
+    color: aliceblue;
+    padding: 5px;
+    padding-top: 40px;
+    margin: 0;
+    animation: fadeIn 5s infinite; 
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.lightblue-section h1 {
+    font-family: "dashiell-fine", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2.8vw;
+    color: rgb(0, 23, 231);
+    padding: 5px;
+    padding-top: 40px;
+    margin: 0;
+    animation: fadeOut 5s infinite; 
+    animation-delay: 1s;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.black-square {
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: shapeAnimation 9s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes shapeAnimation {
+    0% {
+        width: 400px;
+        height: 400px;
+        border-radius: 0%; 
+        /* square */
+    }
+    25% {
+        width: 400px;
+        height: 400px;
+        border-radius: 50%; 
+        /* circle */
+    }
+    50% {
+        width: 400px;
+        height: 200px;
+        border-radius: 50%; 
+        /* oval */
+    }
+    75% {
+        width: 400px;
+        height: 400px;
+        border-radius: 50%; 
+        /* circle */
+    }
+    100% {
+        width: 400px;
+        height: 400px;
+        border-radius: 0%; 
+        /* square */
+    }
+}
+
+
+/*
 .header1 {
     font-family: "dashiell-fine", serif;
     font-weight: 300;
@@ -90,7 +206,4 @@ h1, h2 {
     padding: 5px;
     margin: 0;
 }
-
-
-
-
+*/
