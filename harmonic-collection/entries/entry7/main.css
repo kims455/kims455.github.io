@@ -140,6 +140,11 @@ h1, h2 {
     transform: translate(-50%, -50%);
     animation: shapeAnimation 9s linear infinite;
     animation-delay: 1s;
+    transition: background-color 0.3s;
+}
+
+.black-square1:hover {
+    background-color: aliceblue;
 }
 
 .black-square2 {
@@ -152,6 +157,11 @@ h1, h2 {
     transform: translate(-50%, -50%);
     animation: shapeAnimation 9s linear infinite;
     animation-delay: 1s;
+    transition: background-color 0.3s;
+}
+
+.black-square2:hover {
+    background-color: aliceblue;
 }
 
 .black-square3 {
@@ -164,6 +174,11 @@ h1, h2 {
     transform: translate(-50%, -50%);
     animation: shapeAnimation 9s linear infinite;
     animation-delay: 1s;
+    transition: background-color 0.3s;
+}
+
+.black-square3:hover {
+    background-color: rgb(242, 255, 0);
 }
 
 .black-square4 {
@@ -176,6 +191,11 @@ h1, h2 {
     transform: translate(-50%, -50%);
     animation: shapeAnimation 9s linear infinite;
     animation-delay: 1s;
+    transition: background-color 0.3s;
+}
+
+.black-square4:hover {
+    background-color: rgb(0, 23, 231);
 }
 
 .black-square5 {
@@ -188,6 +208,11 @@ h1, h2 {
     transform: translate(-50%, -50%);
     animation: shapeAnimation 9s linear infinite;
     animation-delay: 1s;
+    transition: background-color 0.3s;
+}
+
+.black-square5:hover {
+    background-color: rgb(0, 23, 231);
 }
 
 @keyframes shapeAnimation {
