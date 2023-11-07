@@ -374,7 +374,6 @@ h1, h2 {
     }
 }
 
-
 @media (min-width: 1024px) and (max-width: 1280px) {
     .black-square1,
     .black-square2,
@@ -420,34 +419,92 @@ h1, h2 {
     }
 }
 
-/*
-.header1 {
-    font-family: "dashiell-fine", serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 3vw;
-    color: rgb(0, 21, 255);
-    padding: 5px;
-    margin: 0;
+@media (min-width: 1280px) and (max-width: 1440px) {
+    .black-square1,
+    .black-square2,
+    .black-square3,
+    .black-square4,
+    .black-square5 {
+        width: 300px;
+        height: 300px;
+        animation: smallShape 10s linear infinite;
+    }
 }
 
-.header2 {
-    font-family: "dashiell-fine", serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 3vw;
-    color: rgb(0, 21, 255);
-    padding: 5px;
-    margin: 0;
+@keyframes smallShape {
+    0% {
+        width: 300px;
+        height: 300px;
+        border-radius: 0%; 
+        /* square */
+    }
+    25% {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%; 
+        /* circle */
+    }
+    50% {
+        width: 300px;
+        height: 150px;
+        border-radius: 50%; 
+        /* oval */
+    }
+    75% {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%; 
+        /* circle */
+    }
+    100% {
+        width: 300px;
+        height: 300px;
+        border-radius: 0%; 
+        /* square */
+    }
 }
 
-.header3 {
-    font-family: "dashiell-fine", serif;
-    font-weight: 900;
-    font-style: normal;
-    font-size: 3vw;
-    color: rgb(0, 21, 255);
-    padding: 5px;
-    margin: 0;
+@media (min-width: 1440px) {
+    .black-square1,
+    .black-square2,
+    .black-square3,
+    .black-square4,
+    .black-square5 {
+        width: 400px;
+        height: 400px;
+        animation: regularShape 10s linear infinite;
+    }
 }
-*/
+
+@keyframes regularShape {
+    0% {
+        width: 400px;
+        height: 400px;
+        border-radius: 0%; 
+        /* square */
+    }
+    25% {
+        width: 400px;
+        height: 400px;
+        border-radius: 50%; 
+        /* circle */
+    }
+    50% {
+        width: 400px;
+        height: 200px;
+        border-radius: 50%; 
+        /* oval */
+    }
+    75% {
+        width: 400px;
+        height: 400px;
+        border-radius: 50%; 
+        /* circle */
+    }
+    100% {
+        width: 400px;
+        height: 400px;
+        border-radius: 0%; 
+        /* square */
+    }
+}
