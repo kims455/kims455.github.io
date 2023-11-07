@@ -3,7 +3,6 @@ body, html {
     margin: 0;
     padding: 0;
     background-color: rgb(0, 0, 0);
-    font-family: "dashiell-fine", serif;
 }
   
 .button-container {
@@ -76,13 +75,14 @@ h1, h2 {
 }
 
 .blue-section h1 {
-    font-family: "dashiell-fine", serif;
-    font-weight: 600;
+    font-family: "sonar-sans", sans-serif;
+    font-weight: 700;
     font-style: normal;
-    font-size: 2.5vw;
+    font-style: normal;
+    font-size: 2.6vw;
     color: aliceblue;
     padding: 5px;
-    padding-top: 35px;
+    padding-top: 31px;
     margin: 0;
     animation: fadeIn 5s infinite; 
 }
@@ -103,13 +103,13 @@ h1, h2 {
 }
 
 .lightblue-section h1 {
-    font-family: "dashiell-fine", serif;
-    font-weight: 600;
+    font-family: "sonar-sans", sans-serif;
+    font-weight: 700;
     font-style: normal;
-    font-size: 2.5vw;
+    font-size: 2.6vw;
     color: rgb(0, 23, 231);
     padding: 5px;
-    padding-top: 35px;
+    padding-top: 31px;
     margin: 0;
     animation: fadeOut 5s infinite; 
     animation-delay: 1s;
@@ -607,7 +607,7 @@ h1, h2 {
 
 .paragraph {
     font-family: "dashiell-fine", serif;
-    width: 50%;
+    width: 45%;
     padding: 100px;
     padding-top: 1000px; 
     margin: 0 auto;
@@ -619,7 +619,7 @@ h1, h2 {
     font-family: "dashiell-fine", serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 35px;
+    font-size: 36px;
     text-align: center;
     color: #FF4600;
 }
@@ -628,7 +628,7 @@ h1, h2 {
     font-family: "dashiell-fine", serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 18px;
+    font-size: 17px;
     color: rgb(255, 255, 255);
     text-align: justify;
     line-height: 1.7em;
