@@ -4,7 +4,13 @@ body, html {
     padding: 0;
     background-color: rgb(0, 0, 0);
 }
-  
+
+/*
+background-image: url('assets/mouse-cursor.svg') 10 10, auto;
+background-repeat: no-repeat;
+background-size: 4000px;  
+*/
+
 .button-container {
     position: fixed;
     top: 7px;
@@ -77,7 +83,6 @@ h1, h2 {
 .blue-section h1 {
     font-family: "sonar-sans", sans-serif;
     font-weight: 700;
-    font-style: normal;
     font-style: normal;
     font-size: 2.6vw;
     color: aliceblue;
@@ -606,9 +611,8 @@ h1, h2 {
 }
 
 .paragraph {
-    font-family: "dashiell-fine", serif;
-    width: 45%;
-    padding: 100px;
+    width: 49%;
+    padding: 110px;
     padding-top: 1000px; 
     margin: 0 auto;
     justify-content: center; 
@@ -616,8 +620,8 @@ h1, h2 {
 }
 
 .title {
-    font-family: "dashiell-fine", serif;
-    font-weight: 600;
+    font-family: "sonar-sans", sans-serif;
+    font-weight: 700;
     font-style: normal;
     font-size: 36px;
     text-align: center;
@@ -625,11 +629,25 @@ h1, h2 {
 }
 
 .describe {
-    font-family: "dashiell-fine", serif;
+    font-family: "sonar-sans", sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 17px;
+    font-size: 18px;
     color: rgb(255, 255, 255);
     text-align: justify;
-    line-height: 1.7em;
+    line-height: 1.5em;
+}
+
+.tornado {
+    width: 35%;
+    height: 35%;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 90px;
+    transition: transform 3s;
+}
+
+.tornado:hover {
+    filter: invert(100%);
+    transform: scale(1.25);
 }
