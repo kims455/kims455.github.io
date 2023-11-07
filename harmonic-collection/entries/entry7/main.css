@@ -63,14 +63,14 @@ h1, h2 {
 
 .blue-section {
     width: 50%;
-    height: 100vh;
+    height: 110vh;
     background-color: rgb(0, 23, 231);
     float: left;
 }
 
 .lightblue-section {
     width: 50%;
-    height: 100vh;
+    height: 110vh;
     background-color: rgb(215, 236, 255);
     float: left;
 }
@@ -79,10 +79,10 @@ h1, h2 {
     font-family: "dashiell-fine", serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 2.8vw;
+    font-size: 2.5vw;
     color: aliceblue;
     padding: 5px;
-    padding-top: 40px;
+    padding-top: 35px;
     margin: 0;
     animation: fadeIn 5s infinite; 
 }
@@ -106,10 +106,10 @@ h1, h2 {
     font-family: "dashiell-fine", serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 2.8vw;
+    font-size: 2.5vw;
     color: rgb(0, 23, 231);
     padding: 5px;
-    padding-top: 40px;
+    padding-top: 35px;
     margin: 0;
     animation: fadeOut 5s infinite; 
     animation-delay: 1s;
@@ -130,48 +130,29 @@ h1, h2 {
     }
 }
 
-/*
-.black-square-top {
-    width: 400px;
-    height: 400px;
-    background-color: black;
-    position: absolute;
-    top: 100%; 
-    left: 50%; 
-    transform: translate(-50%, -50%);
-    animation: shapeAnimation 10s linear infinite;
-    animation-delay: 1s;
-    transition: background-color 0.3s;
+.image-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; 
+    overflow: hidden;
 }
 
-.black-square-top:hover {
-    background-color: aliceblue;
+.balloon1, .balloon2, .balloon3, .balloon4, .balloon5 {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    border-radius: 50%; 
 }
-
-.black-square-btm {
-    width: 400px;
-    height: 400px;
-    background-color: black;
-    position: absolute;
-    top: 50%;
-    left: 0%;
-    transform: translate(-50%, -50%);
-    animation: shapeAnimation 10s linear infinite;
-    animation-delay: 1s;
-    transition: background-color 0.3s;
-}
-
-.black-square-btm:hover {
-    background-color: aliceblue;
-}
-*/
 
 .black-square1 {
     width: 400px;
     height: 400px;
     background-color: black;
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 0%;
     transform: translate(-50%, -50%);
     animation: shapeAnimation 10s linear infinite;
@@ -188,7 +169,7 @@ h1, h2 {
     height: 400px;
     background-color: black;
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 25%;
     transform: translate(-50%, -50%);
     animation: shapeAnimation 10s linear infinite;
@@ -205,7 +186,7 @@ h1, h2 {
     height: 400px;
     background-color: black;
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     animation: shapeAnimation 10s linear infinite;
@@ -222,7 +203,7 @@ h1, h2 {
     height: 400px;
     background-color: black;
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 75%;
     transform: translate(-50%, -50%);
     animation: shapeAnimation 10s linear infinite;
@@ -239,7 +220,7 @@ h1, h2 {
     height: 400px;
     background-color: black;
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 100%;
     transform: translate(-50%, -50%);
     animation: shapeAnimation 10s linear infinite;
@@ -250,6 +231,93 @@ h1, h2 {
 .black-square5:hover {
     background-color: rgb(0, 23, 231);
 }
+
+.black-square6 {
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    position: absolute;
+    top: 85%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    animation: shapeAnimation 10s linear infinite;
+    animation-delay: 1s;
+    transition: background-color 0.3s;
+}
+
+.black-square6:hover {
+    background-color: aliceblue;
+}
+
+.black-square7 {
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    position: absolute;
+    top: 85%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    animation: shapeAnimation 10s linear infinite;
+    animation-delay: 1s;
+    transition: background-color 0.3s;
+}
+
+.black-square7:hover {
+    background-color: aliceblue;
+}
+
+.black-square8 {
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: shapeAnimation 10s linear infinite;
+    animation-delay: 1s;
+    transition: background-color 0.3s;
+}
+
+.black-square8:hover {
+    background-color: aliceblue;
+}
+
+.black-square9 {
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    position: absolute;
+    top: 85%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    animation: shapeAnimation 10s linear infinite;
+    animation-delay: 1s;
+    transition: background-color 0.3s;
+}
+
+.black-square9:hover {
+    background-color: aliceblue;
+}
+
+.black-square10 {
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    position: absolute;
+    top: 85%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    animation: shapeAnimation 10s linear infinite;
+    animation-delay: 1s;
+    transition: background-color 0.3s;
+}
+
+.black-square10:hover {
+    background-color: aliceblue;
+}
+
+
 
 @keyframes shapeAnimation {
     0% {
@@ -284,6 +352,15 @@ h1, h2 {
     }
 }
 
+
+
+
+
+
+
+
+
+/* Different viewport size */
 @media (max-width: 768px) {
     .black-square1,
     .black-square2,
