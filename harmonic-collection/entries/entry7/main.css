@@ -145,16 +145,22 @@ h1, h2 {
     max-height: 100%;
     display: block;
     border-radius: 50%; 
+    transition: transform 3s ease-in-out;
 }
 
-/*
-.balloon1, .balloon2, .balloon3, .balloon4, .balloon5 {
-    max-width: 100%;
-    max-height: 100%;
-    display: block;
-    border-radius: 50%; 
+.round-img:hover {
+    animation: rotateAndEnlarge 5s linear forwards;
 }
-*/
+
+@keyframes rotateAndEnlarge {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    100% {
+        transform: rotate(360deg) scale(1.25);
+    }
+}
+
 
 .black-square1 {
     width: 400px;
@@ -201,7 +207,7 @@ h1, h2 {
 }
 
 .black-square3:hover {
-    background-color: rgb(242, 255, 0);
+    background-color: aliceblue;
 }
 
 .black-square4 {
@@ -217,7 +223,7 @@ h1, h2 {
 }
 
 .black-square4:hover {
-    background-color: rgb(0, 23, 231);
+    background-color: aliceblue;
 }
 
 .black-square5 {
@@ -228,12 +234,12 @@ h1, h2 {
     top: 35%;
     left: 100%;
     transform: translate(-50%, -50%);
-    animation: shapeAnimation 10s linear forwards;
+    animation: shapeAnimation 10s linear forwards, rotateImage 5s linear;
     transition: background-color 0.3s;
 }
 
 .black-square5:hover {
-    background-color: rgb(0, 23, 231);
+    background-color: aliceblue;
 }
 
 .black-square6 {
