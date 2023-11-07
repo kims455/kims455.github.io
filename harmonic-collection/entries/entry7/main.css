@@ -164,8 +164,7 @@ h1, h2 {
     top: 35%;
     left: 0%;
     transform: translate(-50%, -50%);
-    animation: shapeAnimation 10s linear infinite;
-    animation-delay: 1s;
+    animation: shapeAnimation 10s linear;
     transition: background-color 0.3s;
 }
 
@@ -181,8 +180,7 @@ h1, h2 {
     top: 35%;
     left: 25%;
     transform: translate(-50%, -50%);
-    animation: shapeAnimation 10s linear infinite;
-    animation-delay: 1s;
+    animation: shapeAnimation 10s linear;
     transition: background-color 0.3s;
 }
 
@@ -198,8 +196,8 @@ h1, h2 {
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
-    animation: shapeAnimation 10s linear infinite;
-    animation-delay: 1s;
+    animation: shapeAnimation 10s linear;
+    animation-iteration-count: 2;
     transition: background-color 0.3s;
 }
 
@@ -215,8 +213,9 @@ h1, h2 {
     top: 35%;
     left: 75%;
     transform: translate(-50%, -50%);
-    animation: shapeAnimation 10s linear infinite;
-    animation-delay: 1s;
+    animation: shapeAnimation 10s linear;
+    animation-iteration-count: 2;
+
     transition: background-color 0.3s;
 }
 
@@ -232,8 +231,8 @@ h1, h2 {
     top: 35%;
     left: 100%;
     transform: translate(-50%, -50%);
-    animation: shapeAnimation 10s linear infinite;
-    animation-delay: 1s;
+    animation: shapeAnimation 10s linear;
+    animation-iteration-count: 2;
     transition: background-color 0.3s;
 }
 
@@ -249,7 +248,8 @@ h1, h2 {
     top: 85%;
     left: 0%;
     transform: translate(-50%, -50%);
-    animation: shapeAnimation 10s linear infinite;
+    animation: shapeAnimation 10s linear;
+    animation-iteration-count: 2;
     transition: background-color 0.3s;
 }
 
@@ -265,7 +265,8 @@ h1, h2 {
     top: 85%;
     left: 25%;
     transform: translate(-50%, -50%);
-    animation: shapeAnimation 10s linear infinite;
+    animation: shapeAnimation 10s linear;
+    animation-iteration-count: 2;
     transition: background-color 0.3s;
 }
 
@@ -281,7 +282,8 @@ h1, h2 {
     top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
-    animation: shapeAnimation 10s linear infinite;
+    animation: shapeAnimation 10s linear;
+    animation-iteration-count: 2;
     transition: background-color 0.3s;
 }
 
@@ -297,7 +299,8 @@ h1, h2 {
     top: 85%;
     left: 75%;
     transform: translate(-50%, -50%);
-    animation: shapeAnimation 10s linear infinite;
+    animation: shapeAnimation 10s linear;
+    animation-iteration-count: 2;
     transition: background-color 0.3s;
 }
 
@@ -313,7 +316,8 @@ h1, h2 {
     top: 85%;
     left: 100%;
     transform: translate(-50%, -50%);
-    animation: shapeAnimation 10s linear infinite;
+    animation: shapeAnimation 10s linear;
+    animation-iteration-count: 2;
     transition: background-color 0.3s;
 }
 
@@ -360,10 +364,16 @@ h1, h2 {
     .black-square2,
     .black-square3,
     .black-square4,
-    .black-square5 {
+    .black-square5,
+    .black-square6,
+    .black-square7,
+    .black-square8,
+    .black-square9,
+    .black-square10 {
         width: 100px; 
         height: 100px; 
-        animation: smallestShape 10s linear infinite;
+        animation: smallestShape 10s linear;
+        animation-iteration-count: 2;
     }
 }
 
@@ -405,10 +415,16 @@ h1, h2 {
     .black-square2,
     .black-square3,
     .black-square4,
-    .black-square5 {
+    .black-square5,
+    .black-square6,
+    .black-square7,
+    .black-square8,
+    .black-square9,
+    .black-square10 {
         width: 200px; 
         height: 200px; 
-        animation: smallerShape 10s linear infinite;
+        animation: smallerShape 10s linear;
+        animation-iteration-count: 2;
     }
 }
 
@@ -450,10 +466,16 @@ h1, h2 {
     .black-square2,
     .black-square3,
     .black-square4,
-    .black-square5 {
+    .black-square5,
+    .black-square6,
+    .black-square7,
+    .black-square8,
+    .black-square9,
+    .black-square10 {
         width: 300px;
         height: 300px;
-        animation: smallShape 10s linear infinite;
+        animation: smallShape 10s linear;
+        animation-iteration-count: 2;
     }
 }
 
@@ -495,10 +517,16 @@ h1, h2 {
     .black-square2,
     .black-square3,
     .black-square4,
-    .black-square5 {
+    .black-square5,
+    .black-square6,
+    .black-square7,
+    .black-square8,
+    .black-square9,
+    .black-square10 {
         width: 300px;
         height: 300px;
-        animation: smallShape 10s linear infinite;
+        animation: smallShape 10s linear;
+        animation-iteration-count: 2;
     }
 }
 
@@ -540,10 +568,16 @@ h1, h2 {
     .black-square2,
     .black-square3,
     .black-square4,
-    .black-square5 {
+    .black-square5,
+    .black-square6,
+    .black-square7,
+    .black-square8,
+    .black-square9,
+    .black-square10 {
         width: 400px;
         height: 400px;
-        animation: regularShape 10s linear infinite;
+        animation: regularShape 10s linear;
+        animation-iteration-count: 2;
     }
 }
 
