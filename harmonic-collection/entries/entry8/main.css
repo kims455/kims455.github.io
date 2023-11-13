@@ -12,8 +12,8 @@ body {
 html {
     background-image: url('assets/color-smudge-reverse.jpg');
     background-size: contain;
-    background-repeat: repeat-x;
     background-position: center;
+    /* background-repeat: repeat-x; */
 }
 
 .button-container {
@@ -74,13 +74,15 @@ h1 {
     font-size: 70px;
     text-align: center;
     padding: 10px;
-    color: rgb(255, 183, 0);
+    color: rgb(255, 255, 255);
+    /*
     border-radius: 15px;
     max-width: 18%;
     background-color: aliceblue; 
+    */
 }
 
-.rectangle-container {
+.square-container {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -90,18 +92,20 @@ h1 {
     justify-content: center;
 }
 
-.rectangle {
-    width: 380px;
-    height: 300px;
+.square1 {
+    width: 40px;
+    height: 40px;
     background-color: rgb(255, 255, 244);
-    margin: 15px;
+    margin: 13px;
     display: inline-block;
 }
 
-.pattern {
-    width: 30px;
-    height: 30px;
+/*
+.square2 {
+    width: 40px;
+    height: 40px;
     background-color: rgb(21, 21, 20);
     margin: 15px;
     display: inline-block;
 }
+*/

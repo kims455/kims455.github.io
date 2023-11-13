@@ -1,11 +1,13 @@
-for (let i = 0; i < 8; i++) {
+for (let i = 0; i < 216; i++) {
     const rectangle = document.createElement('div');
-    rectangle.classList.add('rectangle');
+    rectangle.classList.add('square1');
     document.body.appendChild(rectangle);
 }
 
-for (let i = 0; i < 15; i++) {
+/*
+for (let i = 0; i < 20; i++) {
     const pattern = document.createElement('div');
-    pattern.classList.add('pattern');
+    pattern.classList.add('square2');
     document.body.appendChild(pattern);
 }
+*/
