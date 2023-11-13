@@ -1,9 +1,19 @@
 body, html {
-    height: 100%;
+    max-height: 100%;
     margin: 0;
     padding: 0;
     cursor: auto;
-    background-color: rgb(196, 253, 255);
+}
+
+body {
+    background: none;
+}
+
+html {
+    background-image: url('assets/color-smudge-reverse.jpg');
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position: center;
 }
 
 .button-container {
@@ -58,15 +68,40 @@ body, html {
 }  
 
 h1 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "neulis-neue", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 70px;
     text-align: center;
-    padding: 50px;
+    padding: 10px;
+    color: rgb(255, 183, 0);
+    border-radius: 15px;
+    max-width: 18%;
+    background-color: aliceblue; 
+}
+
+.rectangle-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .rectangle {
-    width: 500px;
+    width: 380px;
     height: 300px;
-    background-color: black;
-    margin: 5px;
+    background-color: rgb(255, 255, 244);
+    margin: 15px;
+    display: inline-block;
+}
+
+.pattern {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(21, 21, 20);
+    margin: 15px;
     display: inline-block;
 }
