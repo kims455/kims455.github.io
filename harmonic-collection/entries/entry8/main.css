@@ -3,6 +3,7 @@ body, html {
     margin: 0;
     padding: 0;
     cursor: auto;
+    background-color: rgb(196, 253, 255);
 }
 
 .button-container {
@@ -55,3 +56,17 @@ body, html {
     background-color: rgb(170, 232, 255);
     color: #b10000;
 }  
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+
+.rectangle {
+    width: 500px;
+    height: 300px;
+    background-color: black;
+    margin: 5px;
+    display: inline-block;
+}
