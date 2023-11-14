@@ -85,44 +85,48 @@ h1 {
     justify-content: center;
 }
 
+.square1,
+.square2,
+.square3,
+.square4,
+.square5 {
+  width: 40px;
+  height: 36px;
+  margin: 13px;
+  display: inline-block;
+  animation: popInOut 10s infinite alternate ease-in-out; /* Adjust the animation duration and timing function as needed */
+}
+
 .square1 {
-    width: 40px;
-    height: 36px;
-    background-color: #FFF740;
-    margin: 13px;
-    display: inline-block;
+  background-color: #FFF740;
 }
 
 .square2 {
-    width: 40px;
-    height: 36px;
-    background-color: rgb(255, 255, 255);
-    margin: 13px;
-    display: inline-block;
+  background-color: rgb(255, 255, 255);
 }
 
 .square3 {
-    width: 40px;
-    height: 36px;
-    background-color: #7AFCFF;
-    margin: 13px;
-    display: inline-block;
+  background-color: #7AFCFF;
 }
 
 .square4 {
-    width: 40px;
-    height: 36px;
-    background-color: rgb(255, 134, 183);
-    margin: 13px;
-    display: inline-block;
+  background-color: rgb(255, 134, 183);
 }
 
 .square5 {
-    width: 40px;
-    height: 36px;
-    background-color: #adf080;
-    margin: 13px;
-    display: inline-block;
+  background-color: #adf080;
+}
+
+@keyframes popInOut {
+    0% {
+      opacity: 0%;
+    }
+    50% {
+      opacity: 50%;
+    }
+    100% {
+      opacity: 100%;
+    }
 }
 
 /*
