@@ -1,12 +1,11 @@
 body, html {
-    max-height: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
     cursor: auto;
     background-image: url('assets/chalkboard.jpeg');
-    background-size: contain;
+    background-size: cover;
     background-position: center;
-    background-repeat: repeat-x;
 }
 
 .button-container {
@@ -90,9 +89,9 @@ h1 {
 .square3,
 .square4,
 .square5 {
-  width: 40px;
-  height: 36px;
-  margin: 13px;
+  width: 60px;
+  height: 60px;
+  margin: 10px;
   display: inline-block;
   animation: popInOut 10s infinite alternate ease-in-out;
 }
