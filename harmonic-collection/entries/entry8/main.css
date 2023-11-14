@@ -3,18 +3,21 @@ body, html {
     margin: 0;
     padding: 0;
     cursor: auto;
+    background-color: #FF4600;
 }
 
 body {
     background: none;
 }
 
+/*
 html {
     background-image: url('assets/color-smudge-reverse.jpg');
     background-size: contain;
     background-position: center;
-    /* background-repeat: repeat-x; */
+    background-repeat: repeat-x;
 }
+*/
 
 .button-container {
     position: fixed;
@@ -94,8 +97,16 @@ h1 {
 
 .square1 {
     width: 40px;
-    height: 40px;
-    background-color: rgb(255, 255, 244);
+    height: 36px;
+    background-color: rgb(0, 0, 0);
+    margin: 13px;
+    display: inline-block;
+}
+
+.square2 {
+    width: 40px;
+    height: 36px;
+    background-color: rgb(255, 255, 255);
     margin: 13px;
     display: inline-block;
 }
@@ -109,3 +120,33 @@ h1 {
     display: inline-block;
 }
 */
+
+.paragraph {
+    width: 100%;
+    padding: 16px; 
+    margin: 0 auto;
+    justify-content: center; 
+    align-items: center;
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: relative;
+}
+
+.title {
+    font-family: "neulis-neue", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 45px;
+    text-align: center;
+    color: #FF4600;
+}
+
+.describe {
+    font-family: "neulis-neue", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    color: rgb(0, 30, 255);
+    text-align: justify;
+    line-height: 1.5em;
+}
