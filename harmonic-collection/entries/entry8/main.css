@@ -94,7 +94,7 @@ h1 {
   height: 36px;
   margin: 13px;
   display: inline-block;
-  animation: popInOut 10s infinite alternate ease-in-out; /* Adjust the animation duration and timing function as needed */
+  animation: popInOut 10s infinite alternate ease-in-out;
 }
 
 .square1 {
@@ -128,16 +128,6 @@ h1 {
       opacity: 100%;
     }
 }
-
-/*
-.square2 {
-    width: 40px;
-    height: 40px;
-    background-color: rgb(21, 21, 20);
-    margin: 15px;
-    display: inline-block;
-}
-*/
 
 .paragraph {
     width: 93%;
