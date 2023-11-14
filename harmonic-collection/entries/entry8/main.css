@@ -67,11 +67,6 @@ h1 {
     text-align: center;
     padding-top: 9px;
     color: rgb(255, 255, 255);
-    /*
-    border-radius: 15px;
-    max-width: 18%;
-    background-color: aliceblue; 
-    */
 }
 
 .square-container {
@@ -90,33 +85,42 @@ h1 {
 .square3,
 .square4,
 .square5 {
-  width: 60px;
-  height: 60px;
-  margin: 10px;
-  display: inline-block;
-  animation: popInOut 10s infinite alternate ease-in-out;
-  box-shadow: 2px 2px 6px black;
-  z-index: 1;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    display: inline-block;
+    animation: popInOut 10s infinite alternate ease-in-out;
+    transition: transform 0.3s ease-in-out; 
+    box-shadow: 2px 2px 6px black;
+    z-index: 1;
+}
+
+.square1:hover,
+.square2:hover,
+.square3:hover,
+.square4:hover,
+.square5:hover {
+  transform: scale(4);
 }
 
 .square1 {
-  background-color: #FFF740;
+    background-color: #FFF740;
 }
 
 .square2 {
-  background-color: orange;
+    background-color: orange;
 }
 
 .square3 {
-  background-color: #7AFCFF;
+    background-color: #7AFCFF;
 }
 
 .square4 {
-  background-color: rgb(255, 134, 183);
+    background-color: rgb(255, 134, 183);
 }
 
 .square5 {
-  background-color: #adf080;
+    background-color: #adf080;
 }
 
 @keyframes popInOut {
@@ -153,7 +157,7 @@ h1 {
     font-style: normal;
     font-size: 35px;
     text-align: center;
-    color: #FF4600;
+    color: #9f2a00;
 }
 
 .describe {
@@ -161,14 +165,53 @@ h1 {
     font-weight: 300;
     font-style: normal;
     font-size: 16px;
-    color: rgb(0, 30, 255);
+    color: rgb(0, 16, 140);
     text-align: justify;
     line-height: 1.4em;
 }
 
-.stack {
+.image-container {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+
+.notes-stack {
+    position: relative;
     width: 40%;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
+
+.notes-on-wall {
+    width: 25%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+  
+.stack {
+    width: 100%;
+    height: auto;
+}
+
+.on-wall {
+    width: 90%;
+    height: auto;
+}
+  
+.text-over-image {
+    font-family: "neulis-neue", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
