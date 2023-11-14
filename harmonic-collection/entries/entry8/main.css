@@ -3,21 +3,11 @@ body, html {
     margin: 0;
     padding: 0;
     cursor: auto;
-    background-color: #FF4600;
-}
-
-body {
-    background: none;
-}
-
-/*
-html {
-    background-image: url('assets/color-smudge-reverse.jpg');
+    background-image: url('assets/chalkboard.jpeg');
     background-size: contain;
     background-position: center;
     background-repeat: repeat-x;
 }
-*/
 
 .button-container {
     position: fixed;
@@ -71,12 +61,12 @@ html {
 }  
 
 h1 {
-    font-family: "neulis-neue", sans-serif;
-    font-weight: 700;
+    font-family: "feltro-texture-1", sans-serif;
+    font-weight: 400;
     font-style: normal;
-    font-size: 70px;
+    font-size: 79px;
     text-align: center;
-    padding: 10px;
+    padding-top: 9px;
     color: rgb(255, 255, 255);
     /*
     border-radius: 15px;
@@ -98,7 +88,7 @@ h1 {
 .square1 {
     width: 40px;
     height: 36px;
-    background-color: rgb(0, 0, 0);
+    background-color: #FFF740;
     margin: 13px;
     display: inline-block;
 }
@@ -107,6 +97,30 @@ h1 {
     width: 40px;
     height: 36px;
     background-color: rgb(255, 255, 255);
+    margin: 13px;
+    display: inline-block;
+}
+
+.square3 {
+    width: 40px;
+    height: 36px;
+    background-color: #7AFCFF;
+    margin: 13px;
+    display: inline-block;
+}
+
+.square4 {
+    width: 40px;
+    height: 36px;
+    background-color: rgb(255, 134, 183);
+    margin: 13px;
+    display: inline-block;
+}
+
+.square5 {
+    width: 40px;
+    height: 36px;
+    background-color: #adf080;
     margin: 13px;
     display: inline-block;
 }
@@ -122,21 +136,20 @@ h1 {
 */
 
 .paragraph {
-    width: 100%;
-    padding: 16px; 
+    width: 93%;
+    padding-left: 16px;
+    padding-right: 16px;
     margin: 0 auto;
     justify-content: center; 
     align-items: center;
-    z-index: 9999;
     background-color: rgba(255, 255, 255, 0.8);
-    position: relative;
 }
 
 .title {
     font-family: "neulis-neue", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 45px;
+    font-size: 35px;
     text-align: center;
     color: #FF4600;
 }
@@ -145,8 +158,8 @@ h1 {
     font-family: "neulis-neue", sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 18px;
+    font-size: 16px;
     color: rgb(0, 30, 255);
     text-align: justify;
-    line-height: 1.5em;
+    line-height: 1.4em;
 }
