@@ -32,11 +32,3 @@ for (let i = 0; i < 44; i++) {
     rectangle.style.animationDelay = Math.random() * 10 + 's'; 
     document.body.appendChild(rectangle);
 }
-
-/*
-for (let i = 0; i < 20; i++) {
-    const pattern = document.createElement('div');
-    pattern.classList.add('square2');
-    document.body.appendChild(pattern);
-}
-*/
