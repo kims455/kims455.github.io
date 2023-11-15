@@ -177,7 +177,7 @@ h1 {
     justify-content: space-between;
 }
 
-.notes-stack {
+.notes-stack-container {
     position: relative;
     width: 40%;
     display: block;
@@ -185,12 +185,26 @@ h1 {
     margin-right: auto;
 }
 
-.notes-on-wall {
+.notes-on-wall-left {
     width: 25%;
     position: relative;
     margin-left: auto;
     margin-right: auto;
     display: block;
+    padding-top: 4%;
+    top: 50%;
+    left: 8%;
+}
+
+.notes-on-wall-right {
+    width: 25%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-top: 4%;
+    top: 50%;
+    right: 6%;
 }
   
 .stack {
@@ -207,7 +221,7 @@ h1 {
     font-family: "neulis-neue", sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 17px;
+    font-size: 1.13vw;
     color: rgb(0, 0, 0);
     position: absolute;
     top: 31%;
@@ -215,5 +229,6 @@ h1 {
     transform: translate(-50%, -50%);
     white-space: pre;
     line-height: 2em;
+    padding-top: 25%;
 }
   
