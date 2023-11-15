@@ -6,6 +6,7 @@ body, html {
     background-image: url('assets/chalkboard.jpeg');
     background-size: cover;
     background-position: center;
+    cursor: url('assets/ball-pen.png'), auto;
 }
 
 .button-container {
