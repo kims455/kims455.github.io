@@ -58,7 +58,7 @@ body, html {
 
 h1 {
     font-family: monospace;
-    font-size: 65px;
+    font-size: 45px;
     text-align: center;
     color: skyblue;
 }
@@ -107,7 +107,7 @@ h1 {
 }
 
 .horizontal-divider {
-    top: 50%;
+    top: 62%;
     left: 20;
     width: 100%;
     height: 20px;
