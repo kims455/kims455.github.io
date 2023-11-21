@@ -3,6 +3,7 @@ body, html {
     margin: 0;
     padding: 0;
     cursor: auto;
+    overflow: hidden;
 }
 /*
 html {
@@ -125,23 +126,28 @@ h1 {
 }
 
 .grid-container {
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     position: relative;
 }
 
+.top-half {
+    display: flex; 
+    height: 50%;
+}
+
+.topleft-half,
+.topright-half {
+    flex: 1;
+}
+
 .topleft-half {
     background-color: #dedede;
-    flex: 1;
-    width: 50%;
 }
 
 .topright-half {
-    background-color: #3c3c3c;
-    flex: 1;
-    width: 50%;
-
+    background-color: #d6d6d6;
 }
 
 .bottom-half {
