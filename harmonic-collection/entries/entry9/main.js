@@ -8,3 +8,4 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById("overlay").classList.add("hidden");
     }, 3500);
 });
+
