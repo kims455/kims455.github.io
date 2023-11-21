@@ -58,6 +58,35 @@ body, html {
 
 /*     cursor: url('assets/ball-pen.png'), auto; */
 
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: opacity 2s ease-out;
+  }
+  
+#overlay.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+  
+.main-header {
+    font-family: "mixta-didone", serif;
+    font-weight: 800;
+    font-style: normal;
+    color: white;
+    font-size: 52px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
 h1 {
     font-family: "mixta-didone", serif;
     font-weight: 800;
