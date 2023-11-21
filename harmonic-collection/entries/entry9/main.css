@@ -68,7 +68,7 @@ body, html {
     justify-content: center;
     opacity: 1;
     transition: opacity 2s ease-out;
-  }
+}
   
 #overlay.hidden {
     opacity: 0;
@@ -83,15 +83,6 @@ body, html {
     font-size: 58px;
     text-align: center;
     letter-spacing: 1px;
-}
-
-h1 {
-    font-family: "mixta-didone", serif;
-    font-weight: 800;
-    font-style: normal;
-    font-size: 33px;
-    text-align: center;
-    color: rgb(255, 255, 255);
 }
 
 .object-container {
@@ -270,7 +261,7 @@ h1 {
     }
 }
   
-h1 {
+.phases h1 {
     font-family: "mixta-didone", serif;
     font-weight: 800;
     font-style: normal;
@@ -289,14 +280,52 @@ h1 {
     margin-top: 95vh;
     opacity: 0;
     transition: opacity 0.8s;
-    padding: 30px;
 }
-  
+
+.paragraph {
+    width: 45%;
+    padding: 100px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+    z-index: 1;
+}
+
+.title {
+    font-family: "mixta-didone", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 33px;
+    color: rgb(0, 0, 48);
+}
+
+p {
+    font-family: "mixta-didone", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.5em;
+    color: rgb(0, 0, 48);
+}
+
 .hidden-section:not(.visible-section) {
     opacity: 1;
 }
-  
+
 .hidden-section:target {
     margin-top: 0;
 }
 
+/*
+.notebook {
+    width: 58%;
+    margin: 0 auto;
+    z-index: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+*/
