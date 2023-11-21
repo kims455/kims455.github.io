@@ -56,8 +56,6 @@ body, html {
     color: #b10000;
 }  
 
-/*     cursor: url('assets/ball-pen.png'), auto; */
-
 #overlay {
     position: fixed;
     top: 0;
@@ -98,9 +96,9 @@ h1 {
 
 .object-container {
     display: flex;
-  }
+}
   
-  .object-container img {
+.object-container img {
     width: 53%;
     position: absolute;
     top: 50%;
@@ -109,26 +107,30 @@ h1 {
     z-index: 1;
     opacity: 1;
     animation: blink 10s ease-in-out infinite;
-    animation-delay: 2s;
+    animation-delay: 1.3s;
 }
   
-  .object-container img:nth-child(1) {
+.object-container img:nth-child(1) {
     animation-delay: 0s;
-  }
+}
   
-  .object-container img:nth-child(2) {
+.object-container img:nth-child(2) {
     animation-delay: 5s; 
-  }
+}
   
-  .object-container img:nth-child(3) {
+.object-container img:nth-child(3) {
     animation-delay: 10s;
-  }
+}
   
-  .object-container img:nth-child(4) {
+.object-container img:nth-child(4) {
     animation-delay: 15s;
-  }
+}
+
+.object-container img:nth-child(4) {
+    animation-delay: 20s;
+}
   
-  @keyframes blink {
+ @keyframes blink {
     0%, 100% {
       opacity: 1;
     }
@@ -138,7 +140,7 @@ h1 {
     50% {
       opacity: 1;
     }
-  }
+}
 
 .grid-container {
     height: 100%;
@@ -188,7 +190,7 @@ h1 {
     background-color: black;
 }
 
-.vertical-divider {
+.vertical-divider-center {
     top: 0;
     left: 50%;
     height: 100%;
@@ -197,7 +199,7 @@ h1 {
     background-color: black;
 }
 
-.horizontal-divider {
+.horizontal-divider-center {
     top: 50%;
     left: 0;
     width: 100%;
@@ -206,10 +208,19 @@ h1 {
     background-color: black;
 }
 
-.horizontal-divider2 {
-    top: 23%;
+.horizontal-divider-right {
+    top: 24%;
     left: 50%;
     width: 50%;
+    height: 10px;
+    transform: translateY(-50%);
+    background-color: black;
+}
+
+.horizontal-divider-left {
+    top: 75%;
+    right: 50%;
+    width: 30%;
     height: 10px;
     transform: translateY(-50%);
     background-color: black;
@@ -225,9 +236,9 @@ h1 {
 }
 
 .short-divider {
-    top: 50%;
+    top: 24%;
     left: 80%;
-    height: 50%;
+    height: 76%;
     width: 10px;
     transform: translateX(-50%);
     background-color: black;
@@ -288,3 +299,4 @@ h1 {
 .hidden-section:target {
     margin-top: 0;
 }
+
