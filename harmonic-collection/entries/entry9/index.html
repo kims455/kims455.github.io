@@ -14,21 +14,6 @@
         <button class="backward" type="button2" onclick="history.back()">Backward</button>
     </div>
 
-    <!--
-    <div class="header">
-        <h1>Entry 9</h1>
-    </div>
-    
-
-    <section id="object1">
-        <img src="assets/object-straight.png" alt="Image" class="object-straight">
-    </section>
-
-    <section id="object2">
-        <img src="assets/object-curve1.png" alt="Image" class="object-curve1">
-    </section>
-    -->
-
     <div class="object-container">
         <img src="assets/object-straight.png" alt="Image" class="object-straight">
         <img src="assets/object-curve1.png" alt="Image" class="object-curve1">
@@ -41,15 +26,21 @@
 
     <div class="grid-container">
         <div class="top-half">
-          <div class="topleft-half"></div>
-          <div class="divider vertical-divider"></div>
-          <div class="divider short-divider"></div>
-          <div class="divider horizontal-divider"></div>
-          <div class="topright-half"></div>
-          <div class="divider horizontal-divider2"></div>
-          <div class="divider left-divider"></div>
+            <div class="top-left-half"></div>
+            <div class="divider vertical-divider"></div>
+            <div class="divider short-divider"></div>
+            <div class="divider horizontal-divider"></div>
+            <div class="top-right-half"></div>
+            <div class="divider horizontal-divider2"></div>
+            <div class="divider left-divider"></div>
         </div>
-        <div class="bottom-half"></div>
+        <div class="bottom-half">
+            <div class="bottom-left-half"></div>
+            <div class="bottom-right-half"></div>
+        </div>
+      </div>
+    
+      <div class="marquee-container" behavior="scroll" direction="up">
         <div class="phases">
           <h1>Denial</h1>
           <h1>Anger</h1>
@@ -58,6 +49,15 @@
           <h1>Acceptance</h1>
         </div>
       </div>
+      
+      <div class="hidden-section">
+        <h2>..</h2>
+        <p>..</p>
+      </div>
+    
+      <script src="main.js"></script>
+
+
 <!--
     Work on your next entry that explores asymmetry/symmetry in the composition. 
 -->
