@@ -4,6 +4,24 @@ body, html {
     padding: 0;
     cursor: auto;
 }
+/*
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+#object1 {
+    width: 53%;
+}
+
+#object2 {
+    width: 53%;
+}
+*/
 
 .button-container {
     position: fixed;
@@ -56,11 +74,15 @@ body, html {
     color: #b10000;
 }  
 
+/*     cursor: url('assets/ball-pen.png'), auto; */
+
 h1 {
-    font-family: monospace;
-    font-size: 45px;
+    font-family: "mixta-didone", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 32px;
     text-align: center;
-    color: skyblue;
+    color: rgb(255, 255, 255);
 }
 
 .object-container {
@@ -68,70 +90,64 @@ h1 {
 }
 
 .object-container img {
+    width: 53%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
     transition: opacity 3s ease;
 }
 
 .object-container img:hover {
     opacity: 0;
+    transition: opacity 0s;
 }
 
 .object-container img:nth-child(1) {
-    width: 53%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
+    transition-duration: 0;
+    transition: opacity 3s ease;
 }
 
 .object-container img:nth-child(2) {
-    width: 53%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
+    transition-duration: 0;
+    transition: opacity 3s ease;
 }
 
 .object-container img:nth-child(3) {
-    width: 53%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
+    transition-duration: 0;
+    transition: opacity 3s ease;
 }
 
 .object-container img:nth-child(4) {
-    width: 53%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
+    transition-duration: 0;
+    transition: opacity 3s ease;
 }
 
-
 .grid-container {
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     position: relative;
 }
 
-.half {
+.topleft-half {
+    background-color: #dedede;
+    flex: 1;
+    width: 50%;
+}
+
+.topright-half {
+    background-color: #3c3c3c;
+    flex: 1;
+    width: 50%;
+
+}
+
+.bottom-half {
+    background-color: #7f7f7f;
     flex: 1;
     width: 100%;
-}
-
-.half:first-child {
-    background-color: #dedede;
-    /* background-color: #3498db;*/
-}
-
-.half:last-child {
-    background-color: #7f7f7f;
-    /* background-color: #e74c3c;*/
 }
 
 .divider {
@@ -140,37 +156,37 @@ h1 {
 }
 
 .vertical-divider {
-    top: 0px; 
+    top: 0;
     left: 50%;
     height: 100%;
-    width: 15px;
+    width: 10px;
     transform: translateX(-50%);
     background-color: black;
 }
 
 .horizontal-divider {
     top: 50%;
-    left: 0%;
+    left: 0;
     width: 100%;
-    height: 15px;
+    height: 10px;
     transform: translateY(-50%);
     background-color: black;
 }
 
 .horizontal-divider2 {
-    top: 25%;
+    top: 23%;
     left: 50%;
     width: 50%;
-    height: 15px;
+    height: 10px;
     transform: translateY(-50%);
     background-color: black;
 }
 
 .left-divider {
-    top: 0px;
-    left: 17%;
+    top: 0;
+    left: 23%;
     height: 100%;
-    width: 15px;
+    width: 10px;
     transform: translateX(-50%);
     background-color: black;
 }
@@ -179,7 +195,20 @@ h1 {
     top: 50%;
     left: 75%;
     height: 50%;
-    width: 15px;
+    width: 10px;
     transform: translateX(-50%);
     background-color: black;
+}
+
+.phases {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+}
+
+.phases h1 {
+    margin: 0;
 }
