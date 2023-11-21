@@ -277,14 +277,15 @@ body, html {
     font-family: "mixta-didone", serif;
     font-weight: 300;
     font-style: normal;
-    margin-top: 95vh;
+    margin-top: 110vh;
+    margin: auto;
     opacity: 0;
     transition: opacity 0.8s;
 }
 
 .paragraph {
     width: 45%;
-    padding: 100px;
+    padding: 150px;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
@@ -296,17 +297,15 @@ body, html {
     font-family: "mixta-didone", serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 35px;
+    font-size: 40px;
     color: rgb(0, 0, 48);
 }
 
 p {
-    font-family: "mixta-didone", serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
     text-align: justify;
-    line-height: 1.5em;
+    line-height: 1.3em;
     color: rgb(0, 0, 48);
 }
 
