@@ -208,7 +208,16 @@ button:hover {
     cursor: pointer;
 }
 
-.empty-space {
-    height: 130px; 
+.countdown-result {
+    font-family: "termina", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    padding: 300px;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
+.empty-space {
+    height: 120px; 
+}
