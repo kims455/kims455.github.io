@@ -3,21 +3,24 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function hideAllInstructions() {
-  const allInstructions = document.querySelectorAll('.instruction-text');
-    allInstructions.forEach(instruction => {
+  const allInstructions = document.querySelectorAll('.instruction-text, .instruction-image');
+  allInstructions.forEach(instruction => {
       instruction.style.display = 'none';
-    });
+  });
 }
 
 function showInstructions(step) {
   hideAllInstructions();
 
   const selectedInstruction = document.getElementById(step);
+  const selectedImage = document.getElementById(`Image${step}`);
   if (selectedInstruction) {
       selectedInstruction.style.display = 'block';
   }
+  if (selectedImage) {
+      selectedImage.style.display = 'block';
+  }
 }
-
 
 function calculateDays() {
   const targetDate = new Date('December 21, 2023 00:00:00 GMT+00:00');

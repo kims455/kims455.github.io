@@ -91,6 +91,15 @@ p {
     text-align: left;
 }
 
+.main-title {
+    font-family: "termina", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 4.1vw;
+    color: white;
+    text-shadow: 2px 2px 3px rgb(119, 119, 119);
+}
+
 .jumbotron2 {
     background-image: url('assets/airplane-view.gif');
     background-repeat: no-repeat;
@@ -105,19 +114,19 @@ p {
     font-family: "termina", sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 20px;
-    color: #232323;
-    padding: 310px;
-    padding-top: 280px;
+    font-size: 22px;
+    color: white;
+    padding: 370px;
+    padding-top: 20px;
     padding-bottom: 280px;
+    text-shadow: 2px 2px 4px rgb(91, 91, 91);
 }
 
-.main-title {
-    font-family: "termina", sans-serif;
-    font-weight: 800;
-    font-style: normal;
-    font-size: 4.1vw;
-    color: white;
+.instruction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 #instructions-container {
@@ -131,6 +140,7 @@ p {
     font-style: normal;
     font-size: 45px;
     color: darkgreen;
+    stroke: black;
 }
 
 .instruction-button {
@@ -138,11 +148,17 @@ p {
     font-weight: 400;
     font-style: normal;
     font-size: 24px;
-    padding: 20px; 
+    padding: 20px;
     margin: 10px;
     border: none;
     background: none;
     cursor: pointer;
+}
+
+.instruction-image {
+    display: none;
+    max-width: 80%;
+    margin-top: 20px;
 }
 
 .instruction-text {
@@ -151,7 +167,7 @@ p {
     font-style: normal;
     display: none;
     font-size: 20px;
-    margin-top: 40px;
+    margin-top: 20px; 
     color: #333;
 }
 
@@ -162,13 +178,13 @@ button {
     border: none;
     border-radius: 50px;
     background-color: #3498db;
-    color: black; 
+    color: black;
     margin-top: 20px;
     transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #ffdb4d; 
+    background-color: #ffdb4d;
     color: #333;
 }
 
@@ -193,5 +209,6 @@ button:hover {
 }
 
 .empty-space {
-    height: 100px; 
+    height: 130px; 
 }
+
