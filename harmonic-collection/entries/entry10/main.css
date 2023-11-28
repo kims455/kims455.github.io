@@ -108,3 +108,13 @@ p {
     margin-right: 10px;
 }
 
+#countdown-container {
+    text-align: center;
+  }
+
+  #countdown-button {
+    padding: 20px;
+    margin: 10px;
+    font-size: 18px;
+    cursor: pointer;
+  }
