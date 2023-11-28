@@ -1,7 +1,24 @@
+// Welcome alert!
 document.addEventListener('DOMContentLoaded', function () {
-  alert('We reached the last entry of my Harmonic Collection! Great work this semester and here are my winter break plans :)');
+  alert('We reached the last entry of my Harmonic Collection! I hope you enjoyed and here are my winter break plans :)');
 });
 
+// Changing the color of the background as you click the button
+let colors = ["#FFFFFF", "#FFCAD4", "#B0D0D3", "#C08497", "#F7AF9D", "#FAF0CA", "#f0f8ff"];
+let body = document.querySelector("body");
+
+function handleButtonClick() {
+    calculateDays();
+    newColor();
+}
+
+function newColor() {
+    let randIndex = Math.floor(Math.random() * colors.length);
+    let randColor = colors[randIndex];
+    body.style.backgroundColor = randColor;
+}
+
+// Showing and hiding instructions by clicking each steps 
 function hideAllInstructions() {
   const allInstructions = document.querySelectorAll('.instruction-text, .instruction-image');
   allInstructions.forEach(instruction => {
@@ -22,6 +39,7 @@ function showInstructions(step) {
   }
 }
 
+// Calculating the days and time left until the departing date
 function calculateDays() {
   const targetDate = new Date('December 21, 2023 00:00:00 GMT+00:00');
   const currentDate = new Date();

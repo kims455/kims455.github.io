@@ -213,10 +213,18 @@ button:hover {
     font-family: "termina", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 30px;
+    font-size: 28px;
     padding: 30px;
     padding-left: 150px;
     padding-right: 150px;
+}
+
+.d-day-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
 }
 
 .empty-space {
