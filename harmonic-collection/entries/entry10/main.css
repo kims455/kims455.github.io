@@ -158,6 +158,8 @@ p {
     display: none;
     max-width: 30%;
     margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto 
 }
 
 .instruction-text {
