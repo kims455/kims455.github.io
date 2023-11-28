@@ -3,7 +3,6 @@ body {
     display: block;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     margin: 0;
     background-color: aliceblue;
 }
@@ -57,7 +56,7 @@ body {
 .forward:hover, .backward:hover {
     background-color: rgb(170, 232, 255);
     color: #b10000;
-}  
+} 
 
 p {
     font-family: "termina", sans-serif;
@@ -70,8 +69,55 @@ p {
     text-align: center;
 }
 
+.jumbotron {
+    background-image: ('assets/');
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    width: auto;
+    background-attachment: fixed;
+    padding: 0;
+    display: block;
+}
+
+.intro-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 25px;
+}
+  
+.intro {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.main-title {
+    font-family: "termina", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 45px;
+    color: darkgreen;
+}
+
+#typed-text {
+    font-size: 21px;
+    color: #333;
+    padding: 200px;
+}
+
 #instructions-container {
     text-align: center;
+    margin-bottom: 50px;
+}
+
+.winter {
+    font-family: "termina", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 45px;
+    padding-top: 20px;
+    color: darkgreen;
 }
 
 .instruction-button {
@@ -95,44 +141,10 @@ p {
     margin-top: 10px;
     color: #333;
 }
-  
-.intro-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-  
-.intro {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.main-title {
-    font-family: "termina", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 45px;
-    color: darkgreen;
-}
-  
-.winter {
-    font-family: "termina", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 45px;
-    padding-top: 20px;
-    color: darkgreen;
-}
-
-#typed-text {
-    font-size: 21px;
-    color: #333;
-    padding: 200px;
-}
 
 #countdown-container {
     text-align: center;
+    margin-top: 100px;
 }
 
 #countdown-button {
@@ -140,13 +152,14 @@ p {
     font-weight: 600;
     font-style: normal;
     padding: 10px 20px;
-    padding-top: 1000px;
     border: none;
     border-radius: 50px;
     background-color: #3498db;
     color: #fff;
-    padding: 20px;
     margin: 10px;
     font-size: 18px;
     cursor: pointer;
 }
+
+
+
