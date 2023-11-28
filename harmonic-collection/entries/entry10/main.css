@@ -162,6 +162,17 @@ p {
     margin-right: auto 
 }
 
+.fall23 {
+    border-radius: 70px;
+    max-width: 25%;
+
+}
+
+.harry, .dyson {
+    border-radius: 110px;
+    max-width: 25%;
+}
+
 .instruction-text {
     font-family: "termina", sans-serif;
     font-weight: 400;
