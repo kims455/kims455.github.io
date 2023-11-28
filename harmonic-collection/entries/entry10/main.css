@@ -70,7 +70,7 @@ p {
 }
 
 .jumbotron {
-    background-image: ('assets/');
+    background-image: url('assets/airplane-view.gif');
     background-repeat: no-repeat;
     background-size: 100vw;
     width: auto;
@@ -84,20 +84,20 @@ p {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    padding: 0 25px;
+    padding: 0 10px;
 }
   
 .intro {
-    text-align: center;
+    text-align: left;
     margin-top: 10px;
 }
 
 .main-title {
     font-family: "termina", sans-serif;
-    font-weight: 700;
+    font-weight: 800;
     font-style: normal;
-    font-size: 45px;
-    color: darkgreen;
+    font-size: 4.4em;
+    color: white;
 }
 
 #typed-text {
@@ -142,6 +142,23 @@ p {
     color: #333;
 }
 
+button {
+    padding: 10px 10px;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    background-color: #3498db;
+    color: black; 
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffdb4d; 
+    color: #333;
+}
+
 #countdown-container {
     text-align: center;
     margin-top: 100px;
@@ -160,6 +177,5 @@ p {
     font-size: 18px;
     cursor: pointer;
 }
-
 
 
