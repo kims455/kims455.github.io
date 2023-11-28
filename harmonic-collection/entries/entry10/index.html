@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" href="https://use.typekit.net/rhj3kjw.css">
     <link rel="icon" href="assets/ico/favicon.ico" type="image/idea_icon">
-    <title>Entry 10</title>
+    <title>Winter Homecoming Preparation</title>
 </head>
 <body>
     <div class="button-container">
@@ -14,16 +14,61 @@
         <button class="backward" type="button2" onclick="history.back()">Backward</button>
     </div>
 
-    <div id="message-container">
-        <div id="airplane">✈️</div>
-        <div id="clock">00:00:00</div>
-        <div id="instructions">Preparing for takeoff...</div>
-    
-        <div class="center-container">
-            <button>Click me</button>
-        </div>
+    <div id="instructions-container">
+        <button class="instruction-button" onclick="showInstructions('Step1')">Step 1</button>
+            <img src="assets/.png" alt="" class="">
+            <span id="Step1Text" style="display: none;">Step 1</span>
+        </button>
 
+        <button class="instruction-button" onclick="showInstructions('Step2')">
+            <img src="assets/luggage.png" alt="Luggage" class="luggage">
+            Step 2
+        </button>
 
+        <button class="instruction-button" onclick="showInstructions('Step3')">Step 3</button>
+            <img src="assets/.png" alt="" class="">
+            <span id="Step3Text" style="display: none;">Step 3</span>
+        </button>
+
+        <button class="instruction-button" onclick="showInstructions('Step4')">Step 4</button>
+            <img src="assets/.png" alt="" class="">
+            <span id="Step4Text" style="display: none;">Step 4</span>
+        </button>
+
+        <button class="instruction-button" onclick="showInstructions('Step5')">Step 5</button>
+            <img src="assets/.png" alt="" class="">
+            <span id="Step5Text" style="display: none;">Step 5</span>
+        </button>
+
+        <button class="instruction-button" onclick="showInstructions('Step6')">Step 6</button>
+            <img src="assets/.png" alt="" class="">
+            <span id="Step6Text" style="display: none;">Step 6</span>
+        </button>
+
+        <button class="instruction-button" onclick="showInstructions('Step7')">Step 7</button>
+            <img src="assets/.png" alt="" class="">
+            <span id="Step7Text" style="display: none;">Step 7</span>
+        </button>
+
+        <button class="instruction-button" onclick="showInstructions('Step8')">Step 8</button>
+            <img src="assets/.png" alt="" class="">
+            <span id="Step8Text" style="display: none;">Step 8</span>
+        </button>   
+        
+        <div class="instruction">
+            <h1>Winter Homecoming Preparation!</h1>
+            <p></p>
+        </div>  
+
+        <div id="Step1" class="instruction-text">Book a round-trip flight to Incheon International Airport from JFK.</div>
+        <div id="Step2" class="instruction-text">Check passport, visa, and I-20 for validity.</div>
+        <div id="Step3" class="instruction-text">Finish the Fall 2023 semester well without any problems or regrets!</div>
+        <div id="Step4" class="instruction-text">Pack luggage with warm clothes, shoes, and essentials for the winter.</div>
+        <div id="Step5" class="instruction-text">Prepare Christmas and New Year gifts for families and friends.</div>
+        <div id="Step6" class="instruction-text">Clean up and organize my room before leaving.</div>
+        <div id="Step7" class="instruction-text">Plan how to spend the break in Seoul with my parents, friends, and, most importantly, our dog!</div>
+        <div id="Step8" class="instruction-text">Lastly, get some rest!!! Enjoy the break and do whatever you want. Because Spring 2024 is waiting for you...</div>
+      </div>
 
     <script src="main.js" type="text/javascript"></script>
 

@@ -1,28 +1,18 @@
-    // JavaScript to display homesickness instructions and update the clock
-    function displayHomesicknessInstructions() {
-      const instructions = [
-        "Be ready to hug your family.",
-        "Fasten your seatbelt of memories."
-
-      ];
-
-      const randomIndex = Math.floor(Math.random() * instructions.length);
-      document.getElementById('instructions').textContent = instructions[randomIndex];
+    // Function to hide all instruction texts
+    function hideAllInstructions() {
+      const allInstructions = document.querySelectorAll('.instruction-text');
+      allInstructions.forEach(instruction => {
+        instruction.style.display = 'none';
+      });
     }
 
-    function updateTime() {
-      const now = new Date();
-      const hours = now.getHours().toString().padStart(2, '0');
-      const minutes = now.getMinutes().toString().padStart(2, '0');
-      const seconds = now.getSeconds().toString().padStart(2, '0');
+    // Function to show a specific instruction
+    function showInstructions(step) {
+      hideAllInstructions();
 
-      document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
+      const selectedInstruction = document.getElementById(step);
+      if (selectedInstruction) {
+        selectedInstruction.style.display = 'block';
+      }
     }
-
-    setInterval(updateTime, 1000);
-    displayHomesicknessInstructions();
-
-
-
-
 
