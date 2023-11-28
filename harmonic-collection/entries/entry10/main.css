@@ -1,6 +1,6 @@
 body {
     font-family: "termina", sans-serif;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -59,15 +59,6 @@ body {
     color: #b10000;
 }  
 
-h1 {
-    font-family: "termina", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 45px;
-    padding-top: 20px;
-    color: darkgreen;
-}
-
 p {
     font-family: "termina", sans-serif;
     font-weight: 300;
@@ -104,12 +95,40 @@ p {
     margin-top: 10px;
     color: #333;
 }
+  
+.intro-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+  
+.intro {
+    text-align: center;
+    margin-top: 10px;
+}
 
+.main-title {
+    font-family: "termina", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 45px;
+    color: darkgreen;
+}
+  
+.winter {
+    font-family: "termina", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 45px;
+    padding-top: 20px;
+    color: darkgreen;
+}
 
-.luggage {
-    width: 20%; 
-    height: 20%; 
-    margin-right: 10px;
+#typed-text {
+    font-size: 21px;
+    color: #333;
+    padding: 200px;
 }
 
 #countdown-container {
@@ -121,6 +140,7 @@ p {
     font-weight: 600;
     font-style: normal;
     padding: 10px 20px;
+    padding-top: 1000px;
     border: none;
     border-radius: 50px;
     background-color: #3498db;

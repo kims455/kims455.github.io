@@ -14,12 +14,19 @@
         <button class="backward" type="button2" onclick="history.back()">Backward</button>
     </div>
 
+    <div class="intro-container">
+        <div class="intro">
+            <h1 class="main-title">It's the Most Wonderful Time of the Year!</h1>
+            <p id="typed-text">Throughout the semester, I've explored the extraordinary in my daily life in NYC. For the last entry of my Harmonic Collection, I wanted to create a heartfelt entry about the importance of my home and family and how much I miss them.</p>
+        </div>
+      </div>
+
     <div id="instructions-container">
         <div class="instruction">
-            <h1>Winter Homecoming Preparation!</h1>
+            <h1 class="winter">Winter Homecoming Preparation!</h1>
             <p></p>
         </div>  
-
+        
         <button class="instruction-button step1" onclick="showInstructions('Step1')">
             Step 1
         </button>
@@ -52,12 +59,6 @@
             Step 8
         </button>   
 
-
-        <div id="countdown-container">
-            <button id="countdown-button" onclick="calculateDays()">Calculate D-Day</button>
-            <p id="countdown-result"></p>
-          </div>
-
         <div id="Step1" class="instruction-text">Book a round-trip flight to Incheon International Airport from JFK.</div>
         <div id="Step2" class="instruction-text">Check passport, visa, and I-20 for validity.</div>
         <div id="Step3" class="instruction-text">Finish the Fall 2023 semester well without any problems or regrets!</div>
@@ -66,7 +67,12 @@
         <div id="Step6" class="instruction-text">Clean up and organize my room before leaving.</div>
         <div id="Step7" class="instruction-text">Plan how to spend the break in Seoul with my parents, friends, and, most importantly, our dog!</div>
         <div id="Step8" class="instruction-text">Lastly, get some rest!!! Enjoy the break and do whatever you want. Because Spring 2024 is waiting for you...</div>
-      </div>
+    </div>
+
+    <div id="countdown-container">
+        <button id="countdown-button" onclick="calculateDays()">Calculate D-Day</button>
+        <p id="countdown-result"></p>
+    </div>
 
 
     <script src="main.js" type="text/javascript"></script>
