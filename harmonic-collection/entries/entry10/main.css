@@ -165,11 +165,15 @@ p {
 .fall23 {
     border-radius: 70px;
     max-width: 25%;
-
 }
 
 .harry, .dyson {
     border-radius: 110px;
+    max-width: 25%;
+}
+
+.spring24 {
+    border-radius: 40px;
     max-width: 25%;
 }
 
