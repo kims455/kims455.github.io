@@ -136,9 +136,9 @@ p {
 
 .winter {
     font-family: "termina", sans-serif;
-    font-weight: 700;
+    font-weight: 800;
     font-style: normal;
-    font-size: 45px;
+    font-size: 50px;
     color: darkgreen;
 }
 
@@ -178,7 +178,7 @@ button {
     cursor: pointer;
     border: none;
     border-radius: 50px;
-    background-color: #3498db;
+    background-color: rgb(0, 66, 110);
     color: black;
     margin-top: 20px;
     transition: background-color 0.3s ease;
@@ -202,7 +202,7 @@ button:hover {
     padding: 10px 20px;
     border: none;
     border-radius: 50px;
-    background-color: #3498db;
+    background-color: rgb(0, 66, 110);
     color: #fff;
     margin: 10px;
     font-size: 18px;
