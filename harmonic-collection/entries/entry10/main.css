@@ -1,9 +1,12 @@
 body {
+    font-family: "termina", sans-serif;
+    display: flex;
+    align-items: center;
     justify-content: center;
     height: 100vh;
     margin: 0;
-    background-color: #e2f3ff;
-}
+    background-color: #f9ecd3; /* A warm and comforting color */
+  }
 
 .button-container {
     position: fixed;
@@ -57,19 +60,44 @@ body {
 }  
 
 h1 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "termina", sans-serif;
+    font-weight: 500;
+    font-style: normal;
     font-size: 45px;
     padding-top: 20px;
     color: darkgreen;
 }
 
 p {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "termina", sans-serif;
+    font-weight: 300;
+    font-style: normal;
     font-size: 17px;
 }
 
 .text {
     text-align: center;
+}
+
+#clock {
+    font-size: 43px;
+    color: #333;
+}
+
+#message-container {
+    text-align: center;
+    align-items: center;
+}
+
+#airplane {
+    font-size: 48px;
+    color: #247ba0; 
+}
+
+#instructions {
+    font-size: 24px;
+    color: #d95b43;
+    margin-top: 20px;
 }
 
 button {
@@ -78,10 +106,8 @@ button {
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    background-color: #3498db; 
+    background-color: #3498db;
     color: #fff;
+    margin-top: 20px;
 }
 
-.center-container {
-    text-align: center;
-}
