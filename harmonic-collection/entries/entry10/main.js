@@ -2,21 +2,6 @@ document.addEventListener('DOMContentLoaded', function () {
   alert('We reached the last entry of my Harmonic Collection! Great work this semester and here are my winter break plans :)');
 });
 
-
-document.addEventListener('DOMContentLoaded', function () {
-  const text = "Throughout the semester, I've explored the extraordinary in my daily life in NYC. For the last entry of my Harmonic Collection, I wanted to create a heartfelt entry about the importance of my home and family and how much I miss them.";
-
-  const options = {
-    strings: [text],
-    typeSpeed: 50, 
-    showCursor: true,
-    cursorChar: '|', 
-  };
-
-  const typed = new Typed('#typed-text', options);
-});
-
-
 function hideAllInstructions() {
   const allInstructions = document.querySelectorAll('.instruction-text');
     allInstructions.forEach(instruction => {

@@ -72,11 +72,11 @@ p {
 .jumbotron {
     background-image: url('assets/airplane-view.gif');
     background-repeat: no-repeat;
-    background-size: 100vw;
-    width: auto;
+    background-size: cover;
     background-attachment: fixed;
     padding: 0;
     display: block;
+    height: 100vh;
 }
 
 .intro-container {
@@ -89,21 +89,35 @@ p {
   
 .intro {
     text-align: left;
-    margin-top: 10px;
+}
+
+.jumbotron2 {
+    background-image: url('assets/airplane-view.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0;
+    display: block;
+    height: 105vh;
+}
+
+.description {
+    font-family: "termina", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    color: #232323;
+    padding: 310px;
+    padding-top: 280px;
+    padding-bottom: 280px;
 }
 
 .main-title {
     font-family: "termina", sans-serif;
     font-weight: 800;
     font-style: normal;
-    font-size: 4.4em;
+    font-size: 4.1vw;
     color: white;
-}
-
-#typed-text {
-    font-size: 21px;
-    color: #333;
-    padding: 200px;
 }
 
 #instructions-container {
@@ -116,7 +130,6 @@ p {
     font-weight: 700;
     font-style: normal;
     font-size: 45px;
-    padding-top: 20px;
     color: darkgreen;
 }
 
@@ -138,7 +151,7 @@ p {
     font-style: normal;
     display: none;
     font-size: 20px;
-    margin-top: 10px;
+    margin-top: 40px;
     color: #333;
 }
 
@@ -162,6 +175,7 @@ button:hover {
 #countdown-container {
     text-align: center;
     margin-top: 100px;
+    margin-bottom: 100px; 
 }
 
 #countdown-button {
@@ -178,4 +192,6 @@ button:hover {
     cursor: pointer;
 }
 
-
+.empty-space {
+    height: 100px; 
+}
