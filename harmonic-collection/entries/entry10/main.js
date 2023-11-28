@@ -1,6 +1,6 @@
 // Welcome alert!
 document.addEventListener('DOMContentLoaded', function () {
-  alert('We reached the last entry of my Harmonic Collection! I hope you enjoyed and here are my winter break plans :)');
+  alert('We reached the last entry of my Harmonic Collection! I hope you enjoyed it, and here are my instructions for the best winter break back home ʕ•́ᴥ•̀ʔっ♡');
 });
 
 // Changing the color of the background as you click the button
