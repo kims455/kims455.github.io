@@ -36,3 +36,8 @@ function calculateDays() {
   const resultContainer = document.getElementById('countdown-result');
   resultContainer.textContent = `D-Day: ${daysRemaining} days, ${hoursRemaining} hours, ${minutesRemaining} minutes, and ${secondsRemaining} seconds until December 21st.`;
 }
+
+// function playVideo() {
+//   var video = document.querySelector('.video-container video');
+//   video.play();
+// }
