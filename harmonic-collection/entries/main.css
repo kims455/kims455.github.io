@@ -1,6 +1,7 @@
 body, html {
     font-family: "soleil", sans-serif;
-	background: linear-gradient(25deg, #fbffc9, #f3ff49, #ff7eaf, #2ca9fc);
+    background: linear-gradient(25deg, #2076cb, #1ef1ce);
+    /* background: linear-gradient(25deg, #fbffc9, #f3ff49, #ff7eaf, #2ca9fc); */
 	background-size: 350% 350%;
 	animation: gradient 13s ease infinite;
 	height: 100vh;
