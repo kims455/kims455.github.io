@@ -59,8 +59,8 @@ h1 {
     font-style: normal;
     font-size: 50px;
     text-align: center;
-    padding-top: 9px;
-    color: rgb(0, 34, 255);
+    padding-top: 20px;
+    color: rgb(0, 20, 147);
 }
 
 .square-container {
@@ -170,13 +170,13 @@ h1 {
     justify-content: space-between;
 }
 
-.notes-stack-container {
+/* .notes-stack-container {
     position: relative;
     width: 40%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
+} */
 
 .notes-on-wall-left {
     width: 25%;
@@ -184,7 +184,7 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    padding-top: 4%;
+    padding-top: 2%;
     top: 50%;
     left: 8%;
 }
@@ -195,7 +195,7 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    padding-top: 4%;
+    padding-top: 2%;
     top: 50%;
     right: 6%;
 }
