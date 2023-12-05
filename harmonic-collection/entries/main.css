@@ -17,20 +17,17 @@ body, html {
     padding-top: 16px;
 }
 
-.sem {
-    color: rgb(77, 77, 77);
-    text-align: center;
+.sem, .course, .name {
+    color: rgb(255, 255, 255);
+    text-align: center; 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); 
 }
 
 .course {
-    color: rgb(91, 91, 91);
-    text-align: left;
     margin-left: 20px;
 }
 
 .name {
-    color: rgb(91, 91, 91);
-    text-align: right;
     margin-right: 40px;
 }
 
@@ -50,7 +47,8 @@ h1 {
     font-style: normal;
     line-height: 0.94em;
     padding: 7px;
-    margin: 0; 
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); 
 }
 
 .extraordinary {
@@ -58,7 +56,7 @@ h1 {
 }
 
 h3 {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: left;
     font-size: 1.85vw;
     padding: 8px;
