@@ -1,6 +1,6 @@
 body, html {
     font-family: "soleil", sans-serif;
-    background: linear-gradient(25deg, #2076cb, #1ef1ce);
+    background: linear-gradient(25deg, #bedeff, #ebf5ff);
     /* background: linear-gradient(25deg, #fbffc9, #f3ff49, #ff7eaf, #2ca9fc); */
 	background-size: 350% 350%;
 	animation: gradient 13s ease infinite;
@@ -55,9 +55,9 @@ body, html {
 }
 
 h1 {
-    color: rgb(255, 255, 255);
+    color: #102262;
     text-align: left;
-    font-size: 8.3vw;
+    font-size: 10vw;
     font-family: "soleil", sans-serif;
     font-weight: 900;
     font-style: normal;
@@ -71,9 +71,9 @@ h1 {
 }
 
 h3 {
-    color: rgb(90, 58, 58);
+    color: rgb(0, 0, 0);
     text-align: left;
-    font-size: 2vw;
+    font-size: 1.85vw;
     padding: 8px;
     padding-bottom: 5px;
     padding-left: 13px;
@@ -83,7 +83,7 @@ h3 {
 p {
     color: rgb(0, 0, 0);
     text-align: left;
-    font-size: 1vw;
+    font-size: 0.95vw;
     font-family: "soleil", sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -107,17 +107,19 @@ p {
 }
 
 .button {
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255);
     border: 2px solid #d50000;
-    border-radius: 25px;
-    color: #d50000;
+    border-radius: 25px; */
+    border-radius: 50%;
+    color: #ffffff;
     cursor: pointer;
     display: inline-block;
     font-family: "indivisible", sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 14px;
-    padding: 0.37vw 0.55vw;
+    font-size: 25px;
+    padding: 20px;
+    /* padding: 0.37vw 0.55vw; */
     line-height: 1;
     text-align: center;
     margin: 0 8px;
@@ -133,7 +135,7 @@ p {
     transform: translate(2px, 2px);
 }
 
-.balloons {
+/* .balloons {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -154,7 +156,7 @@ p {
     100% {
         transform: rotate(360deg);
     }
-}
+} */
 
 /*
 .hello-gif {

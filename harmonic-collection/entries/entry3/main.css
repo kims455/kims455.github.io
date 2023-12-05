@@ -4,91 +4,44 @@ body {
 }
 
 .button-container {
-    position: fixed;
-    top: 7px;
-    right: 4px;
-    left: 4px;
     z-index: 999;
+    padding: 10px;
 }
 
-.forward {
-    background-color: lightgoldenrodyellow;
-    border: 1.5px solid #422800;
-    border-radius: 25px;
+.backward, .home, .forward {
+    background-color: transparent;
     color: #422800;
     cursor: pointer;
     display: inline-block;
-    font-family: "indivisible", sans-serif;
+    font-family: "termina", sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 12px;
+    font-size: 14px;
     padding: 0 10px;
     line-height: 25px;
     text-align: center;
-    position: absolute;
-    top: 0;
-    right: 4px;
+    text-decoration: none;
 }
 
 .backward {
-    background-color: lightgoldenrodyellow;
-    border: 1.5px solid #422800;
-    border-radius: 20px;
-    color: #422800;
-    cursor: pointer;
-    display: inline-block;
-    font-family: "indivisible", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 12px;
-    padding: 0 10px;
-    line-height: 25px;
-    text-align: center;
     position: absolute;
-    top: 0;
-    left: 4px;
+    left: 11px;
 }
 
-.forward:hover, .backward:hover {
-    background-color: rgb(170, 232, 255);
-    color: #b10000;
+.home {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-/*
-.forward:active, .backward:active {
-    box-shadow: #422800 2px 2px 0 0;
-    transform: translate(2px, 2px);
-}
-*/
-
-/*
 .forward {
-    font-size: 12px;
-    font-family: Verdana, sans-serif;
-    position:absolute;
-    text-align: center; 
-    top:0;
-    right:0;
-    background-color: rgb(70, 70, 70);  
-    color: aliceblue;
+    position: absolute;
+    right: 11px;
 }
 
-.backward {
-    font-size: 12px;
-    font-family: Verdana, sans-serif;
-    position:absolute;
-    text-align: center; 
-    top:0;
-    left:0;
-    background-color: rgb(70, 70, 70);  
-    color: aliceblue;
+.forward:hover, .backward:hover, .home:hover {
+    color: #dd0000;
 }
-
-.button-container {
-    align-items: center;
-    position: relative;
-}
-*/
 
 h1 {
     font-family: Verdana, sans-serif;
