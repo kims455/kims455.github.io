@@ -3,7 +3,7 @@ body, html {
     background: linear-gradient(25deg, #bedeff, #ebf5ff);
     /* background: linear-gradient(25deg, #fbffc9, #f3ff49, #ff7eaf, #2ca9fc); */
 	background-size: 350% 350%;
-	animation: gradient 13s ease infinite;
+	/* animation: gradient 13s ease infinite; */
 	height: 100vh;
 }
 
@@ -17,6 +17,20 @@ body, html {
 	100% {
 		background-position: 0% 50%;
 	}
+}
+
+.container {
+    position: relative;
+}
+
+.background-image {
+    width: 50%; 
+    height: auto; 
+    margin: 0 auto; 
+    background-image: url('assets/night.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .course-info {
@@ -114,7 +128,7 @@ p {
     font-family: "indivisible", sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 25px;
+    font-size: 20px;
     padding: 20px;
     line-height: 1;
     text-align: center;
