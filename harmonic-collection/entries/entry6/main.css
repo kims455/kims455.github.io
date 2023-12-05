@@ -16,7 +16,7 @@ body, html {
 
 .backward, .home, .forward {
   background-color: transparent;
-  color: #ffffff;
+  color: #e1ff00;
   cursor: pointer;
   display: inline-block;
   font-family: "termina", sans-serif;
@@ -67,7 +67,7 @@ h1, h2 {
   background-color: #000000;
   animation: appearEffect 4s alternate forwards;
   position: absolute;
-  top: 4%;
+  top: 6%;
   left: 0;
   z-index: 2;
 }

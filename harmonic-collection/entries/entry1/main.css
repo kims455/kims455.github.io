@@ -1,6 +1,9 @@
 .button-container {
+    position: fixed;
+    top: 13px;
+    right: 4px;
+    left: 4px;
     z-index: 999;
-    padding: 10px;
 }
 
 .backward, .home, .forward {

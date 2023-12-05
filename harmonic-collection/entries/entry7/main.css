@@ -13,13 +13,16 @@ background-size: 4000px;
 */
 
 .button-container {
+    position: fixed;
+    top: 13px;
+    right: 4px;
+    left: 4px;
     z-index: 999;
-    padding: 10px;
 }
 
 .backward, .home, .forward {
     background-color: transparent;
-    color: #422800;
+    color: #00bfff;
     cursor: pointer;
     display: inline-block;
     font-family: "termina", sans-serif;
