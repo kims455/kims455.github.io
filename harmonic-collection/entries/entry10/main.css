@@ -17,7 +17,7 @@ body {
 
 .backward, .home, .forward {
     background-color: transparent;
-    color: #422800;
+    color: #f5d9af;
     cursor: pointer;
     display: inline-block;
     font-family: "termina", sans-serif;
