@@ -1,36 +1,9 @@
 body, html {
     font-family: "soleil", sans-serif;
-    background: linear-gradient(25deg, #bedeff, #ebf5ff);
-    /* background: linear-gradient(25deg, #fbffc9, #f3ff49, #ff7eaf, #2ca9fc); */
-	background-size: 350% 350%;
-	/* animation: gradient 13s ease infinite; */
-	height: 100vh;
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-.container {
-    position: relative;
-}
-
-.background-image {
-    width: 50%; 
-    height: auto; 
-    margin: 0 auto; 
-    background-image: url('assets/night.png');
     background-size: cover;
-    background-position: center center;
     background-repeat: no-repeat;
+    height: 100vh;
+    background-image: url("assets/tunnel.jpg");
 }
 
 .course-info {
@@ -69,7 +42,7 @@ body, html {
 }
 
 h1 {
-    color: #102262;
+    color: #f5f5f5;
     text-align: left;
     font-size: 10vw;
     font-family: "soleil", sans-serif;
