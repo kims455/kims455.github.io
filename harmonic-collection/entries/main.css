@@ -31,7 +31,6 @@ body, html {
     margin: auto;
 }
 
-
 .name {
     margin-right: 20px;
 }
@@ -61,7 +60,7 @@ h1 {
 }
 
 h3 {
-    color: rgb(255, 255, 255);
+    color: rgb(202, 213, 255);
     text-align: left;
     font-size: 1.85vw;
     padding: 8px;
@@ -106,19 +105,20 @@ p {
     font-family: "indivisible", sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 20px;
+    font-size: 25px;
     padding: 20px;
     line-height: 1;
     text-align: center;
     margin: 0 8px;
     text-decoration: none;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
 }
 
 .button:hover {
-    background-color: rgb(249, 255, 141);
-    color: #0051ff;
+    color: rgb(0, 62, 218);
     text-shadow: none;
+    transform: rotate(5deg);
+    background-color: #e74c3c;
 }
 
 .button:active {
