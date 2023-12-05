@@ -57,11 +57,11 @@ body, html {
 h1 {
     color: #ffffff;
     text-align: left;
-    font-size: 10vw;
+    font-size: 10.2vw;
     font-family: "soleil", sans-serif;
     font-weight: 900;
     font-style: normal;
-    line-height: 0.94em;
+    line-height: 1.05em;
     padding: 7px;
     margin: 0;
     text-shadow: 4px 4px 9px rgba(0, 0, 0, 0.8); 

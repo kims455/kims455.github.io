@@ -9,3 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
         mouseTail.style.top = mouseY + 'px';
     });
 });
+
+function enterWebsite() {
+    window.location.href = "index.html"; 
+}
+
