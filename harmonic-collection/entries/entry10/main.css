@@ -107,7 +107,7 @@ p {
     font-family: "termina", sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 22px;
+    font-size: 1.3vw;
     color: white;
     padding: 370px;
     padding-top: 20px;
@@ -131,7 +131,7 @@ p {
     font-family: "termina", sans-serif;
     font-weight: 800;
     font-style: normal;
-    font-size: 50px;
+    font-size: 3vw;
     color: darkgreen;
 }
 
