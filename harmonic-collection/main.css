@@ -37,6 +37,21 @@ h1 {
     }
 }
 
+@keyframes moveButton {
+    0% {
+        transform: translateX(0);
+        text-shadow: 0 0 10px rgba(232, 232, 232, 0.8); /* Initial shadow */
+    }
+    50% {
+        transform: translateX(20px);
+        text-shadow: 0 0 35px rgba(232, 232, 232, 0.8); /* Adjusted shadow during movement */
+    }
+    100% {
+        transform: translateX(0);
+        text-shadow: 0 0 10px rgba(232, 232, 232, 0.8); /* Back to the initial shadow */
+    }
+}
+
 .begin {
     font-family: "soleil", sans-serif;
     font-weight: 900;
@@ -53,4 +68,5 @@ h1 {
 .begin:hover {
     color: #e74c3c;
     animation: none;
+    text-shadow: 0 0 12px rgba(231, 76, 60, 0.8); 
 }
