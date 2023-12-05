@@ -48,7 +48,7 @@ body {
 
 h1 {
     font-family: 'Gloock', serif;
-    font-size: 78pt;
+    font-size: 5.8vw;
     text-align: center;
     letter-spacing: 2px;
     color: #FF4600;
@@ -221,7 +221,7 @@ image {
 
 .title {
     font-family: 'Gloock', serif;
-    font-size: 30px;
+    font-size: 2.3vw;
     letter-spacing: 2px;
     text-align: center;
     color: #FF4600;
@@ -238,7 +238,7 @@ image {
 }
 
 .describe {
-    font-size: 18px;
+    font-size: 1vw;
     font-family: 'Libre Baskerville', serif;
     text-align: justify;
     line-height: 1.7em;
