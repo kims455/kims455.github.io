@@ -27,6 +27,7 @@ body, html {
   line-height: 25px;
   text-align: center;
   text-decoration: none;
+  text-shadow: 1px 1px 3px rgba(27, 27, 27, 0.9); 
 }
 
 .backward {

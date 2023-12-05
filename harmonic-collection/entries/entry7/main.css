@@ -22,7 +22,7 @@ background-size: 4000px;
 
 .backward, .home, .forward {
     background-color: transparent;
-    color: #00bfff;
+    color: #09c1ff;
     cursor: pointer;
     display: inline-block;
     font-family: "termina", sans-serif;
@@ -33,6 +33,7 @@ background-size: 4000px;
     line-height: 25px;
     text-align: center;
     text-decoration: none;
+    text-shadow: 0.5px 0.5px 2px rgba(134, 134, 134, 0.4); 
 }
 
 .backward {

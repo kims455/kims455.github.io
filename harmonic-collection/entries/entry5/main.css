@@ -63,7 +63,7 @@ h1 {
   text-shadow: 1px 1px 3px rgb(255, 174, 187);
 }
 
-h3 {
+/* h3 {
   text-align: center;
   font-size: 18px;
   font-family: "graphie", sans-serif;
@@ -71,7 +71,7 @@ h3 {
   font-style: normal;
   color: rgb(66, 66, 66);
   letter-spacing: 1px;
-}
+} */
 
 .center-box {
   background-color: rgb(0, 4, 37); 
