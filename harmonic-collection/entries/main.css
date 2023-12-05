@@ -107,9 +107,6 @@ p {
 }
 
 .button {
-    /* background-color: rgb(255, 255, 255);
-    border: 2px solid #d50000;
-    border-radius: 25px; */
     border-radius: 50%;
     color: #ffffff;
     cursor: pointer;
@@ -119,10 +116,10 @@ p {
     font-style: normal;
     font-size: 25px;
     padding: 20px;
-    /* padding: 0.37vw 0.55vw; */
     line-height: 1;
     text-align: center;
     margin: 0 8px;
+    text-decoration: none;
 }
 
 .button:hover {
