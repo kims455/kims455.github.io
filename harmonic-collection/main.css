@@ -1,8 +1,8 @@
 body, html {
     margin: 0;
     height: 100vh;
-    background-color: #e74c3c;
-    /* background: url("assets/miami.png") no-repeat center top/cover; */
+    background-color: black;
+    background-image: url("assets/noisebkgd.png");
 }
 
 .container {
@@ -25,18 +25,32 @@ h1 {
     margin-bottom: 50px; 
 }
 
+@keyframes moveButton {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(28px); 
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
 .begin {
     font-family: "soleil", sans-serif;
     font-weight: 900;
     font-style: normal;
     background-color: none;
     color: white;
-    padding: 20px 40px; 
+    padding: 20px 40px;
     font-size: 4vw;
     text-decoration: none;
     cursor: pointer;
+    animation: moveButton 3s infinite;
 }
 
 .begin:hover {
-    color: black;
+    color: #e74c3c;
+    animation: none;
 }
