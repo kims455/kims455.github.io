@@ -6,8 +6,10 @@ body, html {
 }
 
 .container {
-    position: relative; 
-    text-align: center; 
+    position: relative;
+    /* text-align: center; */
+    width: 70%;
+    margin: 0 auto;
 }
 
 h1 {
@@ -17,34 +19,34 @@ h1 {
     color: white;
     font-size: 3vw;
     margin-top: 20px;
-}
-
-.paper {
-    width: 80%;
-    display: block;
-    margin: 0 auto; 
-    margin-top: 20px; 
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-}
-
-.paragraph {
-    width: 45%;
-    padding: 35px;
-    margin: 0 auto;
-    justify-content: center; 
-    align-items: center;
-    border: none;
-}
-
-/* .title {
-    font-size: 29px;
+    position: relative;
     text-align: center;
-    color: aliceblue;
-    font-family: 'Arbutus Slab', serif;
-    font-weight: 600;
-} */
+    width: 80%;
+    margin: 0 auto;
+}
 
-p {
+.paper-photo {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    /* box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); */
+    transition: opacity 3s ease-in-out; 
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #040442;
+    opacity: 0;
+    transition: opacity 4s ease-in-out; 
+}
+
+.overlay-text {
     font-family: "sirba-web", serif;
     font-weight: 400;
     font-style: normal;
@@ -52,6 +54,20 @@ p {
     text-align: justify;
     line-height: 1.3em;
     color: aliceblue;
-    margin-top: 40px;
+    margin-top: 250px;
+    opacity: 0;
+    width: 100%;
+    transition: opacity 2s ease-in-out;
 }
 
+.container:hover .paper {
+    opacity: 0; 
+}
+
+.container:hover .overlay {
+    opacity: 1; 
+}
+
+.container:hover .overlay-text {
+    opacity: 1; 
+}
