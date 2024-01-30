@@ -14,13 +14,6 @@ body, html {
 }
 
 .begin {
-    /* font-family: "soleil", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-    background-color: none;
-    color: white;
-    font-size: 1.5vw;
-    padding: 20px 40px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,12 +21,19 @@ body, html {
     text-decoration: none;
     cursor: pointer;
     animation: moveButton 3s infinite;
+    /* font-family: "soleil", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    background-color: none;
+    color: white;
+    font-size: 1.5vw;
+    padding: 20px 40px; */
 }
 
 .begin:hover {
+    animation: moveButton 3s infinite;
     /* color: #3c3fe7;
     text-shadow: 0 0 10px #3c3fe7;  */
-    animation: moveButton 3s infinite;
 }
 
 /* Paper Plane */
