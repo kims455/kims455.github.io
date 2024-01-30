@@ -1,12 +1,16 @@
 body, html {
     margin: 0;
     height: 100vh;
-    background-color: #040442;
+    background-color: black;
+    background-image: url("assets/noisebkgd.png");
 }
 
 .container {
-    position: relative; 
-    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 h1 {
@@ -14,24 +18,63 @@ h1 {
     font-weight: 900;
     font-style: normal;
     color: white;
-    font-size: 3vw;
-    margin-top: 20px;
+    text-align: center;
+    font-size: 2.8vw;
+    padding: 7px;
+    margin: 0;
+    margin-bottom: 50px; 
 }
 
-.paper {
-    width: 80%;
-    display: block;
-    margin: 0 auto; 
-    margin-top: 20px; 
+@keyframes moveButton {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(28px); 
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
-p {
-    font-family: "sirba-web", serif;
-    font-weight: 400;
+@keyframes moveButton {
+    0% {
+        transform: translateX(0);
+        text-shadow: 0 0 10px rgba(232, 232, 232, 0.8); 
+    }
+    50% {
+        transform: translateX(20px);
+        text-shadow: 0 0 35px rgba(232, 232, 232, 0.8); 
+    }
+    100% {
+        transform: translateX(0);
+        text-shadow: 0 0 10px rgba(232, 232, 232, 0.8);
+    }
+}
+
+.begin {
+    font-family: "soleil", sans-serif;
+    font-weight: 900;
     font-style: normal;
-    font-size: 1vw;
-    text-align: justify;
-    line-height: 1.3em;
-    color: aliceblue;
-    margin-top: 40px;
+    background-color: none;
+    color: white;
+    padding: 20px 40px;
+    font-size: 4vw;
+    text-decoration: none;
+    cursor: pointer;
+    animation: moveButton 3s infinite;
 }
+
+.begin:hover {
+    color: #e74c3c;
+    animation: none;
+    text-shadow: 0 0 12px rgba(231, 76, 60, 0.8); 
+}
+
+.paper-plane {
+    width: 10%;
+    height: auto;
+    cursor: pointer;
+    animation: moveButton 3s infinite;
+}
+
