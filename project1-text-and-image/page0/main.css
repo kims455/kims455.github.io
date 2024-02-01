@@ -1,0 +1,32 @@
+body, html {
+    margin: 0;
+    height: 100vh;
+    background-color: black;
+    background-image: url("assets/noisebkgd.png");
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.begin {
+    font-family: "amandine", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    background-color: none;
+    color: white;
+    padding: 20px 40px;
+    font-size: 4vw;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.begin:hover {
+    color: #2998ff;
+    animation: none;
+    text-shadow: #2998ff;
+}

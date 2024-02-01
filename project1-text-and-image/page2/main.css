@@ -1,0 +1,52 @@
+body, html {
+    margin: 0;
+    height: 100vh;
+    background-image: url("assets/noisebkgd.png");
+}
+
+.container {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.overlay-text {
+    font-family: "sirba-web", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1vw;
+    text-align: justify;
+    line-height: 1.3em;
+    color: aliceblue;
+    opacity: 1;
+}
+
+.doves {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 20vh;
+}
+
+.paper-dove1 {
+    width: 13vw;
+    height: auto;
+    cursor: pointer;
+}
+
+.paper-dove2 {
+    width: 13vw;
+    height: auto;
+    cursor: pointer;
+}

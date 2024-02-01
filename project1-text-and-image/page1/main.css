@@ -1,15 +1,42 @@
 body, html {
     margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.original-photo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.paper-photo {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    cursor: help;
+}
+
+.next-page-button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/*
+body, html {
+    margin: 0;
     height: 100vh;
     background-color: #040442;
     background-image: url(/assets/noisebkgd.png);
-}
-
-.container {
-    position: relative;
-    /* text-align: center; */
-    width: 70%;
-    margin: 0 auto;
 }
 
 h1 {
@@ -34,6 +61,13 @@ h1 {
     cursor: pointer;
 }
 
+.container {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
 .overlay {
     position: absolute;
     top: 0;
@@ -49,99 +83,15 @@ h1 {
     font-family: "sirba-web", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1vw;
+    font-size: 1.1vw;
     text-align: justify;
     line-height: 1.3em;
     color: aliceblue;
-    margin-top: 250px;
+    margin-top: 60px;
     opacity: 0;
     width: 100%;
     transition: opacity 2s ease-in-out;
 }
-
-/* .overlay-text2 {
-    font-family: "sirba-web", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1vw;
-    text-align: justify;
-    line-height: 1.3em;
-    color: aliceblue;
-    margin-top: 250px;
-    opacity: 0;
-    width: 100%;
-    transition: opacity 2s ease-in-out;
-}
-
-.overlay-text3 {
-    font-family: "sirba-web", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1vw;
-    text-align: justify;
-    line-height: 1.3em;
-    color: aliceblue;
-    margin-top: 250px;
-    opacity: 0;
-    width: 100%;
-    transition: opacity 2s ease-in-out;
-}
-
-.overlay-text4 {
-    font-family: "sirba-web", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1vw;
-    text-align: justify;
-    line-height: 1.3em;
-    color: aliceblue;
-    margin-top: 250px;
-    opacity: 0;
-    width: 100%;
-    transition: opacity 2s ease-in-out;
-}
-
-.overlay-text5 {
-    font-family: "sirba-web", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1vw;
-    text-align: justify;
-    line-height: 1.3em;
-    color: aliceblue;
-    margin-top: 250px;
-    opacity: 0;
-    width: 100%;
-    transition: opacity 2s ease-in-out;
-}
-
-.overlay-text6 {
-    font-family: "sirba-web", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1vw;
-    text-align: justify;
-    line-height: 1.3em;
-    color: aliceblue;
-    margin-top: 250px;
-    opacity: 0;
-    width: 100%;
-    transition: opacity 2s ease-in-out;
-}
-
-.overlay-text7 {
-    font-family: "sirba-web", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1vw;
-    text-align: justify;
-    line-height: 1.3em;
-    color: aliceblue;
-    margin-top: 250px;
-    opacity: 0;
-    width: 100%;
-    transition: opacity 2s ease-in-out;
-} */
 
 .container:hover .paper {
     opacity: 0; 
@@ -173,3 +123,4 @@ h1 {
     height: auto;
     cursor: pointer;
 }
+*/

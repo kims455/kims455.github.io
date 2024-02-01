@@ -1,7 +1,6 @@
 body, html {
   margin: 0;
   height: 100vh;
-  background-color: black;
   background-image: url("assets/noisebkgd.png");
 }
 
