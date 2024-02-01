@@ -1,51 +1,51 @@
 body, html {
-    margin: 0;
-    height: 100vh;
-    background-color: black;
-    background-image: url("assets/noisebkgd.png");
+  margin: 0;
+  height: 100vh;
+  background-color: black;
+  background-image: url("assets/noisebkgd.png");
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 .begin {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    cursor: pointer;
-    animation: moveButton 3s infinite;
-    /* font-family: "soleil", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-    background-color: none;
-    color: white;
-    font-size: 1.5vw;
-    padding: 20px 40px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  animation: moveButton 3s infinite;
+  /* font-family: "soleil", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  background-color: none;
+  color: white;
+  font-size: 1.5vw;
+  padding: 20px 40px; */
 }
 
 .begin:hover {
-    animation: moveButton 3s infinite;
-    /* color: #3c3fe7;
-    text-shadow: 0 0 10px #3c3fe7;  */
+  animation: moveButton 3s infinite;
+  /* color: #3c3fe7;
+  text-shadow: 0 0 10px #3c3fe7;  */
 }
 
-/* Paper Plane */
-.paper-plane {
-    width: 190px;
-    height: auto;
-    cursor: pointer;
-    transition: transform 8s ease; 
+/* Paper dove */
+.paper-dove {
+  width: 260px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 8s ease; 
 }
 
-.paper-plane:hover {
-    transform: translateX(-350%); 
+.paper-dove:hover {
+  transform: translateX(-350%); 
 }
 
 @keyframes moveButton {
@@ -80,7 +80,7 @@ body, html {
   height: 15px;
   border-radius: 50%;
   background-color: aliceblue;
-  opacity: 0.7;
+  opacity: 0.65;
   transform: translate(-50%, -50%);
   filter: blur(1.8px);
 }
