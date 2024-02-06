@@ -1,18 +1,24 @@
-const peaceDoves = document.querySelectorAll('.paper-dove1, .paper-dove2');
+// let currentIndex = 0;
+// const sentences = document.querySelectorAll('.overlay-text');
 
-const overlayTexts = document.querySelectorAll('.overlay-text');
+// function showNextSentence() {
+//     if (currentIndex < sentences.length) {
+//         sentences[currentIndex].style.opacity = 1;
+//         currentIndex++;
+//     }
+// }
 
-let currentIndex = 0;
+// function resetSentences() {
+//     currentIndex = 0;
+//     sentences.forEach(sentence => {
+//         sentence.style.opacity = 0;
+//     });
+// }
 
-overlayTexts.forEach(text => {
-    text.style.display = 'none';
-});
+// document.querySelector('.paper-dove1').addEventListener('click', function() {
+//     showNextSentence();
+// });
 
-peaceDoves.forEach(dove => {
-    dove.addEventListener('click', () => {
-        if (currentIndex < overlayTexts.length) {
-            overlayTexts[currentIndex].style.display = 'block';
-            currentIndex++;
-        }
-    });
-});
+// document.querySelector('.paper-dove2').addEventListener('click', function() {
+//     showNextSentence();
+// });

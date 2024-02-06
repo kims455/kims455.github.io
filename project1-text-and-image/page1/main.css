@@ -1,109 +1,35 @@
 body, html {
     margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow: hidden;
-    background-color: black;
-    cursor: url('../page1/assets/peace-dove1-pixel.png'), pointer;
-}
-
-.original-photo {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.paper-photo {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    object-fit: cover;
-    /* cursor: help; */
-}
-
-.next-page-button {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-}
-
-/*
-body, html {
-    margin: 0;
     height: 100vh;
-    background-color: #040442;
-    background-image: url(/assets/noisebkgd.png);
-}
-
-h1 {
-    font-family: "amandine", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-    color: white;
-    font-size: 3vw;
-    margin-top: 20px;
-    position: relative;
-    text-align: center;
-    width: 80%;
-    margin: 0 auto;
-}
-
-.paper-photo {
-    width: 100%;
-    display: block;
-    margin: 0 auto;
-    margin-top: 20px;
-    transition: opacity 3s ease-in-out; 
-    cursor: pointer;
+    background-image: url("assets/noisebkgd.png");
 }
 
 .container {
     position: relative;
-    width: 70%;
+    width: 50%;
     margin: 0 auto;
     cursor: pointer;
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #040442;
-    opacity: 0;
-    transition: opacity 4s ease-in-out; 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    max-width: 800px;
+    padding: 20px;
 }
 
 .overlay-text {
     font-family: "sirba-web", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.1vw;
+    font-size: 1vw;
     text-align: justify;
     line-height: 1.3em;
     color: aliceblue;
-    margin-top: 60px;
-    opacity: 0;
-    width: 100%;
-    transition: opacity 2s ease-in-out;
-}
-
-.container:hover .paper {
-    opacity: 0; 
-}
-
-.container:hover .overlay {
-    opacity: 1; 
-}
-
-.container:hover .overlay-text {
-    opacity: 1; 
+    opacity: 1;
 }
 
 .doves {
@@ -114,14 +40,13 @@ h1 {
 }
 
 .paper-dove1 {
-    width: 260px;
+    width: 13vw;
     height: auto;
     cursor: pointer;
 }
 
 .paper-dove2 {
-    width: 220px;
+    width: 13vw;
     height: auto;
     cursor: pointer;
 }
-*/
