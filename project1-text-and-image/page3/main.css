@@ -1,0 +1,86 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
+    cursor: url('../page1/assets/peace-dove1-pixel.png'), pointer;
+}
+
+.button-container {
+    position: fixed;
+    top: 13px;
+    right: 4px;
+    left: 4px;
+    z-index: 999;
+}
+
+.backward, .home, .forward {
+    background-color: transparent;
+    color: #ececec;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "termina", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    padding: 0 10px;
+    line-height: 25px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.backward {
+    position: absolute;
+    left: 11px;
+}
+
+.home {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.forward {
+    position: absolute;
+    right: 11px;
+}
+
+.forward:hover, .backward:hover, .home:hover {
+    color: rgb(229, 0, 0);
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0; 
+    animation: fadeIn 5s ease-in-out forwards;
+}
+
+video {
+    width: 20%;
+    height: auto;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; 
+    }
+    to {
+        opacity: 1; 
+    }
+}
+
+/* 
+.next-page-button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    cursor: url('../page1/assets/peace-dove1-pixel.png'), pointer;
+} */
