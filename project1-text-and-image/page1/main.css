@@ -27,10 +27,10 @@ body, html {
     text-decoration: none;
 }
 
-.backward {
+/* .backward {
     position: absolute;
     left: 11px;
-}
+} */
 
 .home {
     position: absolute;
@@ -38,10 +38,10 @@ body, html {
     transform: translateX(-50%);
 }
 
-.forward {
+/* .forward {
     position: absolute;
     right: 11px;
-}
+} */
 
 .forward:hover, .backward:hover, .home:hover {
     color: rgb(229, 0, 0);

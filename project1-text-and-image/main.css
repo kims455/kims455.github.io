@@ -4,12 +4,18 @@ body, html {
   background-image: url("assets/noisebkgd.jpg");
 }
 
-.container {
+.button-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  height: 100vh;
+  align-items: center;
+  height: 100vh; 
+}
+
+.container1, .container2, .container3, .container4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
 }
 
 .begin {
@@ -26,16 +32,56 @@ body, html {
   animation: moveButton 3s infinite;
 }
 
-/* Paper dove */
-.paper-dove {
+/* Paper dove 1 */
+.paper-dove1 {
   width: 260px;
   height: auto;
   cursor: pointer;
   transition: transform 8s ease; 
+  transform: translateX(-50%); 
 }
 
-.paper-dove:hover {
-  transform: translateX(-350%); 
+.paper-dove1:hover {
+  transform: translateX(-350%); /* Move to the left */
+}
+
+/* Paper dove 2 */
+.paper-dove2 {
+  width: 260px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 8s ease; 
+  transform: translateY(-50%); 
+}
+
+.paper-dove2:hover {
+  transform: translateY(-350%); /* Move up */
+}
+
+/* Paper dove 3 */
+.paper-dove3 {
+  width: 260px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 8s ease; 
+  transform: translateY(50%);
+}
+
+.paper-dove3:hover {
+  transform: translateY(350%); /* Move down */
+}
+
+/* Paper dove 4 */
+.paper-dove4 {
+  width: 260px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 8s ease; 
+  transform: translateX(50%); 
+}
+
+.paper-dove4:hover {
+  transform: translateX(350%); /* Move to the right */
 }
 
 @keyframes moveButton {
