@@ -55,6 +55,7 @@ body, html {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    text-align: center;
 }
 
 .paper-photo {
@@ -76,96 +77,55 @@ body, html {
     cursor: url('../page1/assets/peace-dove1-pixel.png'), pointer;
 }
 
-/*
-body, html {
-    margin: 0;
-    height: 100vh;
-    background-color: #040442;
-    background-image: url(/assets/noisebkgd.png);
-}
-
-h1 {
-    font-family: "amandine", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-    color: white;
-    font-size: 3vw;
-    margin-top: 20px;
-    position: relative;
-    text-align: center;
-    width: 80%;
-    margin: 0 auto;
-}
-
-.paper-photo {
-    width: 100%;
-    display: block;
-    margin: 0 auto;
-    margin-top: 20px;
-    transition: opacity 3s ease-in-out; 
-    cursor: pointer;
-}
-
-.container {
-    position: relative;
-    width: 70%;
-    margin: 0 auto;
-    cursor: pointer;
-}
-
-.overlay {
-    position: absolute;
+/* Cursor Tracer
+#tracer {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #040442;
-    opacity: 0;
-    transition: opacity 4s ease-in-out; 
+    pointer-events: none;
+    z-index: 9999;
 }
-
-.overlay-text {
-    font-family: "sirba-web", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.1vw;
-    text-align: justify;
-    line-height: 1.3em;
-    color: aliceblue;
-    margin-top: 60px;
-    opacity: 0;
-    width: 100%;
-    transition: opacity 2s ease-in-out;
+  
+.dot {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #2998ff;
+    opacity: 0.65;
+    transform: translate(-50%, -50%);
+    filter: blur(1.8px);
 }
-
-.container:hover .paper {
-    opacity: 0; 
+  
+.dot:nth-child(1),
+.dot:nth-child(2) {
+    background: linear-gradient(180deg, royalblue 0%, #2998ff 100%);
 }
-
-.container:hover .overlay {
-    opacity: 1; 
+  
+.dot:nth-child(3),
+.dot:nth-child(4),
+.dot:nth-child(5) {
+    background: linear-gradient(180deg, #2998ff 0%, rgb(177, 197, 255) 100%);
 }
-
-.container:hover .overlay-text {
-    opacity: 1; 
+  
+.dot:nth-child(1) {
+    opacity: 0.5;
 }
-
-.doves {
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    height: 20vh;
+  
+.dot:nth-child(2) {
+    opacity: 0.4;
 }
-
-.paper-dove1 {
-    width: 260px;
-    height: auto;
-    cursor: pointer;
+  
+.dot:nth-child(3) {
+    opacity: 0.3;
 }
-
-.paper-dove2 {
-    width: 220px;
-    height: auto;
-    cursor: pointer;
+  
+.dot:nth-child(4) {
+    opacity: 0.2;
 }
-*/
+  
+.dot:nth-child(5) {
+    opacity: 0.1;
+} */

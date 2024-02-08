@@ -3,7 +3,7 @@ body, html {
     padding: 0;
     height: 100%;
     overflow: hidden;
-    background-color: black;
+    background-image: url("assets/noisebkgd.png");
     cursor: url('../page1/assets/peace-dove1-pixel.png'), pointer;
 }
 

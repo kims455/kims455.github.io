@@ -93,3 +93,22 @@ body, html {
     height: auto;
     cursor: pointer;
 }
+
+.doves {
+    display: flex;
+    overflow: hidden;
+}
+
+.paper-dove1,
+.paper-dove2 {
+    animation: moveLeft 6s linear infinite; 
+}
+
+@keyframes moveLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%); 
+    }
+}
