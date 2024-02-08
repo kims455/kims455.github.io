@@ -57,20 +57,20 @@ body, html {
     width: 100%;
     height: 100%;
     opacity: 0; 
-    animation: fadeIn 5s ease-in-out forwards;
+    animation: fadeIn 6s ease-in-out forwards;
 }
 
 video {
-    width: 20%;
+    width: 30%;
     height: auto;
 }
 
 @keyframes fadeIn {
     from {
-        opacity: 0; 
+        opacity: 1; 
     }
     to {
-        opacity: 1; 
+        opacity: 0; 
     }
 }
 
