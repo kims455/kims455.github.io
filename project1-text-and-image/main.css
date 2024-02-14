@@ -34,7 +34,7 @@ body, html {
 
 /* Paper dove 1 */
 .paper-dove1 {
-  width: 260px;
+  width: 180px;
   height: auto;
   cursor: pointer;
   transition: transform 8s ease; 
@@ -45,22 +45,22 @@ body, html {
   transform: translateX(-350%); /* Move to the left */
 }
 
-/* Paper dove 2 */
-.paper-dove2 {
-  width: 260px;
+/* Paper dove 5 */
+.paper-dove5 {
+  width: 180px;
   height: auto;
   cursor: pointer;
   transition: transform 8s ease; 
   transform: translateY(-150%); 
 }
 
-.paper-dove2:hover {
+.paper-dove5:hover {
   transform: translateY(-350%); /* Move up */
 }
 
 /* Paper dove 3 */
 .paper-dove3 {
-  width: 260px;
+  width: 170px;
   height: auto;
   cursor: pointer;
   transition: transform 8s ease; 
@@ -73,7 +73,7 @@ body, html {
 
 /* Paper dove 4 */
 .paper-dove4 {
-  width: 260px;
+  width: 180px;
   height: auto;
   cursor: pointer;
   transition: transform 8s ease; 
