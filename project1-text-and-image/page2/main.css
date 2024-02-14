@@ -46,6 +46,7 @@ body, html {
     height: 100%;
     overflow: hidden;
     text-align: center;
+    z-index: 1; 
 }
 
 .paper-photo {
@@ -54,7 +55,6 @@ body, html {
     display: block;
     margin: 0 auto;
     object-fit: cover;
-    /* cursor: help; */
 }
 
 .next-page-button {
@@ -67,55 +67,53 @@ body, html {
     cursor: url('../page1/assets/peace-dove1-pixel.png'), pointer;
 }
 
-/* Cursor Tracer
-#tracer {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: 9999;
-}
-  
-.dot {
+.paper-dove1,
+.paper-dove2,
+.paper-dove3,
+.paper-dove4,
+.paper-dove5 {
     position: absolute;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: #2998ff;
-    opacity: 0.65;
-    transform: translate(-50%, -50%);
-    filter: blur(1.8px);
+    width: 8%;
+    height: auto; 
 }
-  
-.dot:nth-child(1),
-.dot:nth-child(2) {
-    background: linear-gradient(180deg, royalblue 0%, #2998ff 100%);
+
+.paper-dove1 {
+    top: 20%;
+    left: 5%;
+    z-index: 2;
 }
-  
-.dot:nth-child(3),
-.dot:nth-child(4),
-.dot:nth-child(5) {
-    background: linear-gradient(180deg, #2998ff 0%, rgb(177, 197, 255) 100%);
+
+.paper-dove2 {
+    top: 30%;
+    left: 40%;
+    z-index: 2;
 }
-  
-.dot:nth-child(1) {
-    opacity: 0.5;
+
+.paper-dove3 {
+    top: 50%;
+    left: 58%;
+    z-index: 2;
 }
-  
-.dot:nth-child(2) {
-    opacity: 0.4;
+
+.paper-dove4 {
+    top: 70%;
+    left: 80%;
+    z-index: 2;
 }
-  
-.dot:nth-child(3) {
-    opacity: 0.3;
+
+.paper-dove5 {
+    top: 10%;
+    left: 74%;
+    z-index: 2;
 }
-  
-.dot:nth-child(4) {
-    opacity: 0.2;
+
+.paper-dove1:hover,
+.paper-dove2:hover,
+.paper-dove3:hover,
+.paper-dove4:hover,
+.paper-dove5:hover {
+    transform: scale(1.6); 
+    transition: transform 0.6s ease; 
+    filter: hue-rotate(90deg) brightness(108%) saturate(200%);
+    cursor: grab;
 }
-  
-.dot:nth-child(5) {
-    opacity: 0.1;
-} */
