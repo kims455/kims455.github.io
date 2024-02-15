@@ -1,5 +1,3 @@
-
-
 const peaceDoves = document.querySelectorAll('.paper-dove1, .paper-dove2, .paper-dove3, .paper-dove4,.paper-dove5');
 
 const overlayTexts = document.querySelectorAll('.overlay-text');
