@@ -1,0 +1,121 @@
+body, html {
+    margin: 0;
+    height: 100vh;
+    background-image: url("assets/noisebkgd.jpg");
+}
+
+.button-container {
+    position: fixed;
+    top: 13px;
+    right: 4px;
+    left: 4px;
+    z-index: 999;
+}
+
+.home {
+    background-color: transparent;
+    color: #ececec;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "termina", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    padding: 0 10px;
+    line-height: 25px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.home {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.home:hover {
+    color: rgb(229, 0, 0);
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.overlay {
+    position: fixed;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 36%;
+}
+
+.overlay-text {
+    font-family: "sirba-web", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.88vw;
+    text-align: left;
+    line-height: 1.4em;
+    color: aliceblue;
+    opacity: 1;
+}
+
+.doves {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 28vh;
+}
+
+.paper-dove1 {
+    width: 10vw;
+    height: auto;
+    cursor: pointer;
+    padding-right: 40px;
+}
+
+.paper-dove2 {
+    width: 11vw;
+    height: auto;
+    cursor: pointer;
+}
+
+.paper-dove3 {
+    width: 9vw;
+    height: auto;
+    cursor: pointer;
+    padding: 25px;
+}
+
+.paper-dove4 {
+    width: 10vw;
+    height: auto;
+    cursor: pointer;
+    padding-right: 25px;
+}
+
+.paper-dove5 {
+    width: 10vw;
+    height: auto;
+    cursor: pointer;
+    padding-right: 40px;
+} 
+
+.paper-dove1,
+.paper-dove2,
+.paper-dove3,
+.paper-dove4,
+.paper-dove5 {
+    animation: moveLeft 17s linear infinite; 
+}
+
+@keyframes moveLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%); 
+    }
+}

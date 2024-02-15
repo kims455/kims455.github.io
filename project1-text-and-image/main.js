@@ -11,12 +11,10 @@ document.addEventListener("mousemove", function(event) {
   tracer.appendChild(dot);
   dots.push(dot);
 
-
   if (dots.length > 50) {
     tracer.removeChild(dots.shift());
   }
 });
-
 
 function removeDots() {
   if (dots.length > 0) {

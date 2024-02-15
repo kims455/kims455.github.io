@@ -2,6 +2,7 @@ body, html {
   margin: 0;
   height: 100vh;
   background-image: url("assets/noisebkgd.jpg");
+  cursor: none;
 }
 
 .button-container {
@@ -24,7 +25,7 @@ body, html {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  cursor: pointer;
+  /* cursor: pointer; */
   animation: moveButton 3s infinite;
 }
 
@@ -36,7 +37,7 @@ body, html {
 .paper-dove1 {
   width: 160px;
   height: auto;
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: transform 8s ease; 
   animation: moveRandom1 10s infinite alternate;
 }
@@ -59,11 +60,15 @@ body, html {
   }
 }
 
+.paper-dove1:hover {
+  filter: hue-rotate(90deg) brightness(108%) saturate(200%);
+}
+
 /* Paper dove 5 */
 .paper-dove5 {
   width: 160px;
   height: auto;
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: transform 8s ease; 
   animation: moveRandom5 12s infinite alternate;
 }
@@ -90,14 +95,14 @@ body, html {
 .paper-dove3 {
   width: 150px;
   height: auto;
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: transform 8s ease; 
   animation: moveRandom3 14s infinite alternate;
 }
 
 @keyframes moveRandom3 {
   0% {
-      transform: translateY(150%) translateX(-100%);
+      transform: translateY(200%) translateX(-100%);
   }
   25% {
       transform: translateY(50%) translateX(150%);
@@ -109,15 +114,19 @@ body, html {
       transform: translateY(-150%) translateX(100%);
   }
   100% {
-      transform: translateY(150%) translateX(-100%);
+      transform: translateY(150%) translateX(-200%);
   }
+}
+
+.paper-dove3:hover {
+  filter: hue-rotate(90deg) brightness(108%) saturate(200%);
 }
 
 /* Paper dove 4 */
 .paper-dove4 {
   width: 160px;
   height: auto;
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: transform 8s ease; 
   animation: moveRandom4 16s infinite alternate;
 }
@@ -127,13 +136,13 @@ body, html {
       transform: translateX(50%) translateY(-150%);
   }
   25% {
-      transform: translateX(150%) translateY(50%);
+      transform: translateX(200%) translateY(50%);
   }
   50% {
       transform: translateX(-50%) translateY(-50%);
   }
   75% {
-      transform: translateX(100%) translateY(150%);
+      transform: translateX(100%) translateY(200%);
   }
   100% {
       transform: translateX(50%) translateY(-150%);
@@ -144,17 +153,17 @@ body, html {
 .paper-dove2 {
   width: 140px;
   height: auto;
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: transform 8s ease; 
-  animation: moveRandom4 20s infinite alternate;
+  animation: moveRandom5 20s infinite alternate;
 }
 
-@keyframes moveRandom4 {
+@keyframes moveRandom5 {
   0% {
-      transform: translateX(50%) translateY(-150%);
+      transform: translateX(50%) translateY(150%);
   }
   25% {
-      transform: translateX(150%) translateY(50%);
+      transform: translateX(-200%) translateY(50%);
   }
   50% {
       transform: translateX(-50%) translateY(-50%);
@@ -163,8 +172,12 @@ body, html {
       transform: translateX(100%) translateY(150%);
   }
   100% {
-      transform: translateX(50%) translateY(-150%);
+      transform: translateX(50%) translateY(-200%);
   }
+}
+
+.paper-dove2:hover {
+  filter: hue-rotate(90deg) brightness(108%) saturate(200%);
 }
 
 /* Cursor Tracer */

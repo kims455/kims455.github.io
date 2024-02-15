@@ -19,7 +19,7 @@ document.addEventListener("mousemove", function(event) {
 function removeDots() {
   if (dots.length > 0) {
     tracer.removeChild(dots.shift());
-    setTimeout(removeDots, 70);
+    setTimeout(removeDots, 65);
   }
 }
 
@@ -47,14 +47,14 @@ peaceDoves.forEach(dove => {
 
 // Disappear when the user scrolls
 window.addEventListener('scroll', function() {
-  var jumbotron = document.querySelector('.jumbotron');
-  var overlay = document.querySelector('.overlay');
+    var jumbotron = document.querySelector('.jumbotron');
+    var overlay = document.querySelector('.overlay');
 
-  var jumbotronTop = jumbotron.getBoundingClientRect().top;
+    var jumbotronTop = jumbotron.getBoundingClientRect().top;
 
-  if (jumbotronTop >= 0 && jumbotronTop < window.innerHeight) {
-      overlay.style.display = 'none';
-  } else {
-      overlay.style.display = 'block';
-  }
+    if (jumbotronTop >= 0 && jumbotronTop < window.innerHeight) {
+        overlay.style.display = 'none';
+    } else {
+        overlay.style.display = 'block';
+    }
 });
