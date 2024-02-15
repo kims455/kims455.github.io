@@ -1,4 +1,5 @@
-body, html {
+.body,
+html {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -49,9 +50,9 @@ body, html {
 }
 
 .video {
-    width: 32%;
+    width: 34%;
     height: auto;
-    opacity: 1; 
+    opacity: 1;
     animation: fadeOutVideo 11.5s ease-in-out forwards;
     cursor: auto;
 }
@@ -67,7 +68,7 @@ body, html {
     transform: translate(-50%, -50%);
     opacity: 0;
     animation: fadeInText 6s ease-in-out forwards;
-    animation-delay: 6s; 
+    animation-delay: 6s;
 }
 
 .text {
@@ -78,7 +79,7 @@ body, html {
     color: aliceblue;
     text-align: center;
     padding: 20px 40px;
-    font-size: 2.5vw;
+    font-size: 2.8vw;
     text-decoration: none;
     cursor: pointer;
 }
@@ -87,6 +88,7 @@ body, html {
     from {
         opacity: 1;
     }
+
     to {
         opacity: 0;
     }
@@ -96,6 +98,7 @@ body, html {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
