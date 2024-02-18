@@ -25,25 +25,24 @@ function removeDots() {
 
 removeDots();
 
-// paragraph appear when clicked
-const peaceDoves = document.querySelectorAll('.paper-dove1, .paper-dove2, .paper-dove3, .paper-dove4,.paper-dove5');
 
+
+// Overlay container sentences appear every 2 sec
 const overlayTexts = document.querySelectorAll('.overlay-text');
 
 let currentIndex = 0;
 
-overlayTexts.forEach(text => {
-    text.style.display = 'none';
-});
+function showNextText() {
+    if (currentIndex < overlayTexts.length) {
+        overlayTexts[currentIndex].style.opacity = '1'; // Set opacity to 1 to reveal the text
+        currentIndex++;
+    }
+}
 
-peaceDoves.forEach(dove => {
-    dove.addEventListener('click', () => {
-        if (currentIndex < overlayTexts.length) {
-            overlayTexts[currentIndex].style.display = 'block';
-            currentIndex++;
-        }
-    });
-});
+setInterval(showNextText, 2000);
+
+
+
 
 // Disappear when the user scrolls
 window.addEventListener('scroll', function() {
