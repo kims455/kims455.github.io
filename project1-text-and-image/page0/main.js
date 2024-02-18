@@ -47,14 +47,27 @@ peaceDoves.forEach(dove => {
 
 // Disappear when the user scrolls
 window.addEventListener('scroll', function() {
-    var jumbotron = document.querySelector('.jumbotron');
-    var overlay = document.querySelector('.overlay');
+  var introContainer = document.querySelector('.intro-container');
+  var overlayContainer = document.querySelector('.overlay-container');
 
-    var jumbotronTop = jumbotron.getBoundingClientRect().top;
+  var introContainerTop = introContainer.getBoundingClientRect().top;
 
-    if (jumbotronTop >= 0 && jumbotronTop < window.innerHeight) {
-        overlay.style.display = 'none';
-    } else {
-        overlay.style.display = 'block';
-    }
+  if (introContainerTop >= 0 && introContainerTop < window.innerHeight) {
+      overlayContainer.style.display = 'none';
+  } else {
+      overlayContainer.style.display = 'block';
+  }
+});
+
+// video
+document.addEventListener("DOMContentLoaded", function () {
+  const videoContainer = document.getElementById("video-container");
+
+  videoContainer.addEventListener("mouseleave", function () {
+      document.body.style.cursor = "url('assets/peace-dove1-pixel.png'), auto";
+  });
+
+  videoContainer.addEventListener("mouseenter", function () {
+      document.body.style.cursor = "default";
+  });
 });
