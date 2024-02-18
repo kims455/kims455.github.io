@@ -26,7 +26,6 @@ function removeDots() {
 removeDots();
 
 
-
 // Overlay container sentences appear every 2 sec
 const overlayTexts = document.querySelectorAll('.overlay-text');
 
@@ -40,9 +39,6 @@ function showNextText() {
 }
 
 setInterval(showNextText, 2000);
-
-
-
 
 // Disappear when the user scrolls
 window.addEventListener('scroll', function() {
@@ -70,3 +66,4 @@ document.addEventListener("DOMContentLoaded", function () {
       document.body.style.cursor = "default";
   });
 });
+

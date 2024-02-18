@@ -197,7 +197,7 @@ body, html {
     max-width: 600px;
     height: auto;
     opacity: 1;
-    animation: fadeOutVideo 13s ease-in-out forwards;
+    animation: fadeOutVideo 33s ease-in-out forwards;
     cursor: auto;
 }
 
@@ -213,7 +213,7 @@ body, html {
     transform: translate(-50%, -50%);
     opacity: 0;
     animation: fadeInText 6s ease-in-out forwards;
-    animation-delay: 5s;
+    animation-delay: 16s;
     z-index: 999;
 }
 

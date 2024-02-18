@@ -176,10 +176,6 @@ body, html {
   }
 }
 
-.paper-dove2:hover {
-  filter: hue-rotate(90deg) brightness(108%) saturate(200%);
-}
-
 /* Cursor Tracer */
 #tracer {
   position: fixed;
