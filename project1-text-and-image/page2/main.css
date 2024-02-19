@@ -74,7 +74,9 @@ body, html {
 .paper-dove5 {
     position: absolute;
     width: 8%;
-    height: auto; 
+    height: auto;
+    opacity: 0; 
+    animation: fadeIn 0.2s ease-in-out 0.2s forwards; 
 }
 
 .paper-dove1 {
@@ -112,8 +114,17 @@ body, html {
 .paper-dove3:hover,
 .paper-dove4:hover,
 .paper-dove5:hover {
-    transform: scale(1.6); 
-    transition: transform 0.6s ease; 
+    transform: scale(1.6);
+    transition: transform 0.6s ease;
     filter: hue-rotate(90deg) brightness(108%) saturate(200%);
     cursor: grab;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
