@@ -45,7 +45,6 @@ body, html {
     height: 100%;
     overflow: hidden;
     text-align: center;
-    z-index: 1; 
 }
 
 .paper-photo {
@@ -54,15 +53,6 @@ body, html {
     display: block;
     margin: 0 auto;
     object-fit: cover;
-}
-
-.next-page-button {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
 }
 
 .paper-dove1,
