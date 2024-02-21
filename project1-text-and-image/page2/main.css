@@ -3,7 +3,7 @@ body, html {
     padding: 0;
     height: 100%;
     background-color: black;
-    cursor: url('assets/peace-dove1-pixel.png'), auto;
+    cursor: url('assets/dove-cursor.png'), auto;
 }
 
 .button-container {

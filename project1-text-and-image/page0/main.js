@@ -59,11 +59,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const videoContainer = document.getElementById("video-container");
 
   videoContainer.addEventListener("mouseleave", function () {
-      document.body.style.cursor = "url('assets/peace-dove1-pixel.png'), auto";
+      document.body.style.cursor = "url('assets/dove-cursor.png'), auto";
   });
 
   videoContainer.addEventListener("mouseenter", function () {
       document.body.style.cursor = "default";
   });
 });
-
