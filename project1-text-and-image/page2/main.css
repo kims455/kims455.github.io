@@ -64,8 +64,8 @@ body, html {
     position: absolute;
     width: 8%;
     height: auto;
-    opacity: 0; 
-    animation: fadeIn 0.2s ease-in-out 0.2s forwards; 
+    opacity: 0; /* Initially set opacity to 0 */
+    animation: fadeIn 0.2s ease-in-out forwards; /* Apply fadeIn animation */
 }
 
 .paper-dove1 {
