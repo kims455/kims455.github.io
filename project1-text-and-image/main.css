@@ -92,7 +92,7 @@ body, html {
 }
 
 .paper-dove5:hover {
-  filter: hue-rotate(90deg) brightness(108%) saturate(200%);
+  filter: hue-rotate(270deg) brightness(110%) saturate(120%);
 }
 
 /* Paper dove 3 */
@@ -152,7 +152,7 @@ body, html {
 }
 
 .paper-dove4:hover {
-  filter: hue-rotate(90deg) brightness(108%) saturate(200%);
+  filter: hue-rotate(270deg) brightness(110%) saturate(120%);
 }
 
 /* Paper dove 2 */
@@ -183,7 +183,7 @@ body, html {
 }
 
 .paper-dove2:hover {
-  filter: hue-rotate(90deg) brightness(108%) saturate(200%);
+  filter: hue-rotate(270deg) brightness(110%) saturate(120%);
 }
 
 /* Cursor Tracer */
