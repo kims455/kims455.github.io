@@ -15,28 +15,19 @@ body, html {
 }
 
 .home {
-    background-color: transparent;
-    color: #f3f3f3;
-    cursor: pointer;
-    display: inline-block;
-    font-family: "termina", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 14px;
-    padding: 0 10px;
-    line-height: 25px;
-    text-align: center;
-    text-decoration: none;
-}
-
-.home {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
 
+.home img {
+    width: 58px; 
+    height: auto; 
+}
+
 .home:hover {
-    color: rgb(229, 0, 0);
+    filter: hue-rotate(90deg) brightness(108%) saturate(200%);
+    cursor: grab;    
 }
 
 .original-photo {
@@ -64,8 +55,8 @@ body, html {
     position: absolute;
     width: 8%;
     height: auto;
-    opacity: 0; /* Initially set opacity to 0 */
-    animation: fadeIn 0.2s ease-in-out forwards; /* Apply fadeIn animation */
+    opacity: 0; 
+    animation: fadeIn 0.8s ease-in-out forwards;
 }
 
 .paper-dove1 {
