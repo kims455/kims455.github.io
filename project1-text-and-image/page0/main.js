@@ -11,7 +11,7 @@ document.addEventListener("mousemove", function(event) {
   tracer.appendChild(dot);
   dots.push(dot);
 
-  if (dots.length > 50) {
+  if (dots.length > 40) {
     tracer.removeChild(dots.shift());
   }
 });
@@ -19,7 +19,7 @@ document.addEventListener("mousemove", function(event) {
 function removeDots() {
   if (dots.length > 0) {
     tracer.removeChild(dots.shift());
-    setTimeout(removeDots, 60);
+    setTimeout(removeDots, 50);
   }
 }
 

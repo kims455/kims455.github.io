@@ -26,7 +26,7 @@ body, html {
 }
 
 .home:hover {
-    filter: hue-rotate(90deg) brightness(108%) saturate(200%);
+    filter: hue-rotate(495deg) brightness(108%) saturate(250%);
     cursor: grab;    
 }
 

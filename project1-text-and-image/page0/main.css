@@ -28,7 +28,7 @@ body, html {
 }
 
 .home:hover {
-    filter: hue-rotate(90deg) brightness(108%) saturate(200%);
+    filter: hue-rotate(495deg) brightness(108%) saturate(250%);
     cursor: grab;    
 }
 
@@ -268,11 +268,11 @@ body, html {
   
 .dot {
     position: absolute;
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     background-color: #2998ff;
-    opacity: 0.65;
+    opacity: 0.55;
     transform: translate(-50%, -50%);
     filter: blur(1.8px);
 }
