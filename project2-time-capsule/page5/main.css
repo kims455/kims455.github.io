@@ -67,11 +67,6 @@ h1 {
     transition: filter 0.5s ease;
 }
 
-.time-capsule:hover {
-    filter: invert(var(--value, 90%));
-    cursor: grab;
-}
-
 p {
     margin: 0 auto;
     text-align: center;
