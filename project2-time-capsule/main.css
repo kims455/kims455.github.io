@@ -47,13 +47,14 @@ body, html {
 
 h1 {
     font-size: 2.7em;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
     text-align: center;
     color: blue;
 }
 
 p {
+    font-size: 1em;
     margin: 0 auto;
     text-align: center;
     width: 40%;
@@ -62,7 +63,7 @@ p {
 
 .image-container {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 10px;
     position: relative; 
 }
 
@@ -71,32 +72,77 @@ p {
 .mickey-mp3,
 .ipod-nano,
 .ipod-touch,
-.iphone3gs,
 .iphone6s,
 .iphone8plus,
 .iphone13promax {
     width: 10%; 
     height: auto;
     position: absolute; 
-    margin: 20px; 
-    margin-top: 140px;
+    margin: 25px; 
+    margin-top: 130px;
+}
+
+.iphone3gs {
+    width: 8.4%; 
+    height: auto;
+    position: absolute; 
+    margin: 25px; 
+    margin-top: 170px;
 }
 
 .iphonexsmax {
     width: 9%; 
     height: auto;
     position: absolute; 
-    margin: 20px; 
+    margin: 25px; 
     margin-top: 140px;
 }
 
-.sdcard { transform: rotate(-9deg); top: 60px; left: 0; }
-.iriver-mp3 { transform: rotate(0deg); top: 60px; left: 15%; }
-.mickey-mp3 { transform: rotate(12deg); top: 60px; left: 30%; }
-.ipod-nano { transform: rotate(-5deg); top: 60px; left: 45%; }
-.ipod-touch { transform: rotate(4deg); top: 50px; left: 60%; }
-.iphone3gs { transform: rotate(0deg); top: 15px; left: 75%; }
-.iphone6s { transform: rotate(-7deg); top: 10px; left: 90%; }
-.iphone8plus { transform: rotate(5deg); top: 10px; left: 105%; }
-.iphonexsmax { transform: rotate(-2deg); top: 10px; left: 120%; }
-.iphone13promax { transform: rotate(-8deg); top: 10px; left: 135%; }
+.sdcard { transform: rotate(-9deg); top: 65px; left: 0;}
+.iriver-mp3 { transform: rotate(0deg); top: 65px; left: 15%;}
+.mickey-mp3 { transform: rotate(10deg); top: 65px; left: 30%;}
+.ipod-nano { transform: rotate(-5deg); top: 65px; left: 45%;}
+.ipod-touch { transform: rotate(4deg); top: 50px; left: 60%;}
+.iphone3gs { transform: rotate(2deg); top: 15px; left: 75%;}
+.iphone6s { transform: rotate(-5deg); top: 10px; left: 90%;}
+.iphone8plus { transform: rotate(3deg); top: 10px; left: 105%;}
+.iphonexsmax { transform: rotate(-2deg); top: 10px; left: 120%;}
+.iphone13promax { transform: rotate(7deg); top: 10px; left: 135%;}
+
+.old-earbuds {
+    width: 8%;
+    display: block;
+    margin: 0 auto;
+}
+
+.timeline {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-30%);
+    padding: 50px;
+    border-radius: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+    opacity: 10%;
+}
+
+.timeline-item {
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
+    margin-right: 95px;
+}
+
+.timeline-date {
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: block; 
+}
+
+.timeline-content {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px; 
+}
+
