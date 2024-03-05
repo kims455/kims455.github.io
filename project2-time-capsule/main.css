@@ -90,7 +90,7 @@ p {
     margin-top: 140px;
 }
 
-.sdcard { transform: rotate(-10deg); top: 50px; left: 0; }
+.sdcard { transform: rotate(-9deg); top: 50px; left: 0; }
 .iriver-mp3 { transform: rotate(0deg); top: 50px; left: 15%; }
 .mickey-mp3 { transform: rotate(12deg); top: 50px; left: 30%; }
 .ipod-nano { transform: rotate(-5deg); top: 50px; left: 45%; }
