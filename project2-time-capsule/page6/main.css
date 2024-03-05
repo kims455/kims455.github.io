@@ -5,7 +5,7 @@ body, html {
 
 .button-container {
     position: fixed;
-    top: 13px;
+    top: 11px;
     right: 4px;
     left: 4px;
     z-index: 999;
@@ -16,7 +16,6 @@ body, html {
     color: #808080;
     cursor: pointer;
     display: inline-block;
-    font-family: "termina", sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: 14px;
