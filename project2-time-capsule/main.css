@@ -90,11 +90,11 @@ p {
     margin-top: 140px;
 }
 
-.sdcard { transform: rotate(-9deg); top: 50px; left: 0; }
-.iriver-mp3 { transform: rotate(0deg); top: 50px; left: 15%; }
-.mickey-mp3 { transform: rotate(12deg); top: 50px; left: 30%; }
-.ipod-nano { transform: rotate(-5deg); top: 50px; left: 45%; }
-.ipod-touch { transform: rotate(7deg); top: 50px; left: 60%; }
+.sdcard { transform: rotate(-9deg); top: 60px; left: 0; }
+.iriver-mp3 { transform: rotate(0deg); top: 60px; left: 15%; }
+.mickey-mp3 { transform: rotate(12deg); top: 60px; left: 30%; }
+.ipod-nano { transform: rotate(-5deg); top: 60px; left: 45%; }
+.ipod-touch { transform: rotate(4deg); top: 50px; left: 60%; }
 .iphone3gs { transform: rotate(0deg); top: 15px; left: 75%; }
 .iphone6s { transform: rotate(-7deg); top: 10px; left: 90%; }
 .iphone8plus { transform: rotate(5deg); top: 10px; left: 105%; }
