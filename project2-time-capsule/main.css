@@ -3,7 +3,7 @@ body, html {
     font-family: "aktiv-grotesk-georgian", sans-serif;
 }
 
-.button-container {
+/* .button-container {
     position: fixed;
     top: 11px;
     right: 4px;
@@ -43,7 +43,7 @@ body, html {
 
 .forward:hover, .backward:hover, .home:hover {
     color: #dd0000;
-}
+} */
 
 h1 {
     font-size: 2.7em;
@@ -61,85 +61,162 @@ p {
     margin-top: 40px;
 }
 
+.center-line {
+    border: none;
+    border-top: 2px solid blue;
+    width: 340%; 
+    margin: auto;
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%);
+}
+
 .image-container {
     text-align: center;
-    margin-top: 10px;
     position: relative; 
+    margin: 10px;
 }
 
-.sdcard,
-.iriver-mp3,
-.mickey-mp3,
-.ipod-nano,
-.ipod-touch,
-.iphone6s {
-    width: 10%; 
+.sdcard {
+    width: 9%; 
     height: auto;
     position: absolute; 
     margin: 25px; 
-    margin-top: 130px;
+    margin-top: 150px;
+    cursor: grab;
 }
 
-.iphone3gs {
-    width: 8.4%; 
-    height: auto;
-    position: absolute; 
-    margin: 25px; 
-    margin-top: 170px;
-}
-
-.galaxy-m {
-    width: 11.7%; 
-    height: auto;
-    position: absolute; 
-    margin: 25px; 
-    margin-top: 160px;
-}
-
-.lg-slider {
-    width: 12.7%; 
-    height: auto;
-    position: absolute; 
-    margin: 25px; 
-    margin-top: 160px;
-}
-
-.iphone8plus {
-    width: 10.5%; 
-    height: auto;
-    position: absolute; 
-    margin: 25px; 
-    margin-top: 130px;
-}
-
-.iphonexsmax {
-    width: 9.5%; 
+.mixtape {
+    width: 20%; 
     height: auto;
     position: absolute; 
     margin: 25px; 
     margin-top: 140px;
+    cursor: grab;
 }
 
-.iphone13promax {
+.cd-player {
+    width: 35%; 
+    height: auto;
+    position: absolute; 
+    margin: 25px; 
+    margin-top: 70px;
+    cursor: grab;
+}
+
+.iriver-mp3 {
     width: 11%; 
     height: auto;
     position: absolute; 
     margin: 25px; 
-    margin-top: 130px; 
+    margin-top: 135px;
+    cursor: grab;
+}
+
+.mickey-mp3 {
+    width: 11%; 
+    height: auto;
+    position: absolute; 
+    margin: 25px; 
+    margin-top: 140px;
+    cursor: grab;
+}
+
+.iphone3gs {
+    width: 16%; 
+    height: auto;
+    position: absolute; 
+    margin: 25px; 
+    margin-top: 90px;
+    cursor: grab;
+}
+
+.galaxy-m {
+    width: 23%; 
+    height: auto;
+    position: absolute; 
+    margin: 25px; 
+    margin-top: 100px;
+    cursor: grab;
+}
+
+.lg-slider {
+    width: 25%; 
+    height: auto;
+    position: absolute; 
+    margin: 25px; 
+    margin-top: 100px;
+    cursor: grab;
+}
+
+.ipod-nano {
+    width: 16%; 
+    height: auto;
+    position: absolute; 
+    margin: 25px; 
+    margin-top: 100px;
+    cursor: grab;
+}
+
+.ipod-touch {
+    width: 20%; 
+    height: auto;
+    position: absolute; 
+    margin: 25px; 
+    margin-top: 90px;
+    cursor: grab;
+}
+
+.iphone6s {
+    width: 19%; 
+    height: auto;
+    position: absolute; 
+    margin: 25px; 
+    margin-top: 90px;
+    cursor: grab;
+}
+
+.iphone8plus {
+    width: 22%; 
+    height: auto;
+    position: absolute; 
+    margin: 25px; 
+    margin-top: 100px;
+    cursor: grab;
+}
+
+.iphonexsmax {
+    width: 20%; 
+    height: auto;
+    position: absolute; 
+    margin: 25px; 
+    margin-top: 100px;
+    cursor: grab;
+}
+
+.iphone13promax {
+    width: 23%; 
+    height: auto;
+    position: absolute; 
+    margin: 25px; 
+    margin-top: 100px; 
+    cursor: grab; 
 }
 
 .sdcard { transform: rotate(-9deg); top: 65px; left: 0;}
-.iriver-mp3 { transform: rotate(0deg); top: 65px; left: 15%;}
-.mickey-mp3 { transform: rotate(5deg); top: 65px; left: 30%;}
-.iphone3gs { transform: rotate(-2deg); top: 15px; left: 45%;}
-.galaxy-m { transform: rotate(2deg); top: 15px; left: 60%;}
-.lg-slider { transform: rotate(-1deg); top: 65px; left: 75%;}
-.ipod-nano { transform: rotate(-5deg); top: 65px; left: 90%;}
-.ipod-touch { transform: rotate(4deg); top: 50px; left: 105%;}
-.iphone6s { transform: rotate(-5deg); top: 10px; left: 120%;}
-.iphone8plus { transform: rotate(3deg); top: 10px; left: 135%;}
-.iphonexsmax { transform: rotate(-2deg); top: 10px; left: 150%;}
-.iphone13promax { transform: rotate(5deg); top: 15px; left: 165%;}
+.mixtape { transform: rotate(3deg); top: 65px; left: 15%;}
+.cd-player { transform: rotate(-5deg); top: 65px; left: 40%;}
+.iriver-mp3 { transform: rotate(0deg); top: 65px; left: 79%;}
+.mickey-mp3 { transform: rotate(5deg); top: 65px; left: 97%;}
+.iphone3gs { transform: rotate(-2deg); top: 5px; left: 115%;}
+.galaxy-m { transform: rotate(2deg); top: -15px; left: 135%;}
+.lg-slider { transform: rotate(-1deg); top: 45px; left: 162%;}
+.ipod-nano { transform: rotate(-5deg); top: 50px; left: 192%;}
+.ipod-touch { transform: rotate(4deg); top: 10px; left: 212%;}
+.iphone6s { transform: rotate(-5deg); top: -45px; left: 237%;}
+.iphone8plus { transform: rotate(3deg); top: -135px; left: 262%;}
+.iphonexsmax { transform: rotate(-2deg); top: -135px; left: 292%;}
+.iphone13promax { transform: rotate(5deg); top: -145px; left: 320%;}
 
 .old-earbuds {
     width: 8%;
@@ -156,7 +233,8 @@ p {
     border-radius: 10px;
     overflow-x: auto;
     white-space: nowrap;
-    opacity: 10%;
+    opacity: 100%;
+    color: gray;
 }
 
 .timeline-item {
