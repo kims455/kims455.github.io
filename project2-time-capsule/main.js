@@ -14,5 +14,3 @@ $(window).mousemove(function(event) {
   $("h1").css("top",event.pageY + "px");
   $("h1").css("left",event.pageX + "px");
 });
-
-
