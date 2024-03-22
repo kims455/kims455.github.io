@@ -1,0 +1,74 @@
+body, html {
+    background-color: whitesmoke;
+    font-family: "aktiv-grotesk-georgian", sans-serif;
+}
+
+.button-container {
+    position: fixed;
+    top: 11px;
+    right: 4px;
+    left: 4px;
+    z-index: 999;
+}
+
+.backward, .home, .forward {
+    background-color: transparent;
+    color: #808080;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    padding: 0 10px;
+    line-height: 25px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.backward {
+    position: absolute;
+    left: 11px;
+}
+
+.home {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.forward {
+    position: absolute;
+    right: 11px;
+}
+
+.forward:hover, .backward:hover, .home:hover {
+    color: #dd0000;
+}
+
+h1 {
+    font-size: 2.7em;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    color: blue;
+}
+
+.image-container {
+    text-align: center; 
+}
+
+.time-capsule {
+    text-align: center;
+    width: 25%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    transition: filter 0.5s ease;
+}
+
+p {
+    margin: 0 auto;
+    text-align: center;
+    width: 40%;
+    margin-top: 40px;
+}
