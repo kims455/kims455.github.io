@@ -6,7 +6,7 @@ body, html {
 .center-line {
     border: none;
     border-top: 1.5px solid blue;
-    width: 370%; 
+    width: 6000px; 
     position: absolute; 
     top: 50%; 
     transform: translateY(-50%);
@@ -15,14 +15,14 @@ body, html {
 .text-container {
     position: absolute;
     top: 50%;
-    left: 12%; 
+    left: 16%; 
     transform: translate(-50%, -50%);
     text-align: left;
     z-index: 1; 
 }
 
 h1 {
-    font-size: 1.5em;
+    font-size: 1.6em;
     font-weight: 400;
     font-style: normal;
 }
@@ -36,7 +36,7 @@ p {
 .image-container {
     text-align: center;
     position: absolute;
-    width: 6000px;
+    width: 6100px;
     top: 50%;
     left: 300px;
     transform: translateY(-50%);
@@ -63,7 +63,7 @@ p {
 }
 
 .image-text1 {
-    font-size: 0.9em;
+    font-size: 1em;
     font-weight: 400;
     font-style: normal;
     text-align: center;
@@ -81,7 +81,20 @@ p {
     font-style: normal;
     text-align: center;
     position: absolute;
-    bottom: -105px;
+    bottom: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    z-index: 1;
+}
+
+.image-text3 {
+    font-size: 0.9em;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    position: absolute;
+    bottom: -165px;
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
@@ -89,7 +102,8 @@ p {
 }
 
 .image-wrapper:hover .image-text1,
-.image-wrapper:hover .image-text2 {
+.image-wrapper:hover .image-text2,
+.image-wrapper:hover .image-text3 {
     opacity: 1; 
 }
 
