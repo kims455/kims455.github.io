@@ -229,32 +229,69 @@ p {
     margin: 0 auto;
 }
 
-/* .timeline {
-    position: absolute;
-    bottom: 30px;
-    left: 135%;
-    transform: translateX(-30%);
-    border-radius: 10px;
-    overflow-x: auto;
-    white-space: nowrap;
-    opacity: 100%;
-    color: gray;
-}
+@media only screen and (max-width: 768px) {
+    body {
+        min-height: 5000px; 
+        max-width: 768px;
+    }
 
-.timeline-item {
-    display: inline-block;
-    vertical-align: top;
-    width: auto;
-    margin-right: 230px;
-}
+    .center-line {
+        width: 100%;
+        left: 0;
+        top: 20%; 
+        transform: translateY(-50%);
+    }
 
-.timeline-date {
-    font-weight: bold;
-    margin-bottom: 20px;
-    display: block; 
-}
+    .text-container {
+        width: 80%;
+        left: 50%;
+        top: 20%; 
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
 
-.timeline-content {
-    padding: 10px;
-    margin-bottom: 20px; 
-} */
+    .image-container {
+        width: 70%;
+        left: 50%;
+        bottom: 30%; 
+        transform: translate(-50%, -50%);
+    }
+
+    .image-wrapper {
+        margin-right: 0;
+        margin-bottom: 200px;
+    }
+
+    .image-text1,
+    .image-text2,
+    .image-text3 {
+        text-align: center;
+    }
+
+    .image-text1 {
+        bottom: -40px;
+    }
+
+    .image-text2 {
+        bottom: -70px;
+    }
+
+    .image-text3 {
+        bottom: -100px;
+    }
+
+    .sdcard,
+    .iriver-mp3,
+    .mickey-mp3,
+    .ipod-nano,
+    .ipod-touch,
+    .iphone3gs,
+    .iphone6s,
+    .iphone8plus,
+    .iphonexsmax,
+    .iphone13promax {
+        width: 70%;
+        height: auto;
+        margin: 0 30px;
+    }
+}
