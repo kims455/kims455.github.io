@@ -1,5 +1,5 @@
 body, html {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: monospace;
     cursor: url('assets/pointing-finger.png'), auto;
 }
 
@@ -28,7 +28,7 @@ h1 {
 }
 
 p {
-    font-size: 0.9em;
+    font-size: 1em;
     font-weight: 400;
     font-style: normal;
 }
@@ -36,7 +36,7 @@ p {
 .image-container {
     text-align: center;
     position: absolute;
-    width: 5000px;
+    width: 6000px;
     top: 50%;
     left: 300px;
     transform: translateY(-50%);
@@ -55,27 +55,41 @@ p {
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    margin-right: 100px;
+    margin-right: 150px;
 }
 
 .image-wrapper img {
     vertical-align: middle;
 }
 
-.image-text {
+.image-text1 {
     font-size: 0.9em;
     font-weight: 400;
     font-style: normal;
     text-align: center;
     position: absolute;
-    bottom: -50px;
+    bottom: -70px; 
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
     z-index: 1;
 }
 
-.image-wrapper:hover .image-text {
+.image-text2 {
+    font-size: 0.9em;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    position: absolute;
+    bottom: -105px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    z-index: 1;
+}
+
+.image-wrapper:hover .image-text1,
+.image-wrapper:hover .image-text2 {
     opacity: 1; 
 }
 
@@ -83,20 +97,117 @@ p {
     cursor: url('assets/ear.png'), auto;
 } */
 
-.sdcard { transform: rotate(-9deg); top: 60px; left: 0;}
-.mixtape { transform: rotate(3deg); top: 55px; left: 15%;}
-.cd-player { transform: rotate(-5deg); top: 40px; left: 40%;}
-.iriver-mp3 { transform: rotate(0deg); top: 65px; left: 79%;}
-.mickey-mp3 { transform: rotate(5deg); top: 65px; left: 97%;}
-.iphone3gs { transform: rotate(-2deg); top: 5px; left: 115%;}
-.galaxy-m { transform: rotate(2deg); top: -15px; left: 135%;}
-.lg-slider { transform: rotate(-1deg); top: 45px; left: 162%;}
-.ipod-nano { transform: rotate(-5deg); top: 50px; left: 192%;}
-.ipod-touch { transform: rotate(4deg); top: 10px; left: 212%;}
-.iphone6s { transform: rotate(-5deg); top: -45px; left: 237%;}
-.iphone8plus { transform: rotate(3deg); top: -135px; left: 262%;}
-.iphonexsmax { transform: rotate(-2deg); top: -135px; left: 292%;}
-.iphone13promax { transform: rotate(5deg); top: -145px; left: 320%;}
+.sdcard {
+    width: 80%; 
+    height: auto;
+    /* position: absolute; 
+    margin: 25px; 
+    margin-top: 315px;  */
+}
+
+.mixtape {
+    width: 100%; 
+    height: auto;
+    /* position: absolute; 
+    margin: 25px; 
+    margin-top: 280px;  */
+}
+
+.cd-player {
+    width: 100%; 
+    height: auto;
+    /* position: absolute; 
+    margin: 25px; 
+    margin-top: 210px;  */
+}
+
+.iriver-mp3 {
+    width: 89%; 
+    height: auto;
+    /* position: absolute; 
+    margin: 25px; 
+    margin-top: 295px;  */
+}
+
+.mickey-mp3 {
+    width: 73%; 
+    height: auto;
+    /* position: absolute; 
+    margin: 25px; 
+    margin-top: 300px;  */
+}
+
+.iphone3gs {
+    width: 92%; 
+    height: auto;
+    /* position: absolute; 
+    margin: 25px; 
+    margin-top: 220px; */
+}
+
+.galaxy-m {
+    width: 100%; 
+    height: auto;
+    /* position: absolute; 
+    margin: 25px; 
+    margin-top: 230px; */
+}
+
+.lg-slider {
+    width: 101%; 
+    height: auto;
+    /* position: absolute; 
+    margin: 25px; 
+    margin-top: 230px;  */
+}
+
+.ipod-nano {
+    width: 92%; 
+    height: auto;
+    /* position: absolute; 
+    margin: 25px; 
+    margin-top: 240px;  */
+}
+
+.ipod-touch {
+    width: 109%; 
+    height: auto;
+    /* position: absolute; 
+    margin: 25px; 
+    margin-top: 220px;  */
+}
+
+.iphone6s {
+    width: 125%; 
+    height: auto;
+    /* position: absolute; 
+    margin: 25px; 
+    margin-top: 220px;  */
+}
+
+.iphone8plus {
+    width: 133%; 
+    height: auto;
+    /* position: absolute; 
+    margin: 25px; 
+    margin-top: 245px;  */
+}
+
+.iphonexsmax {
+    width: 145%; 
+    height: auto;
+    /* position: absolute; 
+    margin: 25px; 
+    margin-top: 245px;  */
+}
+
+.iphone13promax {
+    width: 146%; 
+    height: auto;
+    /* position: absolute; 
+    margin: 25px; 
+    margin-top: 245px;  */
+}
 
 .old-earbuds {
     width: 8%;
@@ -104,7 +215,7 @@ p {
     margin: 0 auto;
 }
 
-.timeline {
+/* .timeline {
     position: absolute;
     bottom: 30px;
     left: 135%;
@@ -132,4 +243,4 @@ p {
 .timeline-content {
     padding: 10px;
     margin-bottom: 20px; 
-}
+} */
