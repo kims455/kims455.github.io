@@ -108,7 +108,7 @@ p {
     text-align: left;
     line-height: 1.4;
     position: absolute;
-    bottom: -235px;
+    bottom: -295px;
     left: 60%;
     transform: translateX(-50%);
     opacity: 0;
@@ -191,17 +191,17 @@ p {
 }
 
 .iriver-mp3 {
-    width: 89%; 
+    width: 90%; 
     height: auto;
 }
 
 .mickey-mp3 {
-    width: 73%; 
+    width: 82%; 
     height: auto;
 }
 
 .iphone3gs {
-    width: 92%; 
+    width: 100%; 
     height: auto;
 }
 
@@ -221,7 +221,7 @@ p {
 }
 
 .ipod-touch {
-    width: 109%; 
+    width: 110%; 
     height: auto;
 }
 
