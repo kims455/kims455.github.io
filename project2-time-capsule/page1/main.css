@@ -5,8 +5,8 @@ body, html {
 
 .center-line {
     border: none;
-    border-top: 1.5px solid blue;
-    width: 8800px; 
+    border-top: 1.6px solid blue;
+    width: 9200px; 
     position: absolute; 
     top: 50%; 
     transform: translateY(-50%);
@@ -15,7 +15,7 @@ body, html {
 .text-container {
     position: absolute;
     top: 50%;
-    left: 280px; 
+    left: 270px; 
     transform: translate(-50%, -50%);
     text-align: left;
     z-index: 1; 
@@ -25,41 +25,40 @@ h1 {
     font-size: 16pt;
     font-weight: 400;
     font-style: normal;
+    line-height: 2;    
 }
 
 p {
     font-size: 10pt;
     font-weight: 400;
     font-style: normal;
+    line-height: 1.5;    
 }
 
 .image-container {
     text-align: center;
     position: absolute;
-    width: 8300px;
+    width: 8500px;
     top: 50%;
     left: 720px;
     transform: translateY(-50%);
 }
 
 .image-container img {
-    filter: grayscale(100%); 
+    filter: grayscale(100%) drop-shadow(2px 2px 3px #c9c9c9); 
     transition: filter 0.3s ease; 
 }
 
 .image-container img:hover {
     filter: grayscale(0%);
+    filter: drop-shadow(2px 2px 2px #c9c9c9);
 }
 
 .image-wrapper {
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    margin-right: 380px;
-}
-
-.image-wrapper img {
-    vertical-align: middle;
+    margin-right: 390px;
 }
 
 .image-text1 {
@@ -172,73 +171,21 @@ p {
     cursor: url('assets/ear.png'), auto;
 } */
 
-.sdcard {
-    width: 100%; 
-    height: auto;
-}
-
-.cassette {
-    width: 100%; 
-    height: auto;
-}
-
-.cd-player {
-    width: 100%; 
-    height: auto;
-}
-
-.iriver-mp3 {
-    width: 100%; 
-    height: auto;
-}
-
-.mickey-mp3 {
-    width: 100%; 
-    height: auto;
-}
-
-.iphone3gs {
-    width: 100%; 
-    height: auto;
-}
-
-.galaxy-m {
-    width: 100%; 
-    height: auto;
-}
-
-.lg-slider {
-    width: 100%; 
-    height: auto;
-}
-
-.ipod-nano {
-    width: 100%; 
-    height: auto;
-}
-
-.ipod-touch {
-    width: 100%; 
-    height: auto;
-}
-
-.iphone6s {
-    width: 100%; 
-    height: auto;
-}
-
-.iphone8plus {
-    width: 100%; 
-    height: auto;
-}
-
-.iphonexsmax {
-    width: 100%; 
-    height: auto;
-}
-
+.sdcard,
+.cassette,
+.cd-player,
+.iriver-mp3,
+.mickey-mp3,
+.iphone3gs,
+.galaxy-m,
+.lg-slider,
+.ipod-nano,
+.ipod-touch,
+.iphone6s,
+.iphone8plus,
+.iphonexsmax,
 .iphone13promax {
-    width: 100%; 
+    width: 100%;
     height: auto;
 }
 
@@ -251,6 +198,19 @@ p {
 @media only screen and (max-width: 700px) {
     body {
         min-height: 4800px; 
+    }
+
+    h1 {
+        font-size: 14pt;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 1.8;    
+    }
+    
+    p {
+        font-size: 8pt;
+        font-weight: 400;
+        font-style: normal;
     }
 
     .center-line {
@@ -308,7 +268,7 @@ p {
     .story13,
     .story14 {
         text-align: center;
-        width: 300px;
+        width: 350px;
     }
 
     .image-text1 {
@@ -317,7 +277,7 @@ p {
         font-style: normal;
         text-align: center;
         position: absolute;
-        bottom: 300px; 
+        bottom: 330px; 
         left: 50%;
         transform: translateX(-50%);
         opacity: 0;
@@ -330,7 +290,7 @@ p {
         font-style: normal;
         text-align: center;
         position: absolute;
-        bottom: 270px;
+        bottom: 300px;
         left: 50%;
         transform: translateX(-50%);
         opacity: 0;
@@ -343,7 +303,7 @@ p {
         font-style: normal;
         text-align: center;
         position: absolute;
-        bottom: 240px;
+        bottom: 270px;
         left: 50%;
         transform: translateX(-50%);
         opacity: 0;
@@ -370,34 +330,26 @@ p {
         text-align: left;
         line-height: 1.4;
         position: absolute;
-        bottom: -300px;
+        bottom: -220px;
         left: 50%;
         transform: translateX(-50%);
         opacity: 0;
         z-index: 1;
     }
 
-    .sdcard {
-        width: 70%;
-        height: auto;
-    }
-
+    .sdcard,
     .cassette,
     .cd-player,
     .iriver-mp3,
     .mickey-mp3,
-    .iphone3gs {
-        width: 100%;
-        height: auto;
-    }
-
+    .iphone3gs,
     .ipod-nano,
     .ipod-touch,
     .iphone6s,
     .iphone8plus,
     .iphonexsmax,
     .iphone13promax {
-        width: 120%;
+        width: 100%;
         height: auto;
     }
 }

@@ -1,6 +1,6 @@
 body, html {
     font-family: monospace;
-    cursor: url('assets/pointing-finger.png'), auto;
+    cursor: auto;
 }
 
 .image-container {
@@ -12,7 +12,7 @@ body, html {
 }
 
 .folder {
-    height: 40px;
+    height: 45px;
     display: block; 
     margin: 0 auto;
 }
