@@ -5,8 +5,8 @@ body, html {
 
 .center-line {
     border: none;
-    border-top: 1.6px solid blue;
-    width: 9200px; 
+    border-top: 1.8px solid blue;
+    width: 10200px; 
     position: absolute; 
     top: 50%; 
     transform: translateY(-50%);
@@ -38,9 +38,9 @@ p {
 .image-container {
     text-align: center;
     position: absolute;
-    width: 8500px;
+    width: 9500px;
     top: 50%;
-    left: 720px;
+    left: 710px;
     transform: translateY(-50%);
 }
 
@@ -58,7 +58,7 @@ p {
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    margin-right: 390px;
+    margin-right: 425px;
 }
 
 .image-text1 {
@@ -98,6 +98,18 @@ p {
     transform: translateX(-50%);
     opacity: 0;
     z-index: 1;
+}
+
+.continued {
+    font-size: 8pt;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    bottom: 1px;
+    position: absolute;
+    transform: translateX(-50%);
+    z-index: 1;
+    margin-left: 60px;
 }
 
 .story1,
@@ -197,7 +209,7 @@ p {
 
 @media only screen and (max-width: 700px) {
     body {
-        min-height: 4800px; 
+        min-height: 4100px; 
     }
 
     h1 {
@@ -218,7 +230,7 @@ p {
     }
 
     .vertical-line {
-        height: 10400px;
+        height: 11800px;
         position: absolute;
         top: 0;
         bottom: 0;
@@ -229,7 +241,7 @@ p {
     .text-container {
         width: 80%;
         left: 50%;
-        top: 20%; 
+        top: 15%; 
         transform: translate(-50%, -50%);
         text-align: center;
     }
@@ -243,7 +255,7 @@ p {
 
     .image-wrapper {
         margin-right: 0;
-        margin-bottom: 500px;
+        margin-bottom: 600px;
     }
 
     .image-text1,
@@ -308,6 +320,10 @@ p {
         transform: translateX(-50%);
         opacity: 0;
         z-index: 1;
+    }
+
+    .continued {
+        top: 50%;
     }
 
     .story1,
