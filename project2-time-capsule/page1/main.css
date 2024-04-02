@@ -295,7 +295,7 @@ p {
         text-align: center;
         position: absolute;
         bottom: 320px; 
-        left: 50%;
+        left: 53%;
         transform: translateX(-50%);
         opacity: 0;
         z-index: 1;
@@ -308,7 +308,7 @@ p {
         text-align: center;
         position: absolute;
         bottom: 290px;
-        left: 50%;
+        left: 53%;
         transform: translateX(-50%);
         opacity: 0;
         z-index: 1;
@@ -321,7 +321,7 @@ p {
         text-align: center;
         position: absolute;
         bottom: 260px;
-        left: 50%;
+        left: 53%;
         transform: translateX(-50%);
         opacity: 0;
         z-index: 1;
@@ -351,7 +351,7 @@ p {
         text-align: left;
         line-height: 1.4;
         position: absolute;
-        left: 50%;
+        left: 53%;
         transform: translateX(-50%);
         opacity: 0;
         z-index: 1;
