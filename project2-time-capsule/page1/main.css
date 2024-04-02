@@ -294,7 +294,7 @@ p {
         font-style: normal;
         text-align: center;
         position: absolute;
-        bottom: 310px; 
+        bottom: 320px; 
         left: 50%;
         transform: translateX(-50%);
         opacity: 0;
@@ -307,7 +307,7 @@ p {
         font-style: normal;
         text-align: center;
         position: absolute;
-        bottom: 280px;
+        bottom: 290px;
         left: 50%;
         transform: translateX(-50%);
         opacity: 0;
@@ -320,7 +320,7 @@ p {
         font-style: normal;
         text-align: center;
         position: absolute;
-        bottom: 250px;
+        bottom: 260px;
         left: 50%;
         transform: translateX(-50%);
         opacity: 0;
@@ -351,7 +351,6 @@ p {
         text-align: left;
         line-height: 1.4;
         position: absolute;
-        /* bottom: -300px; */
         left: 50%;
         transform: translateX(-50%);
         opacity: 0;
@@ -364,6 +363,8 @@ p {
     .iriver-mp3,
     .mickey-mp3,
     .iphone3gs,
+    .galaxy-m,
+    .lg-slider,
     .ipod-nano,
     .ipod-touch,
     .iphone6s,
