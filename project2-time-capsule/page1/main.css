@@ -58,7 +58,7 @@ p {
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    margin-right: 425px;
+    margin-right: 455px;
 }
 
 .image-text1 {
@@ -156,7 +156,7 @@ p {
 .story12,
 .story13,
 .story14 {
-    width: 400px;
+    width: 420px;
 }
 
 .image-wrapper:hover .image-text1,
