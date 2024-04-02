@@ -100,7 +100,7 @@ p {
     z-index: 1;
 }
 
-.continued {
+/* .continued {
     font-size: 8pt;
     font-weight: 400;
     font-style: normal;
@@ -110,7 +110,7 @@ p {
     transform: translateX(-50%);
     z-index: 1;
     margin-left: 60px;
-}
+} */
 
 .story1,
 .story2,
@@ -132,7 +132,7 @@ p {
     text-align: left;
     line-height: 1.4;
     position: absolute;
-    bottom: -295px;
+    /* bottom: -295px; */
     left: 60%;
     transform: translateX(-50%);
     opacity: 0;
@@ -156,7 +156,7 @@ p {
 .story12,
 .story13,
 .story14 {
-    width: 420px;
+    width: 425px;
 }
 
 .image-wrapper:hover .image-text1,
