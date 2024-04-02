@@ -1,6 +1,10 @@
 body, html {
     font-family: monospace;
     cursor: url('assets/pointing-finger.png'), auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    -webkit-hyphenate-limit-before: 3; 
+    -webkit-hyphenate-limit-after: 2;  
 }
 
 .center-line {
@@ -58,7 +62,7 @@ p {
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    margin-right: 455px;
+    margin-right: 460px;
 }
 
 .image-text1 {
@@ -67,7 +71,7 @@ p {
     font-style: normal;
     text-align: center;
     position: absolute;
-    bottom: 380px; 
+    bottom: 350px; 
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
@@ -80,7 +84,7 @@ p {
     font-style: normal;
     text-align: center;
     position: absolute;
-    bottom: 350px;
+    bottom: 320px;
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
@@ -93,7 +97,7 @@ p {
     font-style: normal;
     text-align: center;
     position: absolute;
-    bottom: 320px;
+    bottom: 290px;
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
@@ -132,12 +136,13 @@ p {
     text-align: left;
     line-height: 1.4;
     position: absolute;
-    /* bottom: -295px; */
-    left: 60%;
+    top: 230px; 
+    left: 52%;
     transform: translateX(-50%);
     opacity: 0;
     z-index: 1;
 }
+
 
 .image-text1,
 .image-text2,
@@ -289,7 +294,7 @@ p {
         font-style: normal;
         text-align: center;
         position: absolute;
-        bottom: 330px; 
+        bottom: 310px; 
         left: 50%;
         transform: translateX(-50%);
         opacity: 0;
@@ -302,7 +307,7 @@ p {
         font-style: normal;
         text-align: center;
         position: absolute;
-        bottom: 300px;
+        bottom: 280px;
         left: 50%;
         transform: translateX(-50%);
         opacity: 0;
@@ -315,7 +320,7 @@ p {
         font-style: normal;
         text-align: center;
         position: absolute;
-        bottom: 270px;
+        bottom: 250px;
         left: 50%;
         transform: translateX(-50%);
         opacity: 0;
@@ -346,7 +351,7 @@ p {
         text-align: left;
         line-height: 1.4;
         position: absolute;
-        bottom: -220px;
+        /* bottom: -300px; */
         left: 50%;
         transform: translateX(-50%);
         opacity: 0;
