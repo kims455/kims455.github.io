@@ -1,0 +1,11 @@
+body, html {
+    background-color: darkolivegreen;
+    cursor: auto;
+}
+
+.title {
+    color: aliceblue;
+    font-size: 50pt;
+    text-align: center;
+
+}
