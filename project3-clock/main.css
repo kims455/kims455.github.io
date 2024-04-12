@@ -1,11 +1,20 @@
 body, html {
-    background-color: darkolivegreen;
+    background-color: whitesmoke;
     cursor: auto;
 }
 
 .title {
-    color: aliceblue;
-    font-size: 50pt;
+    color: black;
+    font-size: 30pt;
     text-align: center;
+}
 
+h2 {
+    text-align: center;
+}
+
+p {
+    color: black;
+    font-size: 15pt;
+    text-align: center;
 }
