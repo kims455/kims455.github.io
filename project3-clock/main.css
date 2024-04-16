@@ -1,20 +1,62 @@
 body, html {
-    background-color: whitesmoke;
+    font-family: "kepler-std", serif;
+    background-color: rgb(0, 0, 0);
     cursor: auto;
 }
 
 .title {
-    color: black;
-    font-size: 30pt;
+    font-size: 55px;
+    font-weight: 500;
+    font-style: normal;
+    color: whitesmoke;
     text-align: center;
 }
 
-h2 {
-    text-align: center;
+.clock-container {
+    display: flex;
+    width: 100%;
+    margin-top: 220px; 
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
 }
 
-p {
-    color: black;
-    font-size: 15pt;
+.edt-clock,
+.kst-clock {
     text-align: center;
+    width: 50%;
+}
+
+.edt-time,
+.kst-time {
+    display: inline-block;
+    padding: 15px;
+    background-color: whitesmoke;
+}
+
+.edt-time h1,
+.kst-time h1 {
+    font-size: 45px;
+    font-weight: 700;
+    font-style: normal;
+    margin: 0;
+    color: #1500ff;
+}
+
+.edt-time h2,
+.kst-time h2 {
+    font-size: 30px;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0;
+    color: #1500ff;
+}
+
+.edt-time p,
+.kst-time p {
+    font-size: 85px;
+    font-weight: 500;
+    font-style: normal;
+    margin: 12px 0;
+    color: #1500ff;
 }

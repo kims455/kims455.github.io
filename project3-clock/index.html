@@ -4,17 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://use.typekit.net/rhj3kjw.css">
     <link rel="icon" href="assets/.png" type="clock favicon">
     <title>The Clock</title>
 </head>
-    <h1 class="title">The Clock</h1>
+    <h1 class="title">Two Clocks</h1>
 
-    <h2>Hello, today is <span class="day"></span>, <span class="month"></span> <span class="date"></span>!</h2>
+    <div class="clock-container">
+        <div class="edt-clock">
+            <div class="edt-time">
+                <h1>New York</h1>
+                <h2><span class="day"></span>, <span class="month"></span> <span class="date"></span></h2>
+                <p><span class="hour"></span>:<span class="minutes"></span>:<span class="seconds"></span></p>
+            </div>
+        </div>
 
-    <p>...and the current time is <span class="hour"></span>:<span class="minutes"></span>:<span class="seconds"></span>.</p>
-
-
-
+        <div class="kst-clock">
+            <div class="kst-time">
+                <h1>Seoul</h1>
+                <h2><span class="kst-day"></span>, <span class="kst-month"></span> <span class="kst-date"></span></h2>
+                <p><span class="kst-hour"></span>:<span class="kst-minutes"></span>:<span class="kst-seconds"></span></p>
+            </div>
+        </div>
+    </div>
 
     <!-- Design and code your own browser-based digital clock, 
     which tells the time and (by design) also changes the way you read the time. -->
