@@ -29,7 +29,6 @@ myClock();
 
 setInterval(myClock, 0);
 
-
 // KST Clock (+13 Hours)
 function koreaTime() {
     const kstTime = new Date().toLocaleString("en-US", {timeZone: "Asia/Seoul"});
@@ -60,38 +59,60 @@ function koreaTime() {
 koreaTime();
 setInterval(koreaTime, 0);
 
+// Change to NEW CLOCK
+$('button').on('click', function () {
+    $('body').css('background', '#FFF0F5');
+    $(".clock-one").show();
+    $(".clock-two").show();
+    $(".clock-three").show();
+});
+
+$(".menu-one").click(function() {
+    $(".clock-container-one").show()
+    $(".clock-container-two").hide()
+    $(".clock-container-three").hide()
+})
+
+$(".menu-two").click(function() {
+    $(".clock-container-one").hide()
+    $(".clock-container-two").show()
+    $(".clock-container-three").hide()
+})
+
+$(".menu-three").click(function() {
+    $(".clock-container-one").hide()
+    $(".clock-container-two").hide()
+    $(".clock-container-three").show()
+})
+
+// CLOCK 1
+// $(document).ready(function() {
+//     const numbers = $(".number");
+//     const hours = new Date().getHours();
+//     const minutes = new Date().getMinutes();
+//     const seconds = new Date().getSeconds();
+// });
+
+var numbers = document.getElementsByTagName('div');
+
+var winWidth = window.innerWidth;
+var winHeight = window.innerHeight;
+
+for ( var i=0; i < numbers.length; i++ ) {
+ 	    
+    randomTop = getRandomNumber(0, winHeight);
+    randomLeft = getRandomNumber(0, winWidth);
+    
+    numbers[i].style.top = randomTop +"px";
+    numbers[i].style.left = randomLeft +"px";  
+    console.log("moved"); 
+}
+
+function getRandomNumber(min, max) {
+  return Math.random() * (max - min) + min;
+}
+
+// CLOCK 2
 
 
-
-// In Class Practice
-// var currentTime = new Date();
-// var currentDay = currentTime.getDay();
-// var currentMonth = currentTime.getMonth();
-// var currentDate = currentTime.getDate();
-
-// var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-// var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-
-// var currentMinutes = currentTime.getMinutes()
-// if (currentMinutes < 10) {
-//     currentMinutes = "0" + currentMinutes;
-// }
-// var currentSeconds = currentTime.getSeconds()
-// if (currentSeconds < 10) {
-//     currentSeconds = "0" + currentSeconds;
-// }
-
-// // $("p").html(currentTime);
-
-// function myClock() {
-//     $(".day").html(days[currentDay]);
-//     $(".month").html(months[currentMonth]);
-//     $(".date").html(currentDate);
-//     $(".hour").html(currentTime.getHours());
-//     $(".minutes").html(currentMinutes);
-//     $(".seconds").html(currentSeconds);
-// };
-
-// myClock();
-
-// setInterval(myClock, 1000);
+// CLOCK 3

@@ -5,28 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" href="https://use.typekit.net/rhj3kjw.css">
-    <link rel="icon" href="assets/.png" type="clock favicon">
+    <link rel="icon" href="assets/timezone.png" type="timezone favicon">
     <title>The Clock</title>
 </head>
-    <h1 class="title">Two Clocks</h1>
+    <h1 class="title">Two Timezones</h1>
+         
+        <button onclick="myFunc()">
+            Click Here
+        </button>
 
-    <div class="clock-container">
-        <div class="edt-clock">
-            <div class="edt-time">
-                <h1>New York</h1>
-                <h2><span class="day"></span>, <span class="month"></span> <span class="date"></span></h2>
-                <p><span class="hour"></span>:<span class="minutes"></span>:<span class="seconds"></span></p>
+        <!-- CLOCK ONE -->
+        <div class="clock-one menu-one">Clock One
+            <div class="clock-container-one">
+                <h1>Here's my first clock</h1>
+                <div class="random-number-clock">
+                    <div class="number" id="num1">1</div>
+                    <div class="number" id="num2">2</div>
+                    <div class="number" id="num3">3</div>
+                    <div class="number" id="num4">4</div>
+                    <div class="number" id="num5">5</div>
+                    <div class="number" id="num6">6</div>
+                    <div class="number" id="num7">7</div>
+                    <div class="number" id="num8">8</div>
+                    <div class="number" id="num9">9</div>
+                    <div class="number" id="num10">10</div>
+                    <div class="number" id="num11">11</div>
+                    <div class="number" id="num12">12</div>
+                </div>
+            </div>
+        </div>
+                
+        <!-- CLOCK TWO -->
+        <div class="clock-two menu-two">Clock Two</div>
+        <div class="clock-container-two">
+            <div class="edt-clock">
+                <div class="edt-time">
+                    <h1>New York</h1>
+                    <h2><span class="day"></span>, <span class="month"></span> <span class="date"></span></h2>
+                    <p><span class="hour"></span>:<span class="minutes"></span>:<span class="seconds"></span></p>
+                </div>
+            </div>
+    
+            <div class="kst-clock">
+                <div class="kst-time">
+                    <h1>서울</h1>
+                    <h2><span class="kst-day"></span>, <span class="kst-month"></span> <span class="kst-date"></span></h2>
+                    <p><span class="kst-hour"></span>:<span class="kst-minutes"></span>:<span class="kst-seconds"></span></p>
+                </div>
             </div>
         </div>
 
-        <div class="kst-clock">
-            <div class="kst-time">
-                <h1>Seoul</h1>
-                <h2><span class="kst-day"></span>, <span class="kst-month"></span> <span class="kst-date"></span></h2>
-                <p><span class="kst-hour"></span>:<span class="kst-minutes"></span>:<span class="kst-seconds"></span></p>
+        <!-- CLOCK THREE -->
+        <div class="clock-three menu-three">Clock Three</div>
+        <div class="clock-container-three">
+            <div class="edt-clock">
+                <div class="edt-time">
+                    <h1>New York</h1>
+                    <h2><span class="day"></span>, <span class="month"></span> <span class="date"></span></h2>
+                    <p><span class="hour"></span>:<span class="minutes"></span>:<span class="seconds"></span></p>
+                </div>
+            </div>
+    
+            <div class="kst-clock">
+                <div class="kst-time">
+                    <h1>서울</h1>
+                    <h2><span class="kst-day"></span>, <span class="kst-month"></span> <span class="kst-date"></span></h2>
+                    <p><span class="kst-hour"></span>:<span class="kst-minutes"></span>:<span class="kst-seconds"></span></p>
+                </div>
             </div>
         </div>
-    </div>
+        
+
+        <!-- <div class="clock-container">
+            <div class="edt-clock">
+                <div class="edt-time">
+                    <h1>New York</h1>
+                    <h2><span class="day"></span>, <span class="month"></span> <span class="date"></span></h2>
+                    <p><span class="hour"></span>:<span class="minutes"></span>:<span class="seconds"></span></p>
+                </div>
+            </div>
+    
+            <div class="kst-clock">
+                <div class="kst-time">
+                    <h1>서울</h1>
+                    <h2><span class="kst-day"></span>, <span class="kst-month"></span> <span class="kst-date"></span></h2>
+                    <p><span class="kst-hour"></span>:<span class="kst-minutes"></span>:<span class="kst-seconds"></span></p>
+                </div>
+            </div>
+        </div> -->
 
     <!-- Design and code your own browser-based digital clock, 
     which tells the time and (by design) also changes the way you read the time. -->

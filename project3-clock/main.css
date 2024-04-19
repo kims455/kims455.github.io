@@ -1,17 +1,59 @@
 body, html {
     font-family: "kepler-std", serif;
-    background-color: rgb(0, 0, 0);
+    /* font-family: "indivisible", sans-serif; */
     cursor: auto;
 }
 
 .title {
-    font-size: 55px;
+    font-size: 45px;
     font-weight: 500;
     font-style: normal;
-    color: whitesmoke;
+    color: black;
     text-align: center;
 }
 
+h1 {
+    color: greenyellow;
+    text-align: center;
+}
+
+/* .edt-clock:hover,
+.kst-clock:hover {
+    cursor: pointer;
+} */
+
+.clock-one,
+.clock-two,
+.clock-three {
+    display: none;
+}
+    
+.clock-container-one,
+.clock-container-two,
+.clock-container-three {
+    display: none;
+    cursor: pointer;
+}
+
+/* FIRST CLOCK */
+.random-number-clock {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.number {
+    position: fixed;
+    font-size: 90px;
+    font-weight: bold;
+    color: black;
+    top: 100px;
+    left: 100px;
+}
+
+/* SECOND CLOCK */
 .clock-container {
     display: flex;
     width: 100%;
@@ -48,7 +90,7 @@ body, html {
     font-size: 30px;
     font-weight: 500;
     font-style: normal;
-    margin: 0;
+    margin: 6;
     color: #1500ff;
 }
 
@@ -57,6 +99,17 @@ body, html {
     font-size: 85px;
     font-weight: 500;
     font-style: normal;
-    margin: 12px 0;
+    margin: 8px 0;
     color: #1500ff;
 }
+
+.hour,
+.minutes,
+.seconds,
+.kst-hour,
+.kst-minutes,
+.kst-seconds {
+    letter-spacing: 3px;
+}
+
+/* THIRD CLOCK  */
