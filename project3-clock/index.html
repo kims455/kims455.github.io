@@ -9,14 +9,19 @@
     <title>The Clock</title>
 </head>
     <h1 class="title">Two Timezones</h1>
-         
-        <button onclick="myFunc()">
-            Click Here
-        </button>
 
-        <!-- CLOCK ONE -->
-        <div class="clock-one menu-one">Clock One
-            <div class="clock-container-one">
+    <button class="switch" onclick="showClocks()">Click Here</button>
+
+    <h1>Check your times</h1>
+
+        <div class="clock-options">
+            <div class="menu-one">Clock One</div>
+            <div class="menu-two">Clock Two</div>
+            <div class="menu-three">Clock Three</div>
+        </div>
+
+        <div class="clock-container">
+            <div class="clock-container-one menu-one">
                 <h1>Here's my first clock</h1>
                 <div class="random-number-clock">
                     <div class="number" id="num1">1</div>
@@ -34,43 +39,30 @@
                 </div>
             </div>
         </div>
-                
-        <!-- CLOCK TWO -->
-        <div class="clock-two menu-two">Clock Two</div>
-        <div class="clock-container-two">
-            <div class="edt-clock">
-                <div class="edt-time">
-                    <h1>New York</h1>
-                    <h2><span class="day"></span>, <span class="month"></span> <span class="date"></span></h2>
-                    <p><span class="hour"></span>:<span class="minutes"></span>:<span class="seconds"></span></p>
-                </div>
-            </div>
-    
-            <div class="kst-clock">
-                <div class="kst-time">
-                    <h1>서울</h1>
-                    <h2><span class="kst-day"></span>, <span class="kst-month"></span> <span class="kst-date"></span></h2>
-                    <p><span class="kst-hour"></span>:<span class="kst-minutes"></span>:<span class="kst-seconds"></span></p>
-                </div>
-            </div>
-        </div>
 
-        <!-- CLOCK THREE -->
-        <div class="clock-three menu-three">Clock Three</div>
-        <div class="clock-container-three">
-            <div class="edt-clock">
+            <div class="clock-container-two menu-two">
+                <div class="edt-clock">
+                    <div class="edt-time">
+                        <h1 class="nyc">New York</h1>
+                        <h2><span class="day"></span>, <span class="month"></span> <span class="date"></span></h2>
+                        <p><span class="hour"></span>:<span class="minutes"></span>:<span class="seconds"></span></p>
+                    </div>
+                </div>
+        
+                <div class="kst-clock">
+                    <div class="kst-time">
+                        <h1 class="seoul">서울</h1>
+                        <h2><span class="kst-day"></span>, <span class="kst-month"></span> <span class="kst-date"></span></h2>
+                        <p><span class="kst-hour"></span>:<span class="kst-minutes"></span>:<span class="kst-seconds"></span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clock-container-three menu-three">
                 <div class="edt-time">
                     <h1>New York</h1>
                     <h2><span class="day"></span>, <span class="month"></span> <span class="date"></span></h2>
                     <p><span class="hour"></span>:<span class="minutes"></span>:<span class="seconds"></span></p>
-                </div>
-            </div>
-    
-            <div class="kst-clock">
-                <div class="kst-time">
-                    <h1>서울</h1>
-                    <h2><span class="kst-day"></span>, <span class="kst-month"></span> <span class="kst-date"></span></h2>
-                    <p><span class="kst-hour"></span>:<span class="kst-minutes"></span>:<span class="kst-seconds"></span></p>
                 </div>
             </div>
         </div>
