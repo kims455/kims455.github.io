@@ -1,6 +1,7 @@
 // Change to NEW CLOCK
 function showClocks() {
     $(".clock-options").show();
+    $(".eternal-circles").hide();
 }
 
 $(".menu-one").click(function() {
