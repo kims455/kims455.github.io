@@ -21,19 +21,22 @@ $(".menu-three").click(function() {
     $(".clock-container-three").show();
 });
 
-
 // CLOCK 1
 if ($(".clock-container-one").length) {
     $(".random-number-clock .number").each(function() {
         var winWidth = window.innerWidth - 100;
         var winHeight = window.innerHeight;
 
-        var randomTop = getRandomNumber(0, 100);
+        var randomTop = getRandomNumber(0, 90);
+        var randomBottom = getRandomNumber(90);
         var randomLeft = getRandomNumber(0, 90);
+        var randomRight = getRandomNumber(90);
 
         $(this).css({
             top: randomTop + "%",
-            left: randomLeft + "%"
+            bottom: randomBottom + "%",
+            left: randomLeft + "%",
+            right: randomRight + "%"
         });
     });
 }
@@ -61,11 +64,9 @@ function myClock() {
         currentHour = currentHour - 12;
         ampm = "pm";
     }
-
     if (currentHour == 12) {
         ampm = "pm";
     }
-
     if (currentMinutes < 10) {
         currentMinutes = "0" + currentMinutes;
     }
@@ -94,11 +95,20 @@ function koreaTime() {
     const currentDay = days[currentTime.getDay()];
     const currentMonth = months[currentTime.getMonth()];
     const currentDate = currentTime.getDate();
+    var currentHour = currentTime.getHours();
+    var ampm = "pm";
     
     let currentHours = currentTime.getHours();
     let currentMinutes = currentTime.getMinutes();
     let currentSeconds = currentTime.getSeconds();
 
+    if (currentHour > 12) {
+        currentHour = currentHour - 12;
+        ampm = "am";
+    }
+    if (currentHour == 12) {
+        ampm = "am";
+    }
     if (currentMinutes < 10) {
         currentMinutes = "0" + currentMinutes;
     }
@@ -112,6 +122,8 @@ function koreaTime() {
     $(".kst-hour").html(currentHours);
     $(".kst-minutes").html(currentMinutes);
     $(".kst-seconds").html(currentSeconds);
+    $("#num" + currentHour).html($(".kst-container"));
+    $(".ampm").html(ampm);
 }
 
 koreaTime();
