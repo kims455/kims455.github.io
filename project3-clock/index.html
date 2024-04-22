@@ -8,11 +8,9 @@
     <link rel="icon" href="assets/timezone.png" type="timezone favicon">
     <title>The Clock</title>
 </head>
-    <h1 class="title">Two Timezones</h1>
+    <!-- <h1 class="title">Two Timezones</h1> -->
 
     <button class="switch" onclick="showClocks()">Click Here</button>
-
-    <h1>Check your times</h1>
 
         <div class="clock-options">
             <div class="menu-one">Clock One</div>
@@ -20,9 +18,9 @@
             <div class="menu-three">Clock Three</div>
         </div>
 
+<!-- CLOCK ONE -->
         <div class="clock-container">
             <div class="clock-container-one menu-one">
-                <h1>Here's my first clock</h1>
                 <div class="random-number-clock">
                     <div class="number" id="num1">1</div>
                     <div class="number" id="num2">2</div>
@@ -40,6 +38,14 @@
             </div>
         </div>
 
+
+<!-- CLOCK TWO -->
+        <div class="edt-container">
+            <span class="hour"></span>: <span class="minutes"></span>: <span class="seconds"></span> <span class="ampm"></span>.
+        
+        </div>
+
+        <div class="clock-container">
             <div class="clock-container-two menu-two">
                 <div class="edt-clock">
                     <div class="edt-time">
@@ -48,7 +54,7 @@
                         <p><span class="hour"></span>:<span class="minutes"></span>:<span class="seconds"></span></p>
                     </div>
                 </div>
-        
+
                 <div class="kst-clock">
                     <div class="kst-time">
                         <h1 class="seoul">서울</h1>
@@ -57,13 +63,22 @@
                     </div>
                 </div>
             </div>
+        </div>
 
+
+<!-- CLOCK THREE -->
+        <div class="clock-container">
             <div class="clock-container-three menu-three">
-                <div class="edt-time">
-                    <h1>New York</h1>
-                    <h2><span class="day"></span>, <span class="month"></span> <span class="date"></span></h2>
-                    <p><span class="hour"></span>:<span class="minutes"></span>:<span class="seconds"></span></p>
-                </div>
+                <div class="min-outer">
+                    <div class="min-hand">
+                      
+                    </div>
+                  </div>
+                  <div class="hour-outer">
+                    <div class="hour-hand">
+                      
+                    </div>
+                  </div>
             </div>
         </div>
         

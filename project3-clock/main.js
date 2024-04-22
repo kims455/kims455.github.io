@@ -25,15 +25,15 @@ $(".menu-three").click(function() {
 // CLOCK 1
 if ($(".clock-container-one").length) {
     $(".random-number-clock .number").each(function() {
-        var winWidth = window.innerWidth;
+        var winWidth = window.innerWidth - 100;
         var winHeight = window.innerHeight;
 
-        var randomTop = getRandomNumber(0, winHeight);
-        var randomLeft = getRandomNumber(0, winWidth);
+        var randomTop = getRandomNumber(0, 100);
+        var randomLeft = getRandomNumber(0, 90);
 
         $(this).css({
-            top: randomTop + "px",
-            left: randomLeft + "px"
+            top: randomTop + "%",
+            left: randomLeft + "%"
         });
     });
 }
@@ -54,6 +54,17 @@ function myClock() {
     var currentDate = currentTime.getDate();
     var currentMinutes = currentTime.getMinutes()
     var currentSeconds = currentTime.getSeconds()
+    var currentHour = currentTime.getHours();
+    var ampm = "am";
+
+    if (currentHour > 12) {
+        currentHour = currentHour - 12;
+        ampm = "pm";
+    }
+
+    if (currentHour == 12) {
+        ampm = "pm";
+    }
 
     if (currentMinutes < 10) {
         currentMinutes = "0" + currentMinutes;
@@ -65,9 +76,11 @@ function myClock() {
     $(".day").html(days[currentDay]);
     $(".month").html(months[currentMonth]);
     $(".date").html(currentDate);
-    $(".hour").html(currentTime.getHours());
+    $(".hour").html(currentHour);
     $(".minutes").html(currentMinutes);
     $(".seconds").html(currentSeconds);
+    $("#num" + currentHour).html($(".edt-container"));
+    $(".ampm").html(ampm);
 };
 
 myClock();
@@ -106,3 +119,8 @@ setInterval(koreaTime, 0);
 
 
 // CLOCK 3
+// 0.5 times 360
+// 180 degrees roatios for Hours
+
+// 25percetn times 
+// minute value divide by 60
