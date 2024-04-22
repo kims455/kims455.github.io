@@ -129,10 +129,25 @@ function koreaTime() {
 koreaTime();
 setInterval(koreaTime, 0);
 
+// D-days calculator
+function calculateCountdown() {
+    var dDayInput = new Date(document.getElementById('d-day-input').value);
+    var currentDate = new Date();
+    var timeDifference = dDayInput - currentDate;
+
+    var days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+    var countdownMessage = days + " days, " + hours + " hours, " + minutes + " minutes, " + seconds + " seconds remaining.";
+
+    document.getElementById('d-day-countdown').innerText = countdownMessage;
+}
 
 // CLOCK 3
 // 0.5 times 360
 // 180 degrees roatios for Hours
-
+// Find the angles on js that shows the correct times
 // 25percetn times 
 // minute value divide by 60

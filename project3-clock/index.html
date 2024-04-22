@@ -10,79 +10,92 @@
 </head>
     <!-- <h1 class="title">Two Timezones</h1> -->
 
-    <button class="switch" onclick="showClocks()">Check your times</button>
+    <button class="switch" onclick="showClocks()">Check the Times</button>
 
-        <div class="clock-options">
-            <div class="menu-one">Clock One</div>
-            <div class="menu-two">Clock Two</div>
-            <div class="menu-three">Clock Three</div>
-        </div>
+    <div class="clock-options">
+        <div class="menu-one">1. HECTIC</div>
+        <div class="menu-two">2. HOMESICKNESS</div>
+        <div class="menu-three">3. COINCIDENCE</div>
+    </div>
 
 <!-- CLOCK ONE -->
-        <div class="clock-container">
-            <div class="clock-container-one menu-one">
-                <div class="random-number-clock">
-                    <div class="number" id="num1">1</div>
-                    <div class="number" id="num2">2</div>
-                    <div class="number" id="num3">3</div>
-                    <div class="number" id="num4">4</div>
-                    <div class="number" id="num5">5</div>
-                    <div class="number" id="num6">6</div>
-                    <div class="number" id="num7">7</div>
-                    <div class="number" id="num8">8</div>
-                    <div class="number" id="num9">9</div>
-                    <div class="number" id="num10">10</div>
-                    <div class="number" id="num11">11</div>
-                    <div class="number" id="num12">12</div>
-                </div>
+    <div class="clock-container">
+        <div class="clock-container-one menu-one">
+            <div class="random-number-clock">
+                <div class="number" id="num1">1</div>
+                <div class="number" id="num2">2</div>
+                <div class="number" id="num3">3</div>
+                <div class="number" id="num4">4</div>
+                <div class="number" id="num5">5</div>
+                <div class="number" id="num6">6</div>
+                <div class="number" id="num7">7</div>
+                <div class="number" id="num8">8</div>
+                <div class="number" id="num9">9</div>
+                <div class="number" id="num10">10</div>
+                <div class="number" id="num11">11</div>
+                <div class="number" id="num12">12</div>
             </div>
         </div>
-        <div class="edt-container">
-            <span class="hour"></span>: <span class="minutes"></span>: <span class="seconds"></span> <span class="ampm"></span>.
-        </div>
+    </div>
+    <div class="edt-container">
+        <span class="hour"></span>: <span class="minutes"></span>: <span class="seconds"></span> <span class="ampm"></span>.
+    </div>
 
-        <div class="kst-container">
-            <span class="kst-hour"></span>: <span class="kst-minutes"></span>: <span class="kst-seconds"></span> <span class="ampm"></span>.
-        </div>
+    <div class="kst-container">
+        <span class="kst-hour"></span>: <span class="kst-minutes"></span>: <span class="kst-seconds"></span> <span class="ampm"></span>.
+    </div>
 
 <!-- CLOCK TWO -->
 <!-- add d-day option on top right corner -->
-        <div class="clock-container">
-            <div class="clock-container-two menu-two">
-                <div class="edt-clock">
-                    <div class="edt-time">
-                        <h1 class="nyc">New York</h1>
-                        <h2><span class="day"></span>, <span class="month"></span> <span class="date"></span></h2>
-                        <p><span class="hour"></span>:<span class="minutes"></span>:<span class="seconds"></span></p>
-                    </div>
-                </div>
+    <div class="clock-container">
+        <div class="clock-container-two menu-two">
+            <div class="d-day">
+                <!-- <h2>D-Day</h2> -->
+                <p>
+                    <label for="d-day-input">Enter D-Day Date:</label>
+                    <input type="date" id="d-day-input">
+                    <button onclick="calculateCountdown()">Calculate Countdown</button>
+                </p>
+                <p id="d-day-countdown"></p>
+            </div>
 
-                <div class="kst-clock">
-                    <div class="kst-time">
-                        <h1 class="seoul">서울</h1>
-                        <h2><span class="kst-day"></span>, <span class="kst-month"></span> <span class="kst-date"></span></h2>
-                        <p><span class="kst-hour"></span>:<span class="kst-minutes"></span>:<span class="kst-seconds"></span></p>
-                    </div>
+            <div class="edt-clock">
+                <div class="edt-time">
+                    <h1 class="nyc">New York</h1>
+                    <h2><span class="day"></span>, <span class="month"></span> <span class="date"></span></h2>
+                    <p><span class="hour"></span>:<span class="minutes"></span>:<span class="seconds"></span></p>
                 </div>
             </div>
-        </div>
 
+            <div class="kst-clock">
+                <div class="kst-time">
+                    <h1 class="seoul">서울</h1>
+                    <h2><span class="kst-day"></span>, <span class="kst-month"></span> <span class="kst-date"></span></h2>
+                    <p><span class="kst-hour"></span>:<span class="kst-minutes"></span>:<span class="kst-seconds"></span></p>
+                </div>
+        </div>
+    </div>
 
 <!-- CLOCK THREE -->
-        <div class="clock-container">
-            <div class="clock-container-three menu-three">
-                <div class="min-outer">
-                    <div class="min-hand">
-                      
-                    </div>
-                  </div>
-                  <div class="hour-outer">
-                    <div class="hour-hand">
-                      
-                    </div>
-                  </div>
+    <div class="clock-container">
+        <div class="clock-container-three menu-three">
+            <div class="edt-min-outer">
+                <div class="edt-min-hand"></div>
+            </div>
+
+            <div class="edt-hour-outer">
+                <div class="edt-hour-hand"></div>
+            </div>
+
+            <div class="kst-min-outer">
+                <div class="kst-min-hand"></div>
+            </div>
+
+            <div class="kst-hour-outer">
+                <div class="kst-hour-hand"></div>
             </div>
         </div>
+    </div>
         
 
         <!-- <div class="clock-container">

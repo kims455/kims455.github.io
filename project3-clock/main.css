@@ -1,6 +1,5 @@
 body, html {
-    font-family: "kepler-std", serif;
-    /* font-family: "indivisible", sans-serif; */
+    font-family: kazimirtext, sans-serif;
     cursor: auto;
 }
 
@@ -20,9 +19,24 @@ body, html {
 }
 
 .switch {
+    font-family: kazimirtext, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
     position: fixed;
     bottom: 10px;
     left: 10px;
+    border: none;
+    padding: 7px 14px; 
+    cursor: pointer;
+    color: black;
+    background-color: rgb(221, 221, 221);
+    transition: background-color 0.15s;
+    letter-spacing: 0.17px;
+}
+
+.switch:hover {
+    background-color: rgb(0, 0, 0); 
+    color: white;
 }
 
 .clock-options {
@@ -36,10 +50,19 @@ body, html {
 .menu-one,
 .menu-two,
 .menu-three {
+    font-size: 15px;
+    font-weight: 600;
     cursor: pointer;
     margin-bottom: 5px;
     display: inline-block;
     margin-right: 10px; 
+    letter-spacing: 0.18px;
+}
+
+.menu-one:hover,
+.menu-two:hover,
+.menu-three:hover {
+    color: blue;
 }
 
 .clock-container-one,
@@ -168,11 +191,51 @@ h1 {
 .kst-hour,
 .kst-minutes,
 .kst-seconds {
-    letter-spacing: 3px;
+    letter-spacing: 2.6px;
 }
 
-/* THIRD CLOCK  */
-.min-outer {
+.d-day {
+    position: fixed;
+    top: 10px; 
+    right: 10px;
+}
+
+.d-day button {
+    margin-top: 5px;
+}
+
+.d-day {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.d-day p {
+    margin-bottom: 10px;
+}
+
+.d-day label {
+    font-weight: 600;
+}
+
+.d-day input {
+    padding: 5px;
+    margin-right: 7px;
+}
+
+.d-day button {
+    font-family: kazimirtext, sans-serif;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#d-day-countdown {
+    font-size: 16px;
+}
+
+/* THIRD CLOCK */
+/* EDT */
+.edt-min-outer {
     width: 200px;
     height: 200px;
     position: relative;
@@ -181,18 +244,18 @@ h1 {
     top:0;
     left:0;
     transform: rotate(35deg);
-  }
+}
   
-  .min-hand {
+.edt-min-hand {
     width: 100px;
     height: 2px;
     position: absolute;
     top: 99px;
     left: 100px;
     background-color: black;
-  }
+}
   
-  .hour-outer {
+.edt-hour-outer {
     width: 200px;
     height: 200px;
     position: relative;
@@ -201,13 +264,54 @@ h1 {
     top:0;
     left:0;
     transform: rotate(95deg);
-  }
+}
   
-  .hour-hand {
+.edt-hour-hand {
     width: 60px;
     height: 4px;
     position: absolute;
     top: 98px;
     left: 100px;
     background-color: black;
-  }
+}
+
+/* KST */
+.kst-min-outer {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border-radius: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    transform: rotate(35deg);
+}
+  
+.kst-min-hand {
+    width: 100px;
+    height: 2px;
+    position: absolute;
+    top: 99px;
+    left: 100px;
+    background-color: orangered;
+}
+  
+.kst-hour-outer {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border-radius: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    transform: rotate(95deg);
+}
+  
+.kst-hour-hand {
+    width: 60px;
+    height: 4px;
+    position: absolute;
+    top: 98px;
+    left: 100px;
+    background-color: orangered;
+}
