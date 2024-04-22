@@ -5,18 +5,21 @@ function showClocks() {
 }
 
 $(".menu-one").click(function() {
+    $(".title").hide();
     $(".clock-container-one").show();
     $(".clock-container-two").hide();
     $(".clock-container-three").hide();
 });
 
 $(".menu-two").click(function() {
+    $(".title").hide();
     $(".clock-container-one").hide();
     $(".clock-container-two").show();
     $(".clock-container-three").hide();
 });
 
 $(".menu-three").click(function() {
+    $(".title").hide();
     $(".clock-container-one").hide();
     $(".clock-container-two").hide();
     $(".clock-container-three").show();
