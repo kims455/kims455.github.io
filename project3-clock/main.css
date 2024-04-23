@@ -250,6 +250,12 @@ h1 {
 }
 
 /* THIRD CLOCK */
+/* .clock-container-three {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) 
+} */
+
 /* EDT */
 .edt-min-outer {
     width: 200px;
@@ -257,9 +263,9 @@ h1 {
     position: relative;
     border-radius: 100%;
     position: fixed;
-    top:0;
-    left:0;
-    transform: rotate(35deg);
+    top: 50%;
+    right: 70%;
+    transform: translate(-50%,-50%) rotate(35deg);
 }
   
 .edt-min-hand {
@@ -277,9 +283,9 @@ h1 {
     position: relative;
     border-radius: 100%;
     position: fixed;
-    top:0;
-    left:0;
-    transform: rotate(95deg);
+    top: 50%;
+    right: 70%;
+    transform: translate(-50%,-50%) rotate(95deg);
 }
   
 .edt-hour-hand {
@@ -298,9 +304,9 @@ h1 {
     position: relative;
     border-radius: 100%;
     position: fixed;
-    top:0;
-    left:0;
-    transform: rotate(35deg);
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%,-50%) rotate(35deg);
 }
   
 .kst-min-hand {
@@ -318,9 +324,9 @@ h1 {
     position: relative;
     border-radius: 100%;
     position: fixed;
-    top:0;
-    left:0;
-    transform: rotate(95deg);
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%,-50%) rotate(95deg);
 }
   
 .kst-hour-hand {
