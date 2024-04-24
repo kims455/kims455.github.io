@@ -121,10 +121,14 @@ h1 {
 
 .edt-container {
     color: #1500ff;
+    font-size: 85px;
+    font-weight: 600;
 }
 
 .kst-container {
     color: #ff5e00;
+    font-size: 85px;
+    font-weight: 600;
 }
 
 @media screen and (max-width: 768px) {
