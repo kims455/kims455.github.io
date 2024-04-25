@@ -139,12 +139,14 @@ h1 {
 
 /* SECOND CLOCK */
 .edt-clock {
+    text-align: center;
     position: fixed;
     top: 0;
     left: 0;
 }
 
 .kst-clock {
+    text-align: center;
     position: fixed;
     bottom: 0;
     right: 0;
@@ -226,7 +228,6 @@ h1 {
 
 .d-day {
     text-align: center;
-    margin-top: 20px;
 }
 
 .d-day p {

@@ -151,7 +151,7 @@ function calculateCountdown() {
 
 // CLOCK 3
 // 0.5 times 360
-// 180 degrees roatios for Hours
+// 180 degrees rotations for Hours
 // Find the angles on js that shows the correct times
-// 25percetn times 
+// 25 percent times 
 // minute value divide by 60
