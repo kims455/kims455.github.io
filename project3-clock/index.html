@@ -8,14 +8,17 @@
     <link rel="icon" href="assets/timezone.png" type="timezone favicon">
     <title>Click, Clock, Click</title>
 </head>
-    <h1 class="title">Click, Clock, Click</h1>
+    <!-- <h1 class="title">Click, Clock, Click</h1> -->
     
-    <!-- <div class="eternal-circles"></div> -->
+    <div class="title">
+        <h1 class="title1">EDT</h1>
+        <h1 class="title2">KST</h1>
+    </div>
 
-    <button class="switch" onclick="showClocks()">Check the Times</button>
+    <!-- <button class="switch" onclick="showClocks()">Check the Times</button> -->
 
     <div class="clock-options">
-        <div class="menu-one">1. HECTIC</div>
+        <div class="menu-one">1. DISTANT</div>
         <div class="menu-two">2. HOMESICKNESS</div>
         <div class="menu-three">3. COINCIDENCE</div>
     </div>
@@ -66,6 +69,15 @@
                     <h2><span class="day"></span>, <span class="month"></span> <span class="date"></span></h2>
                     <p><span class="hour"></span>:<span class="minutes"></span>:<span class="seconds"></span></p>
                 </div>
+            </div>
+
+            <div class="d-day-korea">
+                <p>
+                    <label for="d-day-korea-input">Enter D-Day Date:</label>
+                    <input type="date" id="d-day-input">
+                    <button onclick="calculateCountdown()">Calculate Countdown</button>
+                </p>
+                <p id="d-day-korea-countdown"></p>
             </div>
 
             <div class="kst-clock">

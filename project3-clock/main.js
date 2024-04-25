@@ -1,8 +1,7 @@
 // Change to NEW CLOCK
-function showClocks() {
-    $(".clock-options").show();
-    // $(".eternal-circles").hide();
-}
+// function showClocks() {
+//     $(".clock-options").show();
+// }
 
 $(".menu-one").click(function() {
     $(".title").hide();
@@ -100,7 +99,7 @@ function koreaTime() {
     const currentMonth = months[currentTime.getMonth()];
     const currentDate = currentTime.getDate();
     var currentHour = currentTime.getHours();
-    var ampm = "pm";
+    var ampm = "am";
     
     let currentHours = currentTime.getHours();
     let currentMinutes = currentTime.getMinutes();
@@ -108,10 +107,10 @@ function koreaTime() {
 
     if (currentHour > 12) {
         currentHour = currentHour - 12;
-        ampm = "am";
+        ampm = "pm";
     }
     if (currentHour == 12) {
-        ampm = "am";
+        ampm = "pm";
     }
     if (currentMinutes < 10) {
         currentMinutes = "0" + currentMinutes;
