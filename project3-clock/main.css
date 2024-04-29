@@ -331,6 +331,21 @@ body, html {
     transform: translate(-50%, -100%); 
 }
 
+.blue-numbers,
+.orange-numbers {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.blue-numbers img,
+.orange-numbers img {
+    width: 15%;
+    margin: 2px; 
+    transform: scale(0.1);
+}
+
 /* EDT
 .edt-min-outer {
     width: 200px;
