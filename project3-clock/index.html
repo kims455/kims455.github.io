@@ -7,15 +7,11 @@
     <link rel="stylesheet" href="https://use.typekit.net/rhj3kjw.css">
     <link rel="icon" href="assets/timezone.png" type="timezone favicon">
     <title>Our Times</title>
-</head>
-    <!-- <h1 class="title">Click, Clock, Click</h1> -->
-    
+</head>    
     <div class="title">
         <h1 class="title1">EDT</h1>
         <h1 class="title2">KST</h1>
     </div>
-
-    <!-- <button class="switch" onclick="showClocks()">Check the Times</button> -->
 
     <div class="clock-options">
         <div class="menu-one">1. DISTANT</div>
@@ -27,6 +23,7 @@
     <div class="clock-container">
         <div class="clock-container-one menu-one">
             <div class="random-number-clock">
+                <div class="number" id="num0">0</div>
                 <div class="number" id="num1">1</div>
                 <div class="number" id="num2">2</div>
                 <div class="number" id="num3">3</div>
@@ -39,6 +36,18 @@
                 <div class="number" id="num10">10</div>
                 <div class="number" id="num11">11</div>
                 <div class="number" id="num12">12</div>
+                <!-- <div class="number" id="num13">13</div>
+                <div class="number" id="num14">14</div>
+                <div class="number" id="num15">15</div>
+                <div class="number" id="num16">16</div>
+                <div class="number" id="num17">17</div>
+                <div class="number" id="num18">18</div>
+                <div class="number" id="num19">19</div>
+                <div class="number" id="num20">20</div>
+                <div class="number" id="num21">21</div>
+                <div class="number" id="num22">22</div>
+                <div class="number" id="num23">23</div>
+                <div class="number" id="num24">24</div> -->
             </div>
             
             <div class="edt-container">
@@ -93,6 +102,22 @@
 <!-- CLOCK THREE -->
     <div class="clock-container">
         <div class="clock-container-three menu-three">
+        <div class="edt-dial-clock" id="edt-dial-clock">
+            <div class="hour-hand"></div>
+            <div class="minute-hand"></div>
+            <div class="second-hand"></div>
+        </div>
+    
+        <div class="kst-dial-clock" id="kst-dial-clock">
+            <div class="kst-hour-hand"></div>
+            <div class="kst-minute-hand"></div>
+            <div class="kst-second-hand"></div>
+        </div>
+        </div>
+    </div>
+
+    <!-- <div class="clock-container">
+        <div class="clock-container-three menu-three">
             <div class="edt-min-outer">
                 <div class="edt-min-hand"></div>
             </div>
@@ -109,25 +134,7 @@
                 <div class="kst-hour-hand"></div>
             </div>
         </div>
-    </div>
-        
-        <!-- <div class="clock-container">
-            <div class="edt-clock">
-                <div class="edt-time">
-                    <h1>New York</h1>
-                    <h2><span class="day"></span>, <span class="month"></span> <span class="date"></span></h2>
-                    <p><span class="hour"></span>:<span class="minutes"></span>:<span class="seconds"></span></p>
-                </div>
-            </div>
-    
-            <div class="kst-clock">
-                <div class="kst-time">
-                    <h1>서울</h1>
-                    <h2><span class="kst-day"></span>, <span class="kst-month"></span> <span class="kst-date"></span></h2>
-                    <p><span class="kst-hour"></span>:<span class="kst-minutes"></span>:<span class="kst-seconds"></span></p>
-                </div>
-            </div>
-        </div> -->
+    </div> -->
 
     <!-- Design and code your own browser-based digital clock, 
     which tells the time and (by design) also changes the way you read the time. -->

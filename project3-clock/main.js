@@ -1,8 +1,4 @@
 // Change to NEW CLOCK
-// function showClocks() {
-//     $(".clock-options").show();
-// }
-
 $(".menu-one").click(function() {
     $(".title").hide();
     $(".clock-container-one").show();
@@ -52,7 +48,7 @@ function getRandomNumber(min, max) {
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
-// EDT Clock (Washington D.C. based time)
+// EDT Clock (New York based time)
 function myClock() {
     var currentTime = new Date();
     var currentDay = currentTime.getDay();
@@ -60,21 +56,23 @@ function myClock() {
     var currentDate = currentTime.getDate();
     var currentMinutes = currentTime.getMinutes()
     var currentSeconds = currentTime.getSeconds()
-    var currentHour = currentTime.getHours();
+    var currentHour = currentTime.getHours();    
     var ampm = "am";
 
     if (currentHour > 12) {
-        currentHour = currentHour - 12;
+      currentHour = currentHour - 12;
+    }
+    if (currentHour > 11) {
         ampm = "pm";
     }
     if (currentHour == 12) {
         ampm = "pm";
     }
     if (currentMinutes < 10) {
-        currentMinutes = "0" + currentMinutes;
+      currentMinutes = "0" + currentMinutes;
     }
     if (currentSeconds < 10) {
-        currentSeconds = "0" + currentSeconds;
+      currentSeconds = "0" + currentSeconds;
     }
 
     $(".day").html(days[currentDay]);
@@ -107,6 +105,8 @@ function koreaTime() {
 
     if (currentHour > 12) {
         currentHour = currentHour - 12;
+    }
+    if (currentHour > 11) {
         ampm = "pm";
     }
     if (currentHour == 12) {
@@ -149,8 +149,95 @@ function calculateCountdown() {
 }
 
 // CLOCK 3
+function rotateClock() {
+  const now = new Date();
+  const edtHour = (now.getUTCHours() - 4) % 12; 
+  const kstHour = (now.getUTCHours() + 9) % 12;
+  const minute = now.getMinutes();
+  const second = now.getSeconds();
+
+  const edtHourRotation = (edtHour * 30) + (0.5 * minute);
+  const kstHourRotation = (kstHour * 30) + (0.5 * minute);
+  const minuteRotation = (minute * 6) + (0.1 * second);
+  const secondRotation = second * 6;
+
+  $("#edt-dial-clock .hour-hand").css("transform", `rotate(${edtHourRotation}deg)`);
+  $("#edt-dial-clock .minute-hand").css("transform", `rotate(${minuteRotation}deg)`);
+  $("#edt-dial-clock .second-hand").css("transform", `rotate(${secondRotation}deg)`);
+
+  $("#kst-dial-clock .kst-hour-hand").css("transform", `rotate(${kstHourRotation}deg)`);
+  $("#kst-dial-clock .kst-minute-hand").css("transform", `rotate(${minuteRotation}deg)`);
+  $("#kst-dial-clock .kst-second-hand").css("transform", `rotate(${secondRotation}deg)`);
+}
+
+setInterval(rotateClock, 0);
+
+
+
 // 0.5 times 360
 // 180 degrees rotations for Hours
 // Find the angles on js that shows the correct times
 // 25 percent times 
 // minute value divide by 60
+
+
+// In Class notes
+// var countHours = 0;
+// var countMinutes = 0;
+// var countSeconds = 0;
+
+// function countClock() {
+//   var hoursString;
+//   var minutesString;
+//   var secondsString;
+//   countSeconds++;
+//   if (countSeconds == 60) {
+//     countSeconds = 0;
+//     countMinutes++;
+//   }
+//   if (countMinutes == 60) {
+//     countMinutes = 0;
+//     countHours++;
+//   }
+//   if (countHours < 10) {
+//     hoursString = "0" + countHours;
+//   } else {
+//     hoursString = countHours;
+//   }
+//   if (countMinutes < 10) {
+//     minutesString = "0" + countMinutes;
+//   } else {
+//     minutesString = countMinutes;
+//   }
+//   if (countSeconds < 10) {
+//     secondsString = "0" + countSeconds;
+//   } else {
+//     secondsString = countSeconds;
+//   }
+//   $(".count-clock-hours").html(hoursString);
+//   $(".count-clock-minutes").html(minutesString);
+//   $(".count-clock-seconds").html(secondsString);
+// }
+
+// setInterval(countClock, 1000);
+
+// // Count up and Count Down
+// var counter = 0;
+
+// function countUp() {
+//   counter++;
+//   $(".count-up").html(counter);
+// }
+
+// setInterval(countUp, 1000);
+
+// var counterDown = 10;
+
+// function countDown() {
+//   if (counterDown > 0) {
+//     counterDown--;
+//     $(".count-down").html(counterDown);
+//   }
+// }
+
+// setInterval(countDown, 1000);

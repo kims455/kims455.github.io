@@ -13,41 +13,19 @@ body, html {
 }
 
 .title1 {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 500;
     font-style: italic;
     color: #1500ff;
 }
 
 .title2 {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 500;
     font-style: italic;
     color: #ff5e00;
-    letter-spacing: 1px;
+    letter-spacing: 1.1px;
 }
-
-/* .switch {
-    font-family: kazimirtext, sans-serif;
-    font-weight: 600;
-    font-size: 15px;
-    position: fixed;
-    bottom: 10px;
-    left: 10px;
-    border: none;
-    border-radius: 3px;
-    padding: 7px 14px; 
-    cursor: pointer;
-    color: black;
-    background-color: rgb(224, 224, 224);
-    transition: background-color 0.15s;
-    letter-spacing: 0.17px;
-}
-
-.switch:hover {
-    background-color: rgb(0, 0, 0); 
-    color: white;
-} */
 
 .clock-options {
     bottom: 10px;
@@ -268,21 +246,99 @@ body, html {
 }
 
 /* THIRD CLOCK */
-/* .clock-container-three {
+/* EDT */
+.edt-dial-clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+  
+.hour-hand, 
+.minute-hand, 
+.second-hand {
+    position: absolute;
+    background: #1500ff;
+    transform-origin: bottom center;
+}
+  
+.hour-hand {
+    width: 4px;
+    height: 60px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%) 
-} */
+    transform: translate(-50%, -100%);
+}
+  
+.minute-hand {
+    width: 4px;
+    height: 80px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+  
+.second-hand {
+    width: 2px;
+    height: 90px;
+    background-color: red;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+  
+/* KST */
+.kst-dial-clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+.kst-hour-hand, 
+.kst-minute-hand, 
+.kst-second-hand {
+    position: absolute;
+    background: #ff5e00;
+    transform-origin: bottom center;
+}
+  
+.kst-hour-hand {
+    width: 4px;
+    height: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+  
+.kst-minute-hand {
+    width: 4px;
+    height: 80px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+  
+.kst-second-hand {
+    width: 1.5px;
+    height: 90px;
+    background-color: red;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -100%); 
+}
 
-/* EDT */
+/* EDT
 .edt-min-outer {
     width: 200px;
     height: 200px;
     position: relative;
     border-radius: 100%;
-    position: fixed;
     top: 50%;
-    right: 70%;
+    right: 60%;
     transform: translate(-50%,-50%) rotate(35deg);
 }
   
@@ -292,7 +348,7 @@ body, html {
     position: absolute;
     top: 99px;
     left: 100px;
-    background-color: black;
+    background-color: #1500ff;
 }
   
 .edt-hour-outer {
@@ -302,7 +358,7 @@ body, html {
     border-radius: 100%;
     position: fixed;
     top: 50%;
-    right: 70%;
+    right: 60%;
     transform: translate(-50%,-50%) rotate(95deg);
 }
   
@@ -312,10 +368,10 @@ body, html {
     position: absolute;
     top: 98px;
     left: 100px;
-    background-color: black;
+    background-color: #1500ff;
 }
 
-/* KST */
+KST
 .kst-min-outer {
     width: 200px;
     height: 200px;
@@ -333,7 +389,7 @@ body, html {
     position: absolute;
     top: 99px;
     left: 100px;
-    background-color: orangered;
+    background-color: #ff5e00;
 }
   
 .kst-hour-outer {
@@ -353,5 +409,5 @@ body, html {
     position: absolute;
     top: 98px;
     left: 100px;
-    background-color: orangered;
-}
+    background-color: #ff5e00;
+} */
