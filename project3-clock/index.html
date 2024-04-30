@@ -36,18 +36,6 @@
                 <div class="number" id="num10">10</div>
                 <div class="number" id="num11">11</div>
                 <div class="number" id="num12">12</div>
-                <!-- <div class="number" id="num13">13</div>
-                <div class="number" id="num14">14</div>
-                <div class="number" id="num15">15</div>
-                <div class="number" id="num16">16</div>
-                <div class="number" id="num17">17</div>
-                <div class="number" id="num18">18</div>
-                <div class="number" id="num19">19</div>
-                <div class="number" id="num20">20</div>
-                <div class="number" id="num21">21</div>
-                <div class="number" id="num22">22</div>
-                <div class="number" id="num23">23</div>
-                <div class="number" id="num24">24</div> -->
             </div>
             
             <div class="edt-container">
@@ -55,7 +43,7 @@
             </div>
         
             <div class="kst-container">
-                <span class="kst-hour"></span>:<span class="kst-minutes"></span>:<span class="kst-seconds"></span><span class="ampm"></span>.
+                <span class="kst-hour"></span>:<span class="kst-minutes"></span>:<span class="kst-seconds"></span><span class="kst-ampm"></span>.
             </div>
         </div>
     </div>
@@ -67,7 +55,7 @@
                 <p>
                     <label for="d-day-input">Enter D-Day Date:</label>
                     <input type="date" id="d-day-input">
-                    <button onclick="calculateCountdown()">Calculate Countdown</button>
+                    <button onclick="calculateCountdown()">Calculate</button>
                 </p>
                 <p id="d-day-countdown"></p>
             </div>
@@ -80,20 +68,12 @@
                 </div>
             </div>
 
-            <div class="d-day-korea">
-                <p>
-                    <label for="d-day-korea-input">Enter D-Day Date:</label>
-                    <input type="date" id="d-day-input">
-                    <button onclick="calculateCountdown()">Calculate Countdown</button>
-                </p>
-                <p id="d-day-korea-countdown"></p>
-            </div>
-
             <div class="kst-clock">
                 <div class="kst-time">
                     <h1 class="seoul">서울</h1>
                     <h2><span class="kst-day"></span>, <span class="kst-month"></span> <span class="kst-date"></span></h2>
                     <p><span class="kst-hour"></span>:<span class="kst-minutes"></span>:<span class="kst-seconds"></span></p>
+                    <!-- <p><span class="kst-hour"></span>시 <span class="kst-minutes"></span>분 <span class="kst-seconds"></span>초</p> -->
                 </div>
             </div>
         </div>
@@ -102,7 +82,8 @@
 <!-- CLOCK THREE -->
     <div class="clock-container">
         <div class="clock-container-three menu-three">
-            <div class="edt-dial-clock" id="edt-dial-clock">
+
+            <!-- <div class="edt-dial-clock" id="edt-dial-clock">
                 <div class="hour-hand"></div>
                 <div class="minute-hand"></div>
                 <div class="second-hand"></div>
@@ -112,60 +93,9 @@
                 <div class="kst-hour-hand"></div>
                 <div class="kst-minute-hand"></div>
                 <div class="kst-second-hand"></div>
-            </div>
-
-            <div class="blue-numbers"> 
-                <img src="./assets/blue1.svg" alt="blue numbers">
-                <img src="./assets/blue2.svg" alt="blue numbers">
-                <img src="./assets/blue3.svg" alt="blue numbers">
-                <img src="./assets/blue4.svg" alt="blue numbers">
-                <img src="./assets/blue5.svg" alt="blue numbers">
-                <img src="./assets/blue6.svg" alt="blue numbers">
-                <img src="./assets/blue7.svg" alt="blue numbers">
-                <img src="./assets/blue8.svg" alt="blue numbers">
-                <img src="./assets/blue9.svg" alt="blue numbers">
-                <img src="./assets/blue10.svg" alt="blue numbers">
-                <img src="./assets/blue11.svg" alt="blue numbers">
-                <img src="./assets/blue12.svg" alt="blue numbers">
-            </div>
-
-            <div class="orange-numbers"> 
-                <img src="./assets/orange1.svg" alt="orange numbers">
-                <img src="./assets/orange2.svg" alt="orange numbers">
-                <img src="./assets/orange3.svg" alt="orange numbers">
-                <img src="./assets/orange4.svg" alt="orange numbers">
-                <img src="./assets/orange5.svg" alt="orange numbers">
-                <img src="./assets/orange6.svg" alt="orange numbers">
-                <img src="./assets/orange7.svg" alt="orange numbers">
-                <img src="./assets/orange8.svg" alt="orange numbers">
-                <img src="./assets/orange9.svg" alt="orange numbers">
-                <img src="./assets/orange10.svg" alt="orange numbers">
-                <img src="./assets/orange11.svg" alt="orange numbers">
-                <img src="./assets/orange12.svg" alt="orange numbers">
-            </div>
+            </div> -->
         </div>
     </div>
-
-
-    <!-- <div class="clock-container">
-        <div class="clock-container-three menu-three">
-            <div class="edt-min-outer">
-                <div class="edt-min-hand"></div>
-            </div>
-
-            <div class="edt-hour-outer">
-                <div class="edt-hour-hand"></div>
-            </div>
-
-            <div class="kst-min-outer">
-                <div class="kst-min-hand"></div>
-            </div>
-
-            <div class="kst-hour-outer">
-                <div class="kst-hour-hand"></div>
-            </div>
-        </div>
-    </div> -->
 
     <!-- Design and code your own browser-based digital clock, 
     which tells the time and (by design) also changes the way you read the time. -->

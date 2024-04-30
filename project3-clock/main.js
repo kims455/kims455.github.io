@@ -26,9 +26,9 @@ if ($(".clock-container-one").length) {
         var winWidth = window.innerWidth - 100;
         var winHeight = window.innerHeight;
 
-        var randomTop = getRandomNumber(0, 90);
+        var randomTop = getRandomNumber(0, 80);
         var randomBottom = getRandomNumber(90);
-        var randomLeft = getRandomNumber(0, 90);
+        var randomLeft = getRandomNumber(0, 80);
         var randomRight = getRandomNumber(90);
 
         $(this).css({
@@ -47,6 +47,8 @@ function getRandomNumber(min, max) {
 // CLOCK 2
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+// const kstMonths = ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"];
+// const kstDays = ["일요일", "월요일", "화요일", "수요일", "목요일", "금요일", "토요일"];
 
 // EDT Clock (New York based time)
 function myClock() {
@@ -59,15 +61,16 @@ function myClock() {
     var currentHour = currentTime.getHours();    
     var ampm = "am";
 
+    if (currentHour > 11) {
+      ampm = "pm";
+    }
+    if (currentHour == 12) {
+      ampm = "pm";
+    }
     if (currentHour > 12) {
       currentHour = currentHour - 12;
     }
-    if (currentHour > 11) {
-        ampm = "pm";
-    }
-    if (currentHour == 12) {
-        ampm = "pm";
-    }
+    console.log(currentHour);
     if (currentMinutes < 10) {
       currentMinutes = "0" + currentMinutes;
     }
@@ -87,7 +90,7 @@ function myClock() {
 
 myClock();
 
-setInterval(myClock, 0);
+setInterval(myClock, 1000);
 
 // KST Clock (+13 Hours)
 function koreaTime() {
@@ -103,14 +106,14 @@ function koreaTime() {
     let currentMinutes = currentTime.getMinutes();
     let currentSeconds = currentTime.getSeconds();
 
-    if (currentHour > 12) {
-        currentHour = currentHour - 12;
-    }
     if (currentHour > 11) {
-        ampm = "pm";
+      ampm = "pm";
     }
     if (currentHour == 12) {
-        ampm = "pm";
+      ampm = "pm";
+    }
+    if (currentHour > 12) {
+        currentHour = currentHour - 12;
     }
     if (currentMinutes < 10) {
         currentMinutes = "0" + currentMinutes;
@@ -126,11 +129,11 @@ function koreaTime() {
     $(".kst-minutes").html(currentMinutes);
     $(".kst-seconds").html(currentSeconds);
     $("#num" + currentHour).html($(".kst-container"));
-    $(".ampm").html(ampm);
+    $(".kst-ampm").html(ampm);
 }
 
 koreaTime();
-setInterval(koreaTime, 0);
+setInterval(koreaTime, 1000);
 
 // D-days calculator
 function calculateCountdown() {
@@ -148,31 +151,37 @@ function calculateCountdown() {
     document.getElementById('d-day-countdown').innerText = countdownMessage;
 }
 
+// function setClock() {
+//   $(".clock").html(countdown( new Date(2014,07,06,19,0,0,0) ).toString());
+// }
+
+// setClock();
+
+
 // CLOCK 3
-function rotateClock() {
-  const now = new Date();
-  const edtHour = (now.getUTCHours() - 4) % 12; 
-  const kstHour = (now.getUTCHours() + 9) % 12;
-  const minute = now.getMinutes();
-  const second = now.getSeconds();
 
-  const edtHourRotation = (edtHour * 30) + (0.5 * minute);
-  const kstHourRotation = (kstHour * 30) + (0.5 * minute);
-  const minuteRotation = (minute * 6) + (0.1 * second);
-  const secondRotation = second * 6;
+// function rotateClock() {
+//   const now = new Date();
+//   const edtHour = (now.getUTCHours() - 4) % 12; 
+//   const kstHour = (now.getUTCHours() + 9) % 12;
+//   const minute = now.getMinutes();
+//   const second = now.getSeconds();
 
-  $("#edt-dial-clock .hour-hand").css("transform", `rotate(${edtHourRotation}deg)`);
-  $("#edt-dial-clock .minute-hand").css("transform", `rotate(${minuteRotation}deg)`);
-  $("#edt-dial-clock .second-hand").css("transform", `rotate(${secondRotation}deg)`);
+//   const edtHourRotation = (edtHour * 30) + (0.5 * minute);
+//   const kstHourRotation = (kstHour * 30) + (0.5 * minute);
+//   const minuteRotation = (minute * 6) + (0.1 * second);
+//   const secondRotation = second * 6;
 
-  $("#kst-dial-clock .kst-hour-hand").css("transform", `rotate(${kstHourRotation}deg)`);
-  $("#kst-dial-clock .kst-minute-hand").css("transform", `rotate(${minuteRotation}deg)`);
-  $("#kst-dial-clock .kst-second-hand").css("transform", `rotate(${secondRotation}deg)`);
-}
+//   $("#edt-dial-clock .hour-hand").css("transform", `rotate(${edtHourRotation}deg)`);
+//   $("#edt-dial-clock .minute-hand").css("transform", `rotate(${minuteRotation}deg)`);
+//   $("#edt-dial-clock .second-hand").css("transform", `rotate(${secondRotation}deg)`);
 
-setInterval(rotateClock, 0);
+//   $("#kst-dial-clock .kst-hour-hand").css("transform", `rotate(${kstHourRotation}deg)`);
+//   $("#kst-dial-clock .kst-minute-hand").css("transform", `rotate(${minuteRotation}deg)`);
+//   $("#kst-dial-clock .kst-second-hand").css("transform", `rotate(${secondRotation}deg)`);
+// }
 
-
+// setInterval(rotateClock, 0);
 
 // 0.5 times 360
 // 180 degrees rotations for Hours

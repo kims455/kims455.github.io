@@ -1,5 +1,5 @@
 body, html {
-    font-family: kazimirtext, sans-serif;
+    font-family: "azo-sans-web", sans-serif;
     cursor: auto;
 }
 
@@ -14,15 +14,15 @@ body, html {
 
 .title1 {
     font-size: 30px;
-    font-weight: 500;
-    font-style: italic;
+    font-weight: 600;
+    font-style: normal;
     color: #1500ff;
 }
 
 .title2 {
     font-size: 30px;
-    font-weight: 500;
-    font-style: italic;
+    font-weight: 600;
+    font-style: normal;
     color: #ff5e00;
     letter-spacing: 1.1px;
 }
@@ -78,7 +78,7 @@ body, html {
 .number {
     position: fixed;
     font-size: 85px;
-    font-weight: 600;
+    font-weight: 400;
     color: black;
     top: 100px;
     left: 100px;
@@ -88,17 +88,24 @@ body, html {
     color: #1500ff;
     font-size: 85px;
     font-weight: 600;
+    z-index: 1000;
 }
 
 .kst-container {
     color: #ff5e00;
     font-size: 85px;
     font-weight: 600;
+    z-index: 1000;
 }
 
 @media screen and (max-width: 768px) {
     .number {
-        font-size: 55px; 
+        font-size: 45px; 
+    }
+
+    .edt-container, 
+    .kst-container{
+        font-size: 45px;
     }
 }
 
@@ -113,7 +120,7 @@ body, html {
 .kst-clock {
     text-align: right;
     position: fixed;
-    bottom: 110px;
+    bottom: 25px;
     right: 0;
 }
 
@@ -134,7 +141,7 @@ body, html {
 }
 
 .edt-time h2 {
-    font-size: 75px;
+    font-size: 65px;
     font-weight: 500;
     font-style: normal;
     margin: 0;
@@ -151,7 +158,7 @@ body, html {
 
 .seoul {
     font-size: 55px;
-    font-weight: 500;
+    font-weight: 700;
     font-style: normal;
     text-align: right;
     margin: 0;
@@ -159,7 +166,7 @@ body, html {
 }
 
 .kst-time h2 {
-    font-size: 75px;
+    font-size: 65px;
     font-weight: 500;
     font-style: normal;
     margin: 0;
@@ -180,21 +187,20 @@ body, html {
 .kst-hour,
 .kst-minutes,
 .kst-seconds {
-    letter-spacing: 2.5px;
+    letter-spacing: 2.3px;
 }
 
 /* NYC TIME BASED D-DAY */
 .d-day {
-    font-family: kazimirtext, sans-serif;
     position: fixed;
-    top: 265px; 
-    left: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
 }
 
 .d-day button {
     margin-top: 5px;
-    font-family: kazimirtext, sans-serif;
     padding: 5px 10px;
     border: none;
     cursor: pointer;
@@ -212,9 +218,8 @@ body, html {
     font-size: 14px;
 }
 
-/* KOREA TIME BASED D-DAY */
+/* KOREA TIME BASED D-DAY
 .d-day-korea {
-    font-family: kazimirtext, sans-serif;
     position: fixed;
     bottom: 80px; 
     right: 10px;
@@ -223,7 +228,6 @@ body, html {
 
 .d-day-korea button {
     margin-top: 5px;
-    font-family: kazimirtext, sans-serif;
     padding: 5px 10px;
     border: none;
     cursor: pointer;
@@ -243,7 +247,7 @@ body, html {
 
 #d-day-korea-countdown {
     font-size: 14px;
-}
+} */
 
 /* THIRD CLOCK */
 /* EDT */
@@ -345,84 +349,3 @@ body, html {
     margin: 2px; 
     transform: scale(0.1);
 }
-
-/* EDT
-.edt-min-outer {
-    width: 200px;
-    height: 200px;
-    position: relative;
-    border-radius: 100%;
-    top: 50%;
-    right: 60%;
-    transform: translate(-50%,-50%) rotate(35deg);
-}
-  
-.edt-min-hand {
-    width: 100px;
-    height: 2px;
-    position: absolute;
-    top: 99px;
-    left: 100px;
-    background-color: #1500ff;
-}
-  
-.edt-hour-outer {
-    width: 200px;
-    height: 200px;
-    position: relative;
-    border-radius: 100%;
-    position: fixed;
-    top: 50%;
-    right: 60%;
-    transform: translate(-50%,-50%) rotate(95deg);
-}
-  
-.edt-hour-hand {
-    width: 60px;
-    height: 4px;
-    position: absolute;
-    top: 98px;
-    left: 100px;
-    background-color: #1500ff;
-}
-
-KST
-.kst-min-outer {
-    width: 200px;
-    height: 200px;
-    position: relative;
-    border-radius: 100%;
-    position: fixed;
-    top: 50%;
-    left: 70%;
-    transform: translate(-50%,-50%) rotate(35deg);
-}
-  
-.kst-min-hand {
-    width: 100px;
-    height: 2px;
-    position: absolute;
-    top: 99px;
-    left: 100px;
-    background-color: #ff5e00;
-}
-  
-.kst-hour-outer {
-    width: 200px;
-    height: 200px;
-    position: relative;
-    border-radius: 100%;
-    position: fixed;
-    top: 50%;
-    left: 70%;
-    transform: translate(-50%,-50%) rotate(95deg);
-}
-  
-.kst-hour-hand {
-    width: 60px;
-    height: 4px;
-    position: absolute;
-    top: 98px;
-    left: 100px;
-    background-color: #ff5e00;
-} */
