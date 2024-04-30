@@ -1,6 +1,8 @@
 // Change to NEW CLOCK
 $(".menu-one").click(function() {
     $(".title").hide();
+    $("body").removeClass("airplane-cursor");
+    $("html").removeClass("airplane-cursor");
     $(".clock-container-one").show();
     $(".clock-container-two").hide();
     $(".clock-container-three").hide();
@@ -8,6 +10,8 @@ $(".menu-one").click(function() {
 
 $(".menu-two").click(function() {
     $(".title").hide();
+    $("body").addClass("airplane-cursor");
+    $("html").addClass("airplane-cursor");
     $(".clock-container-one").hide();
     $(".clock-container-two").show();
     $(".clock-container-three").hide();
@@ -15,34 +19,36 @@ $(".menu-two").click(function() {
 
 $(".menu-three").click(function() {
     $(".title").hide();
+    $("body").removeClass("airplane-cursor");
+    $("html").removeClass("airplane-cursor");
     $(".clock-container-one").hide();
     $(".clock-container-two").hide();
     $(".clock-container-three").show();
 });
 
 // CLOCK 1
-if ($(".clock-container-one").length) {
-    $(".random-number-clock .number").each(function() {
-        var winWidth = window.innerWidth - 100;
-        var winHeight = window.innerHeight;
+// if ($(".clock-container-one").length) {
+//     $(".random-number-clock .number").each(function() {
+//         var winWidth = window.innerWidth - 100;
+//         var winHeight = window.innerHeight;
 
-        var randomTop = getRandomNumber(0, 80);
-        var randomBottom = getRandomNumber(90);
-        var randomLeft = getRandomNumber(0, 80);
-        var randomRight = getRandomNumber(90);
+//         var randomTop = getRandomNumber(0, 80);
+//         var randomBottom = getRandomNumber(90);
+//         var randomLeft = getRandomNumber(0, 80);
+//         var randomRight = getRandomNumber(90);
 
-        $(this).css({
-            top: randomTop + "%",
-            bottom: randomBottom + "%",
-            left: randomLeft + "%",
-            right: randomRight + "%"
-        });
-    });
-}
+//         $(this).css({
+//             top: randomTop + "%",
+//             bottom: randomBottom + "%",
+//             left: randomLeft + "%",
+//             right: randomRight + "%"
+//         });
+//     });
+// }
 
-function getRandomNumber(min, max) {
-    return Math.random() * (max - min) + min;
-}
+// function getRandomNumber(min, max) {
+//     return Math.random() * (max - min) + min;
+// }
 
 // CLOCK 2
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -59,14 +65,14 @@ function myClock() {
     var currentMinutes = currentTime.getMinutes()
     var currentSeconds = currentTime.getSeconds()
     var currentHour = currentTime.getHours();    
-    var ampm = "am";
+    // var ampm = "am";
 
-    if (currentHour > 11) {
-      ampm = "pm";
-    }
-    if (currentHour == 12) {
-      ampm = "pm";
-    }
+    // if (currentHour > 11) {
+    //   ampm = "pm";
+    // }
+    // if (currentHour == 12) {
+    //   ampm = "pm";
+    // }
     if (currentHour > 12) {
       currentHour = currentHour - 12;
     }
@@ -85,7 +91,7 @@ function myClock() {
     $(".minutes").html(currentMinutes);
     $(".seconds").html(currentSeconds);
     $("#num" + currentHour).html($(".edt-container"));
-    $(".ampm").html(ampm);
+    // $(".ampm").html(ampm);
 };
 
 myClock();
@@ -100,18 +106,18 @@ function koreaTime() {
     const currentMonth = months[currentTime.getMonth()];
     const currentDate = currentTime.getDate();
     var currentHour = currentTime.getHours();
-    var ampm = "am";
+    // var ampm = "am";
     
     let currentHours = currentTime.getHours();
     let currentMinutes = currentTime.getMinutes();
     let currentSeconds = currentTime.getSeconds();
 
-    if (currentHour > 11) {
-      ampm = "pm";
-    }
-    if (currentHour == 12) {
-      ampm = "pm";
-    }
+    // if (currentHour > 11) {
+    //   ampm = "pm";
+    // }
+    // if (currentHour == 12) {
+    //   ampm = "pm";
+    // }
     if (currentHour > 12) {
         currentHour = currentHour - 12;
     }
@@ -129,34 +135,30 @@ function koreaTime() {
     $(".kst-minutes").html(currentMinutes);
     $(".kst-seconds").html(currentSeconds);
     $("#num" + currentHour).html($(".kst-container"));
-    $(".kst-ampm").html(ampm);
+    // $(".kst-ampm").html(ampm);
 }
 
 koreaTime();
 setInterval(koreaTime, 1000);
 
 // D-days calculator
-function calculateCountdown() {
-    var dDayInput = new Date(document.getElementById('d-day-input').value);
-    var currentDate = new Date();
-    var timeDifference = dDayInput - currentDate;
+$(document).ready(function() {
+  var targetDate = new Date("May 17, 2024 13:00:00");
 
-    var days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+  setInterval(function() {
+      var currentDate = new Date();
+      var timeDifference = targetDate - currentDate;
 
-    var countdownMessage = days + " days, " + hours + " hours, " + minutes + " minutes, " + seconds + " seconds remaining.";
+      var days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
 
-    document.getElementById('d-day-countdown').innerText = countdownMessage;
-}
+      var countdownMessage = days + " days " + hours + " hours " + minutes + " minutes " + seconds + " seconds remaining until departure.";
 
-// function setClock() {
-//   $(".clock").html(countdown( new Date(2014,07,06,19,0,0,0) ).toString());
-// }
-
-// setClock();
-
+      $('#d-day-countdown').text(countdownMessage);
+  }, 1000);
+});
 
 // CLOCK 3
 function updateClocks() {
@@ -168,22 +170,22 @@ function updateClocks() {
 
   const blueColor = `#1500ff`;
   const orangeColor = `#ff5e00`;
-  const edtGradient = `linear-gradient(120deg, ${blueColor}, ${orangeColor})`;
 
-  const kstGradient = `linear-gradient(120deg, ${orangeColor}, ${blueColor})`;
+  if (nycHours <= kstHours) {
+      edtGradient = `linear-gradient(180deg, ${blueColor}, ${orangeColor})`; // NYC
+      kstGradient = `linear-gradient(0deg, ${orangeColor}, ${blueColor})`;  // Seoul
+  } else {
+      edtGradient = `linear-gradient(0deg, ${orangeColor}, ${blueColor})`;  // NYC
+      kstGradient = `linear-gradient(180deg, ${blueColor}, ${orangeColor})`; // Seoul
+  }
 
-  const edtAngle = (nycHours / 12) * 360;
-  const kstAngle = (kstHours / 12) * 360;
-
-  $('#edt-gradient').css('background', `linear-gradient(${edtAngle}deg, ${blueColor}, ${orangeColor})`);
-
-  $('#kst-gradient').css('background', (kstHours >= 6 && kstHours <= 18) ? edtGradient : kstGradient);
+  $('#edt-gradient').css('background', edtGradient);
+  $('#kst-gradient').css('background', kstGradient);
 }
 
 setInterval(updateClocks, 60000);
 
 updateClocks();
-
 
 // In Class notes
 // var countHours = 0;

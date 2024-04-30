@@ -2,7 +2,11 @@ body, html {
     font-family: "azo-sans-web", sans-serif;
     cursor: auto;
     margin: 0;
-    height: 100%;   
+}
+
+body.airplane-cursor, 
+html.airplane-cursor {
+    cursor: url(assets/korean-air.png), auto;
 }
 
 .title {
@@ -51,7 +55,7 @@ body, html {
 .menu-one:hover,
 .menu-two:hover,
 .menu-three:hover {
-    color: blue;
+    color: #1500ff;
 }
 
 .clock-container-one,
@@ -70,48 +74,77 @@ body, html {
 
 /* FIRST CLOCK */
 .random-number-clock {
-    position: relative;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+}
+
+.odd-numbers,
+.even-numbers {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.odd-numbers {
+    padding-right: 15px;
+    right: 0;
+    text-align: right;
+}
+
+.even-numbers {
+    padding-left: 15px;
+    left: 0;
+    text-align: left;
 }
 
 .number {
-    position: fixed;
-    font-size: 85px;
+    font-size: 65px;
     font-weight: 400;
     color: black;
-    top: 100px;
-    left: 100px;
+    margin: 10px;
 }
 
 .edt-container {
-    color: #1500ff;
-    font-size: 85px;
+    font-size: 105px;
     font-weight: 600;
-    z-index: 1000;
+    color: #1500ff;
 }
 
 .kst-container {
-    color: #ff5e00;
-    font-size: 85px;
+    font-size: 105px;
     font-weight: 600;
-    z-index: 1000;
+    color: #ff5e00;
 }
 
 @media screen and (max-width: 768px) {
     .number {
-        font-size: 45px; 
+        font-size: 25px;
     }
 
-    .edt-container, 
-    .kst-container{
-        font-size: 45px;
+    .edt-container {
+        font-size: 65px;
+    }
+    
+    .kst-container {
+        font-size: 65px;
     }
 }
 
 /* SECOND CLOCK */
+.clock-container-two {
+    cursor: url(assets/korean-air.png), auto;
+}
+
+.edt-clock,
+.kst-clock {
+    cursor: url(assets/korean-air.png), auto;
+}
+
 .edt-clock {
     text-align: left;
     position: fixed;
@@ -201,36 +234,20 @@ body, html {
     text-align: center;
 }
 
-.d-day button {
-    margin-top: 5px;
-    padding: 5px 10px;
-    border: none;
-    cursor: pointer;
-}
-
-.d-day label {
-    font-weight: 600;
-}
-
-.d-day input {
-    margin-right: 7px;
-}
-
 #d-day-countdown {
-    font-size: 14px;
+    font-size: 18px;
 }
 
 /* THIRD CLOCK */
 .clock-container-three {
-    display: flex;
-    height: 100vh;
+    cursor: auto;
     display: none;
 }
 
 .edt-gradient,
 .kst-gradient {
-    flex: 1; 
-    min-height: 100px; 
+    flex: 1;
+    min-height: 100px;
     border-radius: 0;
 }
 
@@ -247,103 +264,3 @@ body, html {
     width: 50%;
     height: 100vh;
 }
-
-/* EDT
-.edt-dial-clock {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    margin: 20px;
-}
-  
-.hour-hand, 
-.minute-hand, 
-.second-hand {
-    position: absolute;
-    background: #1500ff;
-    transform-origin: bottom center;
-}
-  
-.hour-hand {
-    width: 4px;
-    height: 60px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -100%);
-}
-  
-.minute-hand {
-    width: 4px;
-    height: 80px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -100%);
-}
-  
-.second-hand {
-    width: 2px;
-    height: 90px;
-    background-color: red;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -100%);
-}
-  
-KST
-.kst-dial-clock {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    margin: 20px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-  
-.kst-hour-hand, 
-.kst-minute-hand, 
-.kst-second-hand {
-    position: absolute;
-    background: #ff5e00;
-    transform-origin: bottom center;
-}
-  
-.kst-hour-hand {
-    width: 4px;
-    height: 60px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -100%);
-}
-  
-.kst-minute-hand {
-    width: 4px;
-    height: 80px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -100%);
-}
-  
-.kst-second-hand {
-    width: 1.5px;
-    height: 90px;
-    background-color: red;
-    top: 50%; 
-    left: 50%;
-    transform: translate(-50%, -100%); 
-}
-
-.blue-numbers,
-.orange-numbers {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-}
-
-.blue-numbers img,
-.orange-numbers img {
-    width: 15%;
-    margin: 2px; 
-    transform: scale(0.1);
-} */
