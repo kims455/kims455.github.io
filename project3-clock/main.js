@@ -159,35 +159,30 @@ function calculateCountdown() {
 
 
 // CLOCK 3
+function updateClocks() {
+  const nycTime = new Date().toLocaleString('en-US', { timeZone: 'America/New_York' });
+  const nycHours = new Date(nycTime).getHours() % 12;
 
-// function rotateClock() {
-//   const now = new Date();
-//   const edtHour = (now.getUTCHours() - 4) % 12; 
-//   const kstHour = (now.getUTCHours() + 9) % 12;
-//   const minute = now.getMinutes();
-//   const second = now.getSeconds();
+  const kstTime = new Date().toLocaleString('en-US', { timeZone: 'Asia/Seoul' });
+  const kstHours = new Date(kstTime).getHours() % 12;
 
-//   const edtHourRotation = (edtHour * 30) + (0.5 * minute);
-//   const kstHourRotation = (kstHour * 30) + (0.5 * minute);
-//   const minuteRotation = (minute * 6) + (0.1 * second);
-//   const secondRotation = second * 6;
+  const blueColor = `#1500ff`;
+  const orangeColor = `#ff5e00`;
+  const edtGradient = `linear-gradient(120deg, ${blueColor}, ${orangeColor})`;
 
-//   $("#edt-dial-clock .hour-hand").css("transform", `rotate(${edtHourRotation}deg)`);
-//   $("#edt-dial-clock .minute-hand").css("transform", `rotate(${minuteRotation}deg)`);
-//   $("#edt-dial-clock .second-hand").css("transform", `rotate(${secondRotation}deg)`);
+  const kstGradient = `linear-gradient(120deg, ${orangeColor}, ${blueColor})`;
 
-//   $("#kst-dial-clock .kst-hour-hand").css("transform", `rotate(${kstHourRotation}deg)`);
-//   $("#kst-dial-clock .kst-minute-hand").css("transform", `rotate(${minuteRotation}deg)`);
-//   $("#kst-dial-clock .kst-second-hand").css("transform", `rotate(${secondRotation}deg)`);
-// }
+  const edtAngle = (nycHours / 12) * 360;
+  const kstAngle = (kstHours / 12) * 360;
 
-// setInterval(rotateClock, 0);
+  $('#edt-gradient').css('background', `linear-gradient(${edtAngle}deg, ${blueColor}, ${orangeColor})`);
 
-// 0.5 times 360
-// 180 degrees rotations for Hours
-// Find the angles on js that shows the correct times
-// 25 percent times 
-// minute value divide by 60
+  $('#kst-gradient').css('background', (kstHours >= 6 && kstHours <= 18) ? edtGradient : kstGradient);
+}
+
+setInterval(updateClocks, 60000);
+
+updateClocks();
 
 
 // In Class notes

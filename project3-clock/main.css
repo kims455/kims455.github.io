@@ -1,6 +1,8 @@
 body, html {
     font-family: "azo-sans-web", sans-serif;
     cursor: auto;
+    margin: 0;
+    height: 100%;   
 }
 
 .title {
@@ -218,39 +220,35 @@ body, html {
     font-size: 14px;
 }
 
-/* KOREA TIME BASED D-DAY
-.d-day-korea {
-    position: fixed;
-    bottom: 80px; 
-    right: 10px;
-    text-align: center;
-}
-
-.d-day-korea button {
-    margin-top: 5px;
-    padding: 5px 10px;
-    border: none;
-    cursor: pointer;
-}
-
-.d-day-korea p {
-    line-height: -100%;
-}
-
-.d-day-korea label {
-    font-weight: 600;
-}
-
-.d-day-korea input {
-    margin-right: 7px;
-}
-
-#d-day-korea-countdown {
-    font-size: 14px;
-} */
-
 /* THIRD CLOCK */
-/* EDT */
+.clock-container-three {
+    display: flex;
+    height: 100vh;
+    display: none;
+}
+
+.edt-gradient,
+.kst-gradient {
+    flex: 1; 
+    min-height: 100px; 
+    border-radius: 0;
+}
+
+#edt-gradient {
+    position: fixed;
+    left: 0;
+    width: 50%;
+    height: 100vh;
+}
+
+#kst-gradient {
+    position: fixed;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+}
+
+/* EDT
 .edt-dial-clock {
     position: relative;
     width: 200px;
@@ -291,7 +289,7 @@ body, html {
     transform: translate(-50%, -100%);
 }
   
-/* KST */
+KST
 .kst-dial-clock {
     position: relative;
     width: 200px;
@@ -348,4 +346,4 @@ body, html {
     width: 15%;
     margin: 2px; 
     transform: scale(0.1);
-}
+} */
