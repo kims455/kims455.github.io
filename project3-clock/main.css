@@ -94,12 +94,32 @@ html.airplane-cursor {
     padding-right: 15px;
     right: 0;
     text-align: right;
+    animation: downBounce 5s 4 alternate;
+}
+
+@keyframes downBounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-410px);
+    }
 }
 
 .even-numbers {
     padding-left: 15px;
     left: 0;
     text-align: left;
+    animation: upBounce 5s 6 alternate;
+}
+
+@keyframes upBounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-410px);
+    }
 }
 
 .number {

@@ -58,25 +58,15 @@ const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", 
 
 // EDT Clock (New York based time)
 function myClock() {
+    const edtTime = new Date().toLocaleString('en-US', { timeZone: 'America/New_York' });
     var currentTime = new Date();
     var currentDay = currentTime.getDay();
     var currentMonth = currentTime.getMonth();
     var currentDate = currentTime.getDate();
-    var currentMinutes = currentTime.getMinutes()
-    var currentSeconds = currentTime.getSeconds()
+    var currentMinutes = currentTime.getMinutes();
+    var currentSeconds = currentTime.getSeconds();
     var currentHour = currentTime.getHours();    
-    // var ampm = "am";
-
-    // if (currentHour > 11) {
-    //   ampm = "pm";
-    // }
-    // if (currentHour == 12) {
-    //   ampm = "pm";
-    // }
-    if (currentHour > 12) {
-      currentHour = currentHour - 12;
-    }
-    console.log(currentHour);
+    
     if (currentMinutes < 10) {
       currentMinutes = "0" + currentMinutes;
     }
@@ -91,12 +81,10 @@ function myClock() {
     $(".minutes").html(currentMinutes);
     $(".seconds").html(currentSeconds);
     $("#num" + currentHour).html($(".edt-container"));
-    // $(".ampm").html(ampm);
 };
 
 myClock();
-
-setInterval(myClock, 1000);
+setInterval(myClock, 0);
 
 // KST Clock (+13 Hours)
 function koreaTime() {
@@ -139,7 +127,7 @@ function koreaTime() {
 }
 
 koreaTime();
-setInterval(koreaTime, 1000);
+setInterval(koreaTime, 0);
 
 // D-days calculator
 $(document).ready(function() {
@@ -172,11 +160,11 @@ function updateClocks() {
   const orangeColor = `#ff5e00`;
 
   if (nycHours <= kstHours) {
-      edtGradient = `linear-gradient(180deg, ${blueColor}, ${orangeColor})`; // NYC
-      kstGradient = `linear-gradient(0deg, ${orangeColor}, ${blueColor})`;  // Seoul
+      edtGradient = `linear-gradient(180deg, ${blueColor}, ${orangeColor})`;
+      kstGradient = `linear-gradient(0deg, ${orangeColor}, ${blueColor})`;
   } else {
-      edtGradient = `linear-gradient(0deg, ${orangeColor}, ${blueColor})`;  // NYC
-      kstGradient = `linear-gradient(180deg, ${blueColor}, ${orangeColor})`; // Seoul
+      edtGradient = `linear-gradient(0deg, ${orangeColor}, ${blueColor})`;
+      kstGradient = `linear-gradient(180deg, ${blueColor}, ${orangeColor})`;
   }
 
   $('#edt-gradient').css('background', edtGradient);
