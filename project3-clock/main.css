@@ -94,70 +94,53 @@ html.airplane-cursor {
     padding-right: 15px;
     right: 0;
     text-align: right;
-    /* animation: downBounce 4s 2 alternate; */
-}
-
-@keyframes downBounce {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(-410px);
-    }
+    /* padding-left: 510px; */
 }
 
 .even-numbers {
     padding-left: 15px;
     left: 0;
     text-align: left;
-    /* animation: upBounce 4s 2 alternate; */
-}
-
-@keyframes upBounce {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(-410px);
-    }
 }
 
 .number {
-    font-size: 65px;
+    font-size: 95px;
     font-weight: 400;
     color: black;
-    margin: 10px;
+    margin: 15px;
 }
 
 .edt-container {
-    font-size: 105px;
+    font-size: 95px;
     font-weight: 600;
     color: #1500ff;
 }
 
 .kst-container {
-    font-size: 105px;
+    font-size: 95px;
     font-weight: 600;
     color: #ff5e00;
+    /* padding-left: 510px; */
 }
 
 @media screen and (max-width: 768px) {
     .number {
-        font-size: 25px;
+        font-size: 30px;
     }
 
     .edt-container {
-        font-size: 65px;
+        font-size: 30px;
     }
     
     .kst-container {
-        font-size: 65px;
+        font-size: 30px;
     }
 }
 
 /* SECOND CLOCK */
 .clock-container-two {
     cursor: url(assets/korean-air.png), auto;
+    overflow: hidden;
 }
 
 .edt-clock,
@@ -244,6 +227,32 @@ html.airplane-cursor {
 .kst-seconds {
     letter-spacing: 2px;
 }
+/* 
+.curved-line {
+    width: 1930px; 
+    height: 2100px; 
+    border-radius: 25%;
+    border: 2px dashed rgb(38, 38, 38);
+    position: relative;
+    top: 100px; 
+    left: -270px;
+    transform: rotate(10deg); 
+} */
+
+.line-svg {
+    width: 100%;
+    height: 90%;
+    left: 50px;
+    top: 100px;
+}
+
+
+/* @media screen and (max-width: 768px) {
+    .line-svg {
+        width: 100%; 
+        height: 2000%;
+    }
+} */
 
 /* NYC TIME BASED D-DAY */
 .d-day {
