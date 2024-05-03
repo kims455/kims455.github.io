@@ -27,28 +27,6 @@ $(".menu-three").click(function() {
 });
 
 // CLOCK 1
-// if ($(".clock-container-one").length) {
-//     $(".random-number-clock .number").each(function() {
-//         var winWidth = window.innerWidth - 100;
-//         var winHeight = window.innerHeight;
-
-//         var randomTop = getRandomNumber(0, 80);
-//         var randomBottom = getRandomNumber(90);
-//         var randomLeft = getRandomNumber(0, 80);
-//         var randomRight = getRandomNumber(90);
-
-//         $(this).css({
-//             top: randomTop + "%",
-//             bottom: randomBottom + "%",
-//             left: randomLeft + "%",
-//             right: randomRight + "%"
-//         });
-//     });
-// }
-
-// function getRandomNumber(min, max) {
-//     return Math.random() * (max - min) + min;
-// }
 
 // CLOCK 2
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -59,7 +37,7 @@ const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", 
 // EDT Clock (New York based time)
 function myClock() {
     const edtTime = new Date().toLocaleString('en-US', { timeZone: 'America/New_York' });
-    var currentTime = new Date();
+    var currentTime = new Date(edtTime); 
     var currentDay = currentTime.getDay();
     var currentMonth = currentTime.getMonth();
     var currentDate = currentTime.getDate();
@@ -67,47 +45,10 @@ function myClock() {
     var currentSeconds = currentTime.getSeconds();
     var currentHour = currentTime.getHours();    
     
-    if (currentMinutes < 10) {
-      currentMinutes = "0" + currentMinutes;
-    }
-    if (currentSeconds < 10) {
-      currentSeconds = "0" + currentSeconds;
-    }
-
-    $(".day").html(days[currentDay]);
-    $(".month").html(months[currentMonth]);
-    $(".date").html(currentDate);
-    $(".hour").html(currentHour);
-    $(".minutes").html(currentMinutes);
-    $(".seconds").html(currentSeconds);
-    $("#num" + currentHour).html($(".edt-container"));
-};
-
-myClock();
-setInterval(myClock, 0);
-
-// KST Clock (+13 Hours)
-function koreaTime() {
-    const kstTime = new Date().toLocaleString("en-US", {timeZone: "Asia/Seoul"});
-    const currentTime = new Date(kstTime);
-    const currentDay = days[currentTime.getDay()];
-    const currentMonth = months[currentTime.getMonth()];
-    const currentDate = currentTime.getDate();
-    var currentHour = currentTime.getHours();
-    // var ampm = "am";
-    
-    let currentHours = currentTime.getHours();
-    let currentMinutes = currentTime.getMinutes();
-    let currentSeconds = currentTime.getSeconds();
-
-    // if (currentHour > 11) {
-    //   ampm = "pm";
-    // }
-    // if (currentHour == 12) {
-    //   ampm = "pm";
-    // }
-    if (currentHour > 12) {
-        currentHour = currentHour - 12;
+    if (currentHour === 0) {
+        $(".hour").html("00");
+    } else {
+        $(".hour").html(currentHour);
     }
     if (currentMinutes < 10) {
         currentMinutes = "0" + currentMinutes;
@@ -116,14 +57,46 @@ function koreaTime() {
         currentSeconds = "0" + currentSeconds;
     }
 
-    $(".kst-day").html(currentDay);
-    $(".kst-month").html(currentMonth);
+    $(".day").html(days[currentDay]);
+    $(".month").html(months[currentMonth]);
+    $(".date").html(currentDate);
+    $(".minutes").html(currentMinutes);
+    $(".seconds").html(currentSeconds);
+    $("#num" + currentHour).html($(".edt-container"));
+}
+
+myClock();
+setInterval(myClock, 0);
+
+// KST Clock (+13 Hours)
+function koreaTime() {
+    const kstTime = new Date().toLocaleString("en-US", {timeZone: "Asia/Seoul"});
+    var currentTime = new Date(kstTime);
+    const currentDay = currentTime.getDay();
+    const currentMonth = currentTime.getMonth();
+    const currentDate = currentTime.getDate();
+    let currentHours = currentTime.getHours();
+    let currentMinutes = currentTime.getMinutes();
+    let currentSeconds = currentTime.getSeconds();
+
+    if (currentHours === 0) {
+        $(".kst-hour").html("00");
+    } else {
+        $(".kst-hour").html(currentHours);
+    }
+    if (currentMinutes < 10) {
+        currentMinutes = "0" + currentMinutes;
+    }
+    if (currentSeconds < 10) {
+        currentSeconds = "0" + currentSeconds;
+    }
+
+    $(".kst-day").html(days[currentDay]);
+    $(".kst-month").html(months[currentMonth]);
     $(".kst-date").html(currentDate);
-    $(".kst-hour").html(currentHours);
     $(".kst-minutes").html(currentMinutes);
     $(".kst-seconds").html(currentSeconds);
-    $("#num" + currentHour).html($(".kst-container"));
-    // $(".kst-ampm").html(ampm);
+    $("#num" + currentHours).html($(".kst-container"));
 }
 
 koreaTime();
@@ -131,48 +104,55 @@ setInterval(koreaTime, 0);
 
 // D-days calculator
 $(document).ready(function() {
-  var targetDate = new Date("May 17, 2024 13:00:00");
+    var startDate = new Date("January 22, 2024").getTime();
+    var endDate = new Date("May 17, 2024").getTime();
+    var totalDays = Math.round((endDate - startDate) / (1000 * 60 * 60 * 24));
 
-  setInterval(function() {
-      var currentDate = new Date();
-      var timeDifference = targetDate - currentDate;
+    setInterval(function() {
+        var currentDate = new Date().getTime();
+        var timeDifference = endDate - startDate;
+        var timeElapsed = currentDate - startDate;
+        var progressPercentage = (timeElapsed / timeDifference) * 100;
 
-      var days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+        var days = Math.floor((timeDifference - timeElapsed) / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((timeDifference - timeElapsed) % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+        var minutes = Math.floor((timeDifference - timeElapsed) % (1000 * 60 * 60) / (1000 * 60));
+        var seconds = Math.floor((timeDifference - timeElapsed) % (1000 * 60) / 1000);
 
-      var countdownMessage = days + " days " + hours + " hours " + minutes + " minutes " + seconds + " seconds remaining until departure.";
+        var countdownMessage = days + " days " + hours + " hours " + minutes + " minutes " + seconds + " seconds remaining until departure.";
+        $('#d-day-countdown').text(countdownMessage);
 
-      $('#d-day-countdown').text(countdownMessage);
-  }, 1000);
+        $('.progress-bar').css('width', progressPercentage + '%');
+    });
 });
 
 // CLOCK 3
 function updateClocks() {
-  const nycTime = new Date().toLocaleString('en-US', { timeZone: 'America/New_York' });
-  const nycHours = new Date(nycTime).getHours() % 12;
-
-  const kstTime = new Date().toLocaleString('en-US', { timeZone: 'Asia/Seoul' });
-  const kstHours = new Date(kstTime).getHours() % 12;
-
-  const blueColor = `#1500ff`;
-  const orangeColor = `#ff5e00`;
-
-  if (nycHours <= kstHours) {
+    const nycTime = new Date().toLocaleString('en-US', { timeZone: 'America/New_York' });
+    const nycHours = new Date(nycTime).getHours() % 12;
+  
+    const kstTime = new Date().toLocaleString('en-US', { timeZone: 'Asia/Seoul' });
+    const kstHours = new Date(kstTime).getHours() % 12;
+  
+    const blueColor = `#1500ff`;
+    const orangeColor = `#ff5e00`;
+  
+    let edtGradient, kstGradient;
+  
+    if (nycHours <= kstHours) {
       edtGradient = `linear-gradient(180deg, ${blueColor}, ${orangeColor})`;
       kstGradient = `linear-gradient(0deg, ${orangeColor}, ${blueColor})`;
-  } else {
+    } else {
       edtGradient = `linear-gradient(0deg, ${orangeColor}, ${blueColor})`;
       kstGradient = `linear-gradient(180deg, ${blueColor}, ${orangeColor})`;
-  }
-
-  $('#edt-gradient').css('background', edtGradient);
-  $('#kst-gradient').css('background', kstGradient);
+    }
+  
+    $('#edt-gradient').css('background', edtGradient);
+    $('#kst-gradient').css('background', kstGradient);
 }
-
+  
 setInterval(updateClocks, 60000);
-
+  
 updateClocks();
 
 // In Class notes
