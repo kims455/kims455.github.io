@@ -143,7 +143,6 @@ p {
     z-index: 1;
 }
 
-
 .image-text1,
 .image-text2,
 .image-text3,
@@ -159,9 +158,12 @@ p {
 .story10,
 .story11,
 .story12,
-.story13,
 .story14 {
     width: 425px;
+}
+
+.story13 {
+    width: 485px;
 }
 
 .image-wrapper:hover .image-text1,
