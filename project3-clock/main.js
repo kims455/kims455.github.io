@@ -106,7 +106,6 @@ setInterval(koreaTime, 0);
 $(document).ready(function() {
     var startDate = new Date("January 22, 2024").getTime();
     var endDate = new Date("May 18, 2024").getTime();
-    var totalDays = Math.round((endDate - startDate) / (1000 * 60 * 60 * 24));
 
     setInterval(function() {
         var currentDate = new Date().getTime();
@@ -129,13 +128,14 @@ $(document).ready(function() {
 // CLOCK 3
 // EDT Gradient Clock
 function updateEdtClock() {
-    const currentHour = new Date().getHours();
+    const edtTime = new Date().toLocaleString('en-US', { timeZone: 'America/New_York' });
+    const currentHour = new Date(edtTime).getHours();
 
     const deepNightColor = '#00135E';
     const nightColor = '#1500FF';
-    const dawnColor = '#FFA500';
-    const morningColor = '#FFFF00';
-    const noonColor = '#6C86D6';
+    const dawnColor = '#ff5e00';
+    const morningColor = '#ffa700';
+    const noonColor = '#fcdb03'; 
 
     let edtGradient;
 
@@ -158,13 +158,15 @@ function updateEdtClock() {
 
 // KST Gradient Clock
 function updateKstClock() {
-    const currentHour = new Date().getHours();
+    const kstTime = new Date().toLocaleString("en-US", {timeZone: "Asia/Seoul"});
+    const currentHour = new Date(kstTime).getHours();
 
+    
     const deepNightColor = '#00135E';
     const nightColor = '#1500FF';
-    const dawnColor = '#FFA500';
-    const morningColor = '#FFFF00';
-    const noonColor = '#6C86D6';
+    const dawnColor = '#ff5e00';
+    const morningColor = '#ffa700';
+    const noonColor = '#fcdb03'; 
 
     let kstGradient;
 
