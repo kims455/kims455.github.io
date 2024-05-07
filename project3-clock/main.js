@@ -129,89 +129,63 @@ $(document).ready(function() {
 // CLOCK 3
 function updateClocks() {
     const nycTime = new Date().toLocaleString('en-US', { timeZone: 'America/New_York' });
-    const nycHours = new Date(nycTime).getHours() % 12;
-  
+    const nycHours = new Date(nycTime).getHours() % 24;
+
     const kstTime = new Date().toLocaleString('en-US', { timeZone: 'Asia/Seoul' });
-    const kstHours = new Date(kstTime).getHours() % 12;
-  
-    const blueColor = `#1500ff`;
-    const orangeColor = `#ff5e00`;
-  
+    const kstHours = new Date(kstTime).getHours() % 24;
+
+    const deepNightColor = `#00135E`;
+    const nightColor = `#1500FF`;
+    const morningColor = `#FFA500`;
+    const noonColor = `#FFFF00`;
+
     let edtGradient, kstGradient;
-  
-    if (nycHours <= kstHours) {
-      edtGradient = `linear-gradient(180deg, ${blueColor}, ${orangeColor})`;
-      kstGradient = `linear-gradient(0deg, ${orangeColor}, ${blueColor})`;
+
+    if (nycHours < 4 || nycHours >= 20) {
+    // Deep night
+        edtGradient = `linear-gradient(180deg, ${deepNightColor}, ${deepNightColor})`;
+    } else if (nycHours >= 4 && nycHours < 6) {
+    // Night
+        edtGradient = `linear-gradient(180deg, ${nightColor}, ${nightColor})`;
+    } else if (nycHours >= 6 && nycHours < 8) {
+    // Sunrise
+        edtGradient = `linear-gradient(180deg, ${nightColor}, ${morningColor})`;
+    } else if (nycHours >= 8 && nycHours < 17) {
+    // Daytime
+        edtGradient = `linear-gradient(180deg, ${morningColor}, ${noonColor})`;
+    } else if (nycHours >= 17 && nycHours < 20) {
+    // Sunset
+        edtGradient = `linear-gradient(180deg, ${noonColor}, ${nightColor})`;
     } else {
-      edtGradient = `linear-gradient(0deg, ${orangeColor}, ${blueColor})`;
-      kstGradient = `linear-gradient(180deg, ${blueColor}, ${orangeColor})`;
+    // Deep night
+        edtGradient = `linear-gradient(180deg, ${deepNightColor}, ${deepNightColor})`;
     }
-  
+
+    if (kstHours < 4 || kstHours >= 20) {
+    // Deep night
+        kstGradient = `linear-gradient(0deg, ${deepNightColor}, ${deepNightColor})`;
+    } else if (kstHours >= 4 && kstHours < 6) {
+    // Night
+        kstGradient = `linear-gradient(0deg, ${nightColor}, ${nightColor})`;
+    } else if (kstHours >= 6 && kstHours < 8) {
+    // Sunrise
+        kstGradient = `linear-gradient(0deg, ${nightColor}, ${morningColor})`;
+    } else if (kstHours >= 8 && kstHours < 17) {
+    // Daytime
+        kstGradient = `linear-gradient(0deg, ${morningColor}, ${noonColor})`;
+    } else if (kstHours >= 17 && kstHours < 20) {
+    // Sunset in KST
+        kstGradient = `linear-gradient(0deg, ${noonColor}, ${nightColor})`;
+    } else {
+    // Deep night
+        kstGradient = `linear-gradient(0deg, ${deepNightColor}, ${deepNightColor})`;
+    }
+
     $('#edt-gradient').css('background', edtGradient);
     $('#kst-gradient').css('background', kstGradient);
 }
-  
-setInterval(updateClocks, 60000);
-  
-updateClocks();
 
-// In Class notes
-// var countHours = 0;
-// var countMinutes = 0;
-// var countSeconds = 0;
-
-// function countClock() {
-//   var hoursString;
-//   var minutesString;
-//   var secondsString;
-//   countSeconds++;
-//   if (countSeconds == 60) {
-//     countSeconds = 0;
-//     countMinutes++;
-//   }
-//   if (countMinutes == 60) {
-//     countMinutes = 0;
-//     countHours++;
-//   }
-//   if (countHours < 10) {
-//     hoursString = "0" + countHours;
-//   } else {
-//     hoursString = countHours;
-//   }
-//   if (countMinutes < 10) {
-//     minutesString = "0" + countMinutes;
-//   } else {
-//     minutesString = countMinutes;
-//   }
-//   if (countSeconds < 10) {
-//     secondsString = "0" + countSeconds;
-//   } else {
-//     secondsString = countSeconds;
-//   }
-//   $(".count-clock-hours").html(hoursString);
-//   $(".count-clock-minutes").html(minutesString);
-//   $(".count-clock-seconds").html(secondsString);
-// }
-
-// setInterval(countClock, 1000);
-
-// // Count up and Count Down
-// var counter = 0;
-
-// function countUp() {
-//   counter++;
-//   $(".count-up").html(counter);
-// }
-
-// setInterval(countUp, 1000);
-
-// var counterDown = 10;
-
-// function countDown() {
-//   if (counterDown > 0) {
-//     counterDown--;
-//     $(".count-down").html(counterDown);
-//   }
-// }
-
-// setInterval(countDown, 1000);
+$(document).ready(function() {
+    updateClocks();
+    setInterval(updateClocks, 60000);
+});
