@@ -127,65 +127,65 @@ $(document).ready(function() {
 });
 
 // CLOCK 3
-function updateClocks() {
-    const nycTime = new Date().toLocaleString('en-US', { timeZone: 'America/New_York' });
-    const nycHours = new Date(nycTime).getHours() % 24;
+// EDT Gradient Clock
+function updateEdtClock() {
+    const currentHour = new Date().getHours();
 
-    const kstTime = new Date().toLocaleString('en-US', { timeZone: 'Asia/Seoul' });
-    const kstHours = new Date(kstTime).getHours() % 24;
+    const deepNightColor = '#00135E';
+    const nightColor = '#1500FF';
+    const dawnColor = '#FFA500';
+    const morningColor = '#FFFF00';
+    const noonColor = '#6C86D6';
 
-    const deepNightColor = `#00135E`;
-    const nightColor = `#1500FF`;
-    const morningColor = `#FFA500`;
-    const noonColor = `#FFFF00`;
+    let edtGradient;
 
-    let edtGradient, kstGradient;
-
-    if (nycHours < 4 || nycHours >= 20) {
-    // Deep night
-        edtGradient = `linear-gradient(180deg, ${deepNightColor}, ${deepNightColor})`;
-    } else if (nycHours >= 4 && nycHours < 6) {
-    // Night
-        edtGradient = `linear-gradient(180deg, ${nightColor}, ${nightColor})`;
-    } else if (nycHours >= 6 && nycHours < 8) {
-    // Sunrise
-        edtGradient = `linear-gradient(180deg, ${nightColor}, ${morningColor})`;
-    } else if (nycHours >= 8 && nycHours < 17) {
-    // Daytime
-        edtGradient = `linear-gradient(180deg, ${morningColor}, ${noonColor})`;
-    } else if (nycHours >= 17 && nycHours < 20) {
-    // Sunset
-        edtGradient = `linear-gradient(180deg, ${noonColor}, ${nightColor})`;
+    if (currentHour < 4 || currentHour >= 20) {
+        edtGradient = `radial-gradient(circle at 100%, ${deepNightColor}, ${deepNightColor} 50%, ${nightColor} 75%, ${deepNightColor} 75%)`;
+    } else if (currentHour >= 4 && currentHour < 6) {
+        edtGradient = `radial-gradient(circle at 100%, ${nightColor}, ${nightColor} 50%, ${dawnColor} 75%, ${nightColor} 75%)`;
+    } else if (currentHour >= 6 && currentHour < 8) {
+        edtGradient = `radial-gradient(circle at 100%, ${dawnColor}, ${dawnColor} 50%, ${morningColor} 75%, ${dawnColor} 75%)`;
+    } else if (currentHour >= 8 && currentHour < 17) {
+        edtGradient = `radial-gradient(circle at 100%, ${morningColor}, ${morningColor} 50%, ${noonColor} 75%, ${morningColor} 75%)`;
+    } else if (currentHour >= 17 && currentHour < 20) {
+        edtGradient = `radial-gradient(circle at 100%, ${noonColor}, ${noonColor} 50%, ${nightColor} 75%, ${noonColor} 75%)`;
     } else {
-    // Deep night
-        edtGradient = `linear-gradient(180deg, ${deepNightColor}, ${deepNightColor})`;
-    }
-
-    if (kstHours < 4 || kstHours >= 20) {
-    // Deep night
-        kstGradient = `linear-gradient(0deg, ${deepNightColor}, ${deepNightColor})`;
-    } else if (kstHours >= 4 && kstHours < 6) {
-    // Night
-        kstGradient = `linear-gradient(0deg, ${nightColor}, ${nightColor})`;
-    } else if (kstHours >= 6 && kstHours < 8) {
-    // Sunrise
-        kstGradient = `linear-gradient(0deg, ${nightColor}, ${morningColor})`;
-    } else if (kstHours >= 8 && kstHours < 17) {
-    // Daytime
-        kstGradient = `linear-gradient(0deg, ${morningColor}, ${noonColor})`;
-    } else if (kstHours >= 17 && kstHours < 20) {
-    // Sunset in KST
-        kstGradient = `linear-gradient(0deg, ${noonColor}, ${nightColor})`;
-    } else {
-    // Deep night
-        kstGradient = `linear-gradient(0deg, ${deepNightColor}, ${deepNightColor})`;
+        edtGradient = `radial-gradient(circle at 100%, ${deepNightColor}, ${deepNightColor} 50%, ${nightColor} 75%, ${deepNightColor} 75%)`;
     }
 
     $('#edt-gradient').css('background', edtGradient);
+}
+
+// KST Gradient Clock
+function updateKstClock() {
+    const currentHour = new Date().getHours();
+
+    const deepNightColor = '#00135E';
+    const nightColor = '#1500FF';
+    const dawnColor = '#FFA500';
+    const morningColor = '#FFFF00';
+    const noonColor = '#6C86D6';
+
+    let kstGradient;
+
+    if (currentHour < 4 || currentHour >= 20) {
+        kstGradient = `radial-gradient(circle at 0%, ${deepNightColor}, ${deepNightColor} 50%, ${nightColor} 75%, ${deepNightColor} 75%)`;
+    } else if (currentHour >= 4 && currentHour < 6) {
+        kstGradient = `radial-gradient(circle at 0%, ${nightColor}, ${nightColor} 50%, ${dawnColor} 75%, ${nightColor} 75%)`;
+    } else if (currentHour >= 6 && currentHour < 8) {
+        kstGradient = `radial-gradient(circle at 0%, ${dawnColor}, ${dawnColor} 50%, ${morningColor} 75%, ${dawnColor} 75%)`;
+    } else if (currentHour >= 8 && currentHour < 17) {
+        kstGradient = `radial-gradient(circle at 0%, ${morningColor}, ${morningColor} 50%, ${noonColor} 75%, ${morningColor} 75%)`;
+    } else if (currentHour >= 17 && currentHour < 20) {
+        kstGradient = `radial-gradient(circle at 0%, ${noonColor}, ${noonColor} 50%, ${nightColor} 75%, ${noonColor} 75%)`;
+    } else {
+        kstGradient = `radial-gradient(circle at 0%, ${deepNightColor}, ${deepNightColor} 50%, ${nightColor} 75%, ${deepNightColor} 75%)`;
+    }
+
     $('#kst-gradient').css('background', kstGradient);
 }
 
 $(document).ready(function() {
-    updateClocks();
-    setInterval(updateClocks, 60000);
+    setInterval(updateEdtClock, 1000);
+    setInterval(updateKstClock, 1000);
 });

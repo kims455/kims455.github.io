@@ -301,27 +301,31 @@ html.airplane-cursor {
 /* THIRD CLOCK */
 .clock-container-three {
     cursor: auto;
-    /* background: radial-gradient(circle, rgba(184,238,174,1) 0%, rgba(148,187,233,1) 100%); */
+}
+
+.edt-gradient {
+    background: radial-gradient(circle at 100%, #333, #333 50%, #eee 75%, #333 75%);
+}
+
+.kst-gradient {
+    background: radial-gradient(circle at 0%, #eee, #eee 50%, #333 75%, #eee 75%);
 }
 
 .edt-gradient,
 .kst-gradient {
-    flex: 1;
-    min-height: 100px;
-    border-radius: 50%;
+    min-height: 100vh;
+}
+
+#edt-gradient,
+#kst-gradient {
+    position: fixed;
+    width: 50%;
 }
 
 #edt-gradient {
-    position: fixed;
     left: 0;
-    width: 50%;
-    height: 100vh;
 }
 
 #kst-gradient {
-    position: fixed;
     right: 0;
-    width: 50%;
-    height: 100vh;
 }
-
