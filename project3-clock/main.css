@@ -279,7 +279,7 @@ html.airplane-cursor {
     width: 95%;
     height: 80%;
     position: fixed;
-    top: 41%;
+    top: 42%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
