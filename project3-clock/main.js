@@ -105,7 +105,7 @@ setInterval(koreaTime, 0);
 // D-days calculator
 $(document).ready(function() {
     var startDate = new Date("January 22, 2024").getTime();
-    var endDate = new Date("May 18, 2024").getTime();
+    var endDate = new Date("May 17, 2024").getTime();
 
     setInterval(function() {
         var currentDate = new Date().getTime();

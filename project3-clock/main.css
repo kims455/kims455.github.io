@@ -1,7 +1,30 @@
 body, html {
-    font-family: "azo-sans-web", sans-serif;
     cursor: auto;
     margin: 0;
+}
+
+.title,
+.clock-options,
+.number,
+.d-day,
+.nyc,
+.seoul,
+.day,
+.month,
+.date,
+.kst-day,
+.kst-month,
+.kst-date {
+    font-family: "azo-sans-web", sans-serif;
+}
+
+.hour,
+.minutes,
+.seconds,
+.kst-hour,
+.kst-minutes,
+.kst-seconds {
+    font-family: "azo-mono", monospace;
 }
 
 body.airplane-cursor, 
@@ -225,7 +248,7 @@ html.airplane-cursor {
 .kst-hour,
 .kst-minutes,
 .kst-seconds {
-    letter-spacing: 2px;
+    letter-spacing: 0.5px;
 }
 /* 
 .curved-line {
