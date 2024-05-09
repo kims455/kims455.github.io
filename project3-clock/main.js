@@ -132,11 +132,11 @@ function updateEdtClock() {
     const currentHour = new Date(edtTime).getHours();
 
     const deepNightColor = '#0C1446';
-    const nightColor = '#25367B';
+    const nightColor = '#2F4394';
     const dawnColor = '#FF774D';
     const sunriseColor = '#FFB14F';
     const sunsetColor = '#FF5733';
-    const twilightColor = '#4E71A8';
+    const twilightColor = '#6088C6';
 
     let edtGradient;
 
@@ -163,11 +163,11 @@ function updateKstClock() {
     const currentHour = new Date(kstTime).getHours();
 
     const deepNightColor = '#0C1446';
-    const nightColor = '#25367B';
+    const nightColor = '#2F4394';
     const dawnColor = '#FF774D';
     const sunriseColor = '#FFB14F';
     const sunsetColor = '#FF5733';
-    const twilightColor = '#4E71A8';
+    const twilightColor = '#6088C6';
 
     let kstGradient;
 
