@@ -214,7 +214,7 @@ html.airplane-cursor {
 
 .edt-time p {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
     font-style: normal;
     margin: 4px 0;
     color: #1500ff;
@@ -239,7 +239,7 @@ html.airplane-cursor {
 
 .kst-time p {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
     font-style: normal;
     margin: 4px 0;
     color: #ff5e00;
@@ -342,11 +342,11 @@ html.airplane-cursor {
 }
 
 .edt-gradient {
-    background: radial-gradient(circle at 100%, #333, #333 50%, #eee 75%, #333 75%);
+    background: radial-gradient(circle at 100%, #000000, #000000 50%, #ffffff 75%, #000000 75%);
 }
 
 .kst-gradient {
-    background: radial-gradient(circle at 0%, #eee, #eee 50%, #333 75%, #eee 75%);
+    background: radial-gradient(circle at 0%, #ffffff, #ffffff 50%, #000000 75%, #ffffff 75%);
 }
 
 .edt-gradient,

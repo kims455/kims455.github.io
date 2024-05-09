@@ -131,26 +131,27 @@ function updateEdtClock() {
     const edtTime = new Date().toLocaleString('en-US', { timeZone: 'America/New_York' });
     const currentHour = new Date(edtTime).getHours();
 
-    const deepNightColor = '#00135E';
-    const nightColor = '#1500FF';
-    const dawnColor = '#ff5e00';
-    const morningColor = '#ffa700';
-    const noonColor = '#fcdb03'; 
+    const deepNightColor = '#04081C';
+    const nightColor = '#1E2B60';
+    const dawnColor = '#FF774D';
+    const sunriseColor = '#FFB14F';
+    const sunsetColor = '#FF5733';
+    const twilightColor = '#4E71A8';
 
     let edtGradient;
 
     if (currentHour < 4 || currentHour >= 20) {
-        edtGradient = `radial-gradient(circle at 100%, ${deepNightColor}, ${deepNightColor} 50%, ${nightColor} 75%, ${deepNightColor} 75%)`;
+        edtGradient = `radial-gradient(circle at 100%, ${deepNightColor}, ${deepNightColor} 20%, ${nightColor} 40%, ${dawnColor} 60%, ${sunriseColor} 80%, ${twilightColor} 100%)`;
     } else if (currentHour >= 4 && currentHour < 6) {
-        edtGradient = `radial-gradient(circle at 100%, ${nightColor}, ${nightColor} 50%, ${dawnColor} 75%, ${nightColor} 75%)`;
+        edtGradient = `radial-gradient(circle at 100%, ${nightColor}, ${nightColor} 20%, ${dawnColor} 40%, ${sunriseColor} 60%, ${twilightColor} 100%)`;
     } else if (currentHour >= 6 && currentHour < 8) {
-        edtGradient = `radial-gradient(circle at 100%, ${dawnColor}, ${dawnColor} 50%, ${morningColor} 75%, ${dawnColor} 75%)`;
+        edtGradient = `radial-gradient(circle at 100%, ${dawnColor}, ${dawnColor} 20%, ${sunriseColor} 40%, ${twilightColor} 60%, ${nightColor} 100%)`;
     } else if (currentHour >= 8 && currentHour < 17) {
-        edtGradient = `radial-gradient(circle at 100%, ${morningColor}, ${morningColor} 50%, ${noonColor} 75%, ${morningColor} 75%)`;
+        edtGradient = `radial-gradient(circle at 100%, ${sunriseColor}, ${sunriseColor} 20%, ${twilightColor} 40%, ${nightColor} 60%, ${deepNightColor} 100%)`;
     } else if (currentHour >= 17 && currentHour < 20) {
-        edtGradient = `radial-gradient(circle at 100%, ${noonColor}, ${noonColor} 50%, ${nightColor} 75%, ${noonColor} 75%)`;
+        edtGradient = `radial-gradient(circle at 100%, ${twilightColor}, ${twilightColor} 20%, ${nightColor} 40%, ${deepNightColor} 60%, ${deepNightColor} 100%)`;
     } else {
-        edtGradient = `radial-gradient(circle at 100%, ${deepNightColor}, ${deepNightColor} 50%, ${nightColor} 75%, ${deepNightColor} 75%)`;
+        edtGradient = `radial-gradient(circle at 100%, ${twilightColor}, ${twilightColor} 20%, ${nightColor} 40%, ${deepNightColor} 60%, ${deepNightColor} 100%)`;
     }
 
     $('#edt-gradient').css('background', edtGradient);
@@ -161,33 +162,33 @@ function updateKstClock() {
     const kstTime = new Date().toLocaleString("en-US", {timeZone: "Asia/Seoul"});
     const currentHour = new Date(kstTime).getHours();
 
-    
-    const deepNightColor = '#00135E';
-    const nightColor = '#1500FF';
-    const dawnColor = '#ff5e00';
-    const morningColor = '#ffa700';
-    const noonColor = '#fcdb03'; 
+    const deepNightColor = '#04081C';
+    const nightColor = '#253577';
+    const dawnColor = '#FF774D';
+    const sunriseColor = '#FFB14F';
+    const sunsetColor = '#FF5733';
+    const twilightColor = '#4E71A8';
 
     let kstGradient;
 
     if (currentHour < 4 || currentHour >= 20) {
-        kstGradient = `radial-gradient(circle at 0%, ${deepNightColor}, ${deepNightColor} 50%, ${nightColor} 75%, ${deepNightColor} 75%)`;
+        kstGradient = `radial-gradient(circle at 0%, ${deepNightColor}, ${deepNightColor} 20%, ${nightColor} 40%, ${dawnColor} 60%, ${sunriseColor} 80%, ${twilightColor} 100%)`;
     } else if (currentHour >= 4 && currentHour < 6) {
-        kstGradient = `radial-gradient(circle at 0%, ${nightColor}, ${nightColor} 50%, ${dawnColor} 75%, ${nightColor} 75%)`;
+        kstGradient = `radial-gradient(circle at 0%, ${nightColor}, ${nightColor} 20%, ${dawnColor} 40%, ${sunriseColor} 60%, ${twilightColor} 100%)`;
     } else if (currentHour >= 6 && currentHour < 8) {
-        kstGradient = `radial-gradient(circle at 0%, ${dawnColor}, ${dawnColor} 50%, ${morningColor} 75%, ${dawnColor} 75%)`;
+        kstGradient = `radial-gradient(circle at 0%, ${dawnColor}, ${dawnColor} 20%, ${sunriseColor} 40%, ${twilightColor} 60%, ${nightColor} 100%)`;
     } else if (currentHour >= 8 && currentHour < 17) {
-        kstGradient = `radial-gradient(circle at 0%, ${morningColor}, ${morningColor} 50%, ${noonColor} 75%, ${morningColor} 75%)`;
+        kstGradient = `radial-gradient(circle at 0%, ${sunriseColor}, ${sunriseColor} 20%, ${twilightColor} 40%, ${nightColor} 60%, ${deepNightColor} 100%)`;
     } else if (currentHour >= 17 && currentHour < 20) {
-        kstGradient = `radial-gradient(circle at 0%, ${noonColor}, ${noonColor} 50%, ${nightColor} 75%, ${noonColor} 75%)`;
+        kstGradient = `radial-gradient(circle at 0%, ${twilightColor}, ${twilightColor} 20%, ${nightColor} 40%, ${deepNightColor} 60%, ${deepNightColor} 100%)`;
     } else {
-        kstGradient = `radial-gradient(circle at 0%, ${deepNightColor}, ${deepNightColor} 50%, ${nightColor} 75%, ${deepNightColor} 75%)`;
+        kstGradient = `radial-gradient(circle at 0%, ${twilightColor}, ${twilightColor} 20%, ${nightColor} 40%, ${deepNightColor} 60%, ${deepNightColor} 100%)`;
     }
 
     $('#kst-gradient').css('background', kstGradient);
 }
 
 $(document).ready(function() {
-    setInterval(updateEdtClock, 1000);
-    setInterval(updateKstClock, 1000);
+    setInterval(updateEdtClock, 0);
+    setInterval(updateKstClock, 0);
 });
