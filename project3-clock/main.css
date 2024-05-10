@@ -150,15 +150,15 @@ html.airplane-cursor {
 
 @media screen and (max-width: 768px) {
     .number {
-        font-size: 30px;
+        font-size: 35px;
     }
 
     .edt-container {
-        font-size: 30px;
+        font-size: 45px;
     }
     
     .kst-container {
-        font-size: 30px;
+        font-size: 45px;
     }
 }
 
@@ -286,33 +286,33 @@ html.airplane-cursor {
 
 @media screen and (max-width: 768px) {
     .nyc {
-        font-size: 15px;
-        margin: 2px 0;
-    }
-    
-    .edt-time h2 {
         font-size: 20px;
         margin: 2px 0;
     }
     
+    .edt-time h2 {
+        font-size: 25px;
+        margin: 2px 0;
+    }
+    
     .edt-time p {
-        font-size: 10px;
+        font-size: 15px;
         margin: 2px 0;
     }
     
     .seoul {
-        font-size: 15px;
+        font-size: 20px;
         margin: 2px 0;
 
     }
     
     .kst-time h2 {
-        font-size: 20px;
+        font-size: 25px;
         margin: 2px 0;
     }
     
     .kst-time p {
-        font-size: 10px;
+        font-size: 15px;
         margin: 2px 0;
     }
 }
