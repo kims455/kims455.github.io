@@ -285,7 +285,36 @@ html.airplane-cursor {
 }
 
 @media screen and (max-width: 768px) {
+    .nyc {
+        font-size: 15px;
+        margin: 2px 0;
+    }
+    
+    .edt-time h2 {
+        font-size: 20px;
+        margin: 2px 0;
+    }
+    
+    .edt-time p {
+        font-size: 10px;
+        margin: 2px 0;
+    }
+    
+    .seoul {
+        font-size: 15px;
+        margin: 2px 0;
 
+    }
+    
+    .kst-time h2 {
+        font-size: 20px;
+        margin: 2px 0;
+    }
+    
+    .kst-time p {
+        font-size: 10px;
+        margin: 2px 0;
+    }
 }
 
 /* @media screen and (max-width: 768px) {
