@@ -1,0 +1,42 @@
+body {
+    font-family: "aktiv-grotesk", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: white;
+}
+
+.flipbook-container {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+#flipbookImage {
+    width: 400px;
+    height: 400px; 
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.link {
+    display: inline-block;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.link:hover {
+    color: red;
+}
