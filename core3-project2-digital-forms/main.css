@@ -7,7 +7,7 @@ body {
     height: 100vh;
     margin: 0;
     background-color: whitesmoke;
-    position: relative; /* Ensure relative positioning for the body */
+    position: relative;
 }
 
 .flipbook-container {
