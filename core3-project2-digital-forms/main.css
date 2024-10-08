@@ -6,7 +6,8 @@ body {
     flex-direction: column;
     height: 100vh;
     margin: 0;
-    background-color: white;
+    background-color: whitesmoke;
+    position: relative; /* Ensure relative positioning for the body */
 }
 
 .flipbook-container {
@@ -20,23 +21,31 @@ body {
 }
 
 #flipbookImage {
-    width: 400px;
-    height: 400px; 
+    width: 900px;
+    height: 900px; 
     border-radius: 50%;
     object-fit: cover;
     display: block;
     margin: 0 auto;
 }
 
-
-.link {
-    display: inline-block;
-    color: black;
+.page1-link, .page2-link {
+    position: absolute;
+    bottom: 20px;
     font-size: 18px;
-    text-align: center;
-    transition: background-color 0.3s ease;
+    color: rgb(22, 22, 22);
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-.link:hover {
-    color: red;
+.page1-link:hover, .page2-link:hover {
+    color: blue;
+}
+
+.page1-link {
+    left: 20px;
+}
+
+.page2-link {
+    right: 20px;
 }
