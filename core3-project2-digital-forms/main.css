@@ -1,0 +1,51 @@
+body {
+    font-family: "aktiv-grotesk", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: whitesmoke;
+    position: relative;
+}
+
+.flipbook-container {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+#flipbookImage {
+    width: 900px;
+    height: 900px; 
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.page1-link, .page2-link {
+    position: absolute;
+    bottom: 20px;
+    font-size: 18px;
+    color: rgb(22, 22, 22);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.page1-link:hover, .page2-link:hover {
+    color: blue;
+}
+
+.page1-link {
+    left: 20px;
+}
+
+.page2-link {
+    right: 20px;
+}

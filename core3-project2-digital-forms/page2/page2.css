@@ -1,0 +1,75 @@
+body {
+    font-family: "aktiv-grotesk", sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.home-link, .page1-link {
+    position: absolute;
+    bottom: 20px;
+    font-size: 18px;
+    color: rgb(22, 22, 22);
+    text-decoration: none;
+}
+
+.home-link:hover, .page1-link:hover {
+    color: blue;
+}
+
+.home-link {
+    left: 20px;
+}
+
+.page1-link {
+    right: 20px;
+}
+
+.stack {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.stack img {
+    position: absolute;
+    width: 70px;
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    gap: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
+    align-items: center;
+    justify-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.gallery img {
+    width: 85%;
+    max-width: 150px;
+    transition: transform 0.6s ease;
+}
+
+.gallery img:hover {
+    transform: scale(5.5)
+}

@@ -1,0 +1,43 @@
+body {
+    font-family: "aktiv-grotesk", sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: whitesmoke;
+}
+
+.home-link, .page2-link {
+    position: absolute;
+    bottom: 20px;
+    font-size: 18px;
+    color: rgb(22, 22, 22);
+    text-decoration: none;
+}
+
+.home-link:hover, .page2-link:hover {
+    color: blue;
+}
+
+.home-link {
+    left: 20px;
+}
+
+.page2-link {
+    right: 20px;
+}
+
+p {
+    font-family: "aktiv-grotesk", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.top-text {
+    font-size: 50px;
+    color:blue;
+}
+
+.bottom-text {
+    font-size: 25px;
+    color:black;
+    padding-top: 50px;
+}
