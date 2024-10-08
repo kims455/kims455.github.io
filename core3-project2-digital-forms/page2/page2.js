@@ -4,7 +4,7 @@ const gallery = document.querySelector('.gallery');
 function createStackImages() {
     for (let i = 1; i <= 55; i++) {
         const img = document.createElement('img');
-        img.src = `assets/trimmed${i}.png`;
+        img.src = `assets/trimmed${i}.webp`;
         img.alt = `Manhole image ${i}`;
 
         const angle = (i / 55) * (Math.PI * 2);
@@ -28,7 +28,7 @@ function showGallery() {
 
     for (let j = 1; j <= 55; j++) {
         const galleryImg = document.createElement('img');
-        galleryImg.src = `assets/trimmed${j}.png`;
+        galleryImg.src = `assets/trimmed${j}.webp`;
         galleryImg.alt = `Manhole image ${j}`;
         gallery.appendChild(galleryImg);
     }
